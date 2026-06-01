@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Global Relocation Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+
+  <div class="bg-stars"></div>
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+      </div>
+      <div>
+        <h1 class="brand-title">Relocation<span>Intelligence</span></h1>
+        <p class="brand-sub">AI-powered country & visa matching · 65 countries · 9 factors</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="pill"><span class="pulse-dot"></span>Live scoring engine</span>
+    </div>
+  </header>
+
+  <main class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+      <!-- Core priorities -->
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Core Priorities</h2>
+          <p>The four classic relocation factors.</p>
+        </div>
+
+        <div class="slider-group">
+          {% set core = [
+            ('salary', '💰', 'Salary importance', 0.7),
+            ('cost',   '🛒', 'Cost of living sensitivity', 0.5),
+            ('pr',     '🛂', 'PR / residency importance', 0.6),
+            ('job',    '💼', 'Job market importance', 0.7)
+          ] %}
+          {% for key, icon, label, dflt in core %}
+            <div class="slider-row">
+              <label>
+                <span class="slider-label"><span class="icon">{{ icon }}</span> {{ label }}</span>
+                <span class="slider-value" data-value-for="{{ key }}">{{ "%.2f"|format(dflt) }}</span>
+              </label>
+              <input type="range" id="{{ key }}" min="0" max="1" step="0.05" value="{{ dflt }}" class="slider" />
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Lifestyle -->
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Lifestyle Factors</h2>
+          <p>Refine the match with quality-of-life metrics.</p>
+        </div>
+
+        <div class="slider-group">
+          {% set extra = [
+            ('climate',    '☀️', 'Climate & weather', 0.3),
+            ('safety',     '🛡️', 'Safety & security', 0.5),
+            ('healthcare', '🏥', 'Healthcare quality', 0.4),
+            ('english',    '🗣️', 'English-friendly', 0.5),
+            ('internet',   '🌐', 'Internet infrastructure', 0.3)
+          ] %}
+          {% for key, icon, label, dflt in extra %}
+            <div class="slider-row">
+              <label>
+                <span class="slider-label"><span class="icon">{{ icon }}</span> {{ label }}</span>
+                <span class="slider-value" data-value-for="{{ key }}">{{ "%.2f"|format(dflt) }}</span>
+              </label>
+              <input type="range" id="{{ key }}" min="0" max="1" step="0.05" value="{{ dflt }}" class="slider" />
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+
+      <!-- Filters -->
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Filters</h2>
+        </div>
+
+        <div class="select-row">
+          <label for="region">Preferred region</label>
+          <select id="region" class="select">
+            <option value="All regions">All regions</option>
+            {% for r in regions %}<option value="{{ r }}">{{ r }}</option>{% endfor %}
+          </select>
+        </div>
+
+        <div class="select-row">
+          <label for="visa_type">Preferred visa type</label>
+          <select id="visa_type" class="select">
+            <option value="any">Any visa type</option>
+            <option value="skilled">Skilled worker</option>
+            <option value="nomad">Digital nomad</option>
+            <option value="investor">Investor / golden visa</option>
+            <option value="study">Study route</option>
+            <option value="startup">Startup founder</option>
+          </select>
+        </div>
+
+        <div class="slider-row">
+          <label>
+            <span class="slider-label">Top countries to show</span>
+            <span class="slider-value" data-value-for="top_n">5</span>
+          </label>
+          <input type="range" id="top_n" min="3" max="10" step="1" value="5" class="slider" />
+        </div>
+      </section>
+
+      <!-- Reset -->
+      <button class="reset-btn" id="reset-btn">↻ Reset to defaults</button>
+
+      <!-- User profile -->
+      <section class="panel insight-panel" id="insight-panel">
+        <div class="panel-header"><h2>🧠 Your Profile</h2></div>
+        <p class="insight-text" id="user-insight">Loading your profile…</p>
+      </section>
+    </aside>
+
+    <!-- Content -->
+    <section class="content">
+
+      <!-- Map -->
+      <div class="map-container">
+        <div class="map-header">
+          <div>
+            <h2>Global Match Map</h2>
+            <p>Hover any country — it lifts off the map with full metrics.</p>
+          </div>
+          <div class="map-legend">
+            <span class="legend-label">Match</span>
+            <div class="legend-scale"></div>
+            <span class="legend-range">Low → High</span>
+          </div>
+        </div>
+
+        <div class="map-stage" id="map-stage">
+          <svg id="world-map" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"></svg>
+          <div id="map-tooltip" class="tooltip hidden"></div>
+          <div id="map-loader" class="map-loader">
+            <div class="spinner"></div>
+            <span>Loading world data…</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top countries -->
+      <div class="section-header">
+        <h2>🏆 Your Top Matches</h2>
+        <p>Click any card for AI-generated insights and visa pathways.</p>
+      </div>
+      <div class="top-grid" id="top-grid"></div>
+
+      <!-- Insights -->
+      <div class="section-header">
+        <h2>🧠 AI Insights & Visa Pathways</h2>
+        <p>Select a country to see its explanation, trade-offs, similar alternatives, and available visa routes.</p>
+      </div>
+      <div class="insights-panel" id="insights-panel">
+        <p class="muted">Click a top country (or a country on the map) to see its breakdown and visa pathways.</p>
+      </div>
+
+      <!-- Full ranking -->
+      <details class="full-ranking">
+        <summary>📊 See full ranking of all countries</summary>
+        <div class="table-wrap">
+          <table id="full-ranking-table">
+            <thead>
+              <tr>
+                <th>#</th><th>Country</th><th>Region</th><th>Score</th><th>Rating</th>
+                <th>💰</th><th>🛒</th><th>🛂</th><th>💼</th>
+                <th>☀️</th><th>🛡️</th><th>🏥</th><th>🗣️</th><th>🌐</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </details>
+
+      <footer class="footer">
+        Built with Flask · Vanilla JS · SVG · Pandas · NumPy — 65 countries, 9 factors, curated visa data.<br>
+        Visa info is illustrative; verify with official immigration authorities before acting.
+      </footer>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='js/countries.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
