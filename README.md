@@ -1,18 +1,18 @@
-# 🌍 AI Global Relocation Intelligence System
+# RelocAitor: An AI Global Relocation Intelligence System
 
 An interactive, AI-powered decision-support web application that recommends the best countries to relocate to based on personalized user preferences, with curated visa pathway data and a real 3D-pop-out world map.
 
-Built with **Flask + vanilla JavaScript + SVG** — no bulky frontend frameworks, no Streamlit limitations. Fast, smooth, production-grade.
+Built with **Flask + vanilla JavaScript + SVG.** No bulky frontend frameworks, no Streamlit limitations. Fast, smooth, production-grade.
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Core
 - **66 countries** across 7 regions, **9 weighted factors** per country
 - **Real country shapes** rendered from public-domain world map GeoJSON
-- **True 3D hover pop-out** — countries lift, scale, and glow with CSS 3D transforms
-- **Real-time scoring** — every slider change debounces and re-queries the Flask backend
+- **True 3D hover pop-out:** Countries lift, scale, and glow with CSS 3D transforms
+- **Real-time scoring:** Every slider change debounces and re-queries the Flask backend
 
 ### Scoring factors
 | Factor | Description |
@@ -30,24 +30,24 @@ Built with **Flask + vanilla JavaScript + SVG** — no bulky frontend frameworks
 ### Visa pathways
 - **Curated visa data** for all 66 countries (skilled, nomad, investor, study, startup routes)
 - Each visa has: difficulty, duration, PR pathway, minimum income, summary
-- **Filter by visa type** — see only countries with the visa class you want
+- **Filter by visa type:**  See only countries with the visa class you want
 - **Color-coded** by category and difficulty
 
 ### Insights
-- **Rule-based AI reasoning** — explanations, trade-off analysis, user-profile insights
-- **Similar-country suggestions** — Euclidean nearest-neighbor matching across all 9 features
-- **Click-through navigation** — click similar-country cards to dive into their insights too
+- **Rule-based AI reasoning:** Explanations, trade-off analysis, user-profile insights
+- **Similar-country suggestions:** Euclidean nearest-neighbor matching across all 9 features
+- **Click-through navigation:** Click similar-country cards to dive into their insights too
 
 ### UX polish
 - **Reset button** to restore defaults
-- **Score categorization** — High / Medium / Low badges
+- **Score categorization** High / Medium / Low badges
 - **Full ranking table** with all 9 metrics for all 66 countries
-- **Region filter** — narrow to one continent
+- **Region filter** narrow to one continent
 - **Dark neon theme** with smooth animations everywhere
 
 ---
 
-## 🚀 Running Locally
+##  Running Locally
 
 ### Easiest: double-click `run.bat`
 
@@ -68,7 +68,7 @@ Then visit **http://localhost:5000**.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 relocator/
@@ -92,7 +92,7 @@ relocator/
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ### Backend (Flask)
 
@@ -118,13 +118,13 @@ Where each `value_i` is the country's normalized [0,1] score for factor *i*, exc
 
 ---
 
-## 📝 Data Disclaimer
+##  Data Disclaimer
 
-All numerical data is normalized approximations for demonstration purposes. Visa information is illustrative — verify with official immigration authorities (or a licensed immigration lawyer) before acting on it.
+All numerical data is normalized approximations for demonstration purposes. Visa information is illustrative, verify with official immigration authorities (or a licensed immigration lawyer) before acting on it.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Tech |
 |---|---|
@@ -136,7 +136,9 @@ All numerical data is normalized approximations for demonstration purposes. Visa
 No React, no Vue, no build step, no bundler. Just open and run.
 
 ---
+##  License: MIT
 
-## 📄 License
+<div align="center">
+  <h5>Built with 💻 by <a href="https://github.com/zinmeir">Muhammad Shaheer Akhtar</a></h5>
+</div>
 
-MIT
