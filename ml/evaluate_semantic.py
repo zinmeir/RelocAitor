@@ -30,8 +30,8 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-import search                                                        # noqa: E402
-from factors import FACTOR_KEYS                                      # noqa: E402
+from relocaitor.nlp import search                                                        # noqa: E402
+from relocaitor.ranking.factors import FACTOR_KEYS                                      # noqa: E402
 from ml import semantic                                              # noqa: E402
 from ml.data import visa_queries as VQ                               # noqa: E402
 from ml.data.prompts import TEST as P_TEST, TRAIN as P_TRAIN         # noqa: E402
@@ -108,7 +108,7 @@ def evaluate_prompts(meta, cfg) -> dict:
 # ---------------------------------------------------------------------------
 
 def _relevant(types, countries) -> set:
-    from visas import _load
+    from relocaitor.visas.catalog import _load
     out = set()
     for code, entry in _load().items():
         if countries and code not in countries:
@@ -131,7 +131,7 @@ def _keys(hits) -> list:
 
 
 def _country_names():
-    from data import load_countries
+    from relocaitor.datasets import load_countries
     return dict(load_countries()[["country_code", "country_name"]].itertuples(index=False))
 
 
@@ -191,7 +191,7 @@ def evaluate_retrieval(meta, th_used, th_best) -> dict:
 
 
 def main() -> dict:
-    from app import meta
+    from relocaitor.web.app import meta
     if not semantic.available():
         raise SystemExit("Embedding model or index missing. Run: python -m ml.build_semantic_index --download")
     m = meta()

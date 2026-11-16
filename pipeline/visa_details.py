@@ -271,7 +271,7 @@ UPDATES = ROOT / "data" / "immigration" / "updates.json"
 
 
 def _apply_updates(data: dict) -> None:
-    """Approved updates (python -m immigration approve) go on top of the research record, oldest first."""
+    """Approved updates (python -m relocaitor.immigration approve) go on top of the research record, oldest first."""
     if not UPDATES.exists():
         return
     import re

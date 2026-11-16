@@ -7,7 +7,7 @@ search) is ported to JavaScript in mock_api.js and search_port.js.
     python preview/build_preview.py --artifact   # dist/artifact.html (sandboxed hosts that block fetch)
 
 Host dist/index.html anywhere static (GitHub Pages, Netlify) for a free demo.
-tests/test_js_parity.py checks the JavaScript port gives the same answers as Python.
+tests/parity/test_js_parity.py checks the JavaScript port gives the same answers as Python.
 """
 import argparse
 import json
@@ -20,11 +20,11 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(ROOT))
 
-import journey  # noqa: E402
-from app import app, meta  # noqa: E402
+from relocaitor.visas import journey  # noqa: E402
+from relocaitor.web.app import app, meta  # noqa: E402
 from ml.prompt_model import serving_payload  # noqa: E402
 from ml.semantic import semantic_payload  # noqa: E402
-from data import _provenance, load_countries  # noqa: E402
+from relocaitor.datasets import _provenance, load_countries  # noqa: E402
 
 ap = argparse.ArgumentParser()
 ap.add_argument("--artifact", action="store_true",

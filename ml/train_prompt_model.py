@@ -27,7 +27,7 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from factors import FACTOR_KEYS                  # noqa: E402
+from relocaitor.ranking.factors import FACTOR_KEYS                  # noqa: E402
 from ml import prompt_model as pm                # noqa: E402
 from ml.data.prompts import TEST, TRAIN          # noqa: E402
 
@@ -101,7 +101,7 @@ def choose_c(texts, Y, v):
 
 def _rules_sets(text, meta):
     """What the rules alone say: factors wanted, factors mentioned at all, visa route."""
-    import search
+    from relocaitor.nlp import search
     r = search.interpret_rules(text, meta, use_model=False, use_semantic=False)
     mentioned = {c["key"] for c in r["chips"] if c.get("kind") == "factor"}
     wanted = {c["key"] for c in r["chips"] if c.get("kind") == "factor"
@@ -188,7 +188,7 @@ def export(vocab, idf, factor_models, visa_model, C):
 # ---------------------------------------------------------------------------
 
 def _rules_prediction(text, meta, use_model):
-    import search
+    from relocaitor.nlp import search
     r = search.interpret_rules(text, meta, use_model=use_model, use_semantic=False)
     explicit = {c["key"] for c in r["chips"] if "key" in c and c.get("kind") in ("factor", "learned") and "not important" not in c["label"]
                 and "opposite" not in c["label"]}
@@ -242,7 +242,7 @@ def train(meta) -> dict:
 
 
 if __name__ == "__main__":
-    from app import meta
+    from relocaitor.web.app import meta
     pm.load.cache_clear()
     model = train(meta())
     pm.MODEL_PATH.write_text(json.dumps(model, separators=(",", ":")), encoding="utf-8")

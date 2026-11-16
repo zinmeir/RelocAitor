@@ -1,6 +1,6 @@
 # Proposals
 
-Put one JSON file per proposed update here, then run `python -m immigration review`.
+Put one JSON file per proposed update here, then run `python -m relocaitor.immigration review`.
 
 ```json
 {
@@ -13,5 +13,5 @@ Put one JSON file per proposed update here, then run `python -m immigration revi
 }
 ```
 
-Approval is a person's step: `python -m immigration approve FILE --by "Your Name"`.
+Approval is a person's step: `python -m relocaitor.immigration approve FILE --by "Your Name"`.
 Route ids and the fields a proposal may change are listed in docs/IMMIGRATION_DATA.md.

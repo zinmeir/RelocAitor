@@ -1,5 +1,5 @@
 {
- "about": "Built by `python -m immigration build` from data/visas.json, updates.json and verifications.json. Do not edit by hand.",
+ "about": "Built by `python -m relocaitor.immigration build` from data/visas.json, updates.json and verifications.json. Do not edit by hand.",
  "routes": {
   "USA-h-1b-specialty-worker": {
    "id": "USA-h-1b-specialty-worker",

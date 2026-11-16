@@ -225,7 +225,7 @@ def test_confidence_and_pathways(page, server):
 def _semantic_build(tmp_path):
     import json
     import os
-    from tests import semantic_stub
+    from tests.ml import semantic_stub
     payload = tmp_path / "semantic.json"
     payload.write_text(json.dumps(semantic_stub.payload()))
     out = tmp_path / "semantic.html"
@@ -235,7 +235,7 @@ def _semantic_build(tmp_path):
 
 
 def test_static_build_semantic_search_in_the_browser(make_page, tmp_path):
-    from tests import semantic_stub
+    from tests.ml import semantic_stub
     out = _semantic_build(tmp_path)
     p = make_page()
     p.page.route("**/@huggingface/transformers**", lambda r: r.fulfill(
@@ -456,8 +456,8 @@ def test_currency_summaries_and_estimates(page, server):
     assert page.inner_text("#profile-summary") == "Pakistani passport, healthcare, age 34, with partner and 2 children"
     assert "PKR" in page.inner_text(".card-figures") and "World Bank" in page.inner_text("#currency-note")
     page.select_option("#currency", "USD")
-    page.wait_for_timeout(600)
-    assert "$" in page.inner_text(".card-figures") and "cur=USD" in page.url
+    page.wait_for_function("document.querySelector('.card-figures').innerText.includes('$')")
+    assert "cur=USD" in page.url
     page.select_option("#currency", "EUR")
     page.fill("#monthly_income", "3000")
     page.wait_for_timeout(800)

@@ -26,10 +26,10 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from data import load_countries            # noqa: E402
-from factors import DEFAULT_WEIGHTS, FACTOR_KEYS  # noqa: E402
+from relocaitor.datasets import load_countries            # noqa: E402
+from relocaitor.ranking.factors import DEFAULT_WEIGHTS, FACTOR_KEYS  # noqa: E402
 from ml import preferences as pref          # noqa: E402
-from scoring import factor_matrix           # noqa: E402
+from relocaitor.ranking.scoring import factor_matrix           # noqa: E402
 
 TRUE_BETA = 8.0
 OUT = Path(__file__).resolve().parent / "preference_eval.json"

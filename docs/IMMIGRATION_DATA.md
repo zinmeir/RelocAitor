@@ -1,10 +1,10 @@
 # Immigration data: statuses, versions, changes and how updates get in
 
-Code: `immigration/`. Data: `data/immigration/`. Schemas: `data/schemas/imm_*.schema.json`.
+Code: `relocaitor/immigration/`. Data: `data/immigration/`. Schemas: `data/schemas/imm_*.schema.json`.
 
 ## One record per route, one status per field
 
-`python -m immigration build` turns `data/visas.json` (what the eligibility engine reads) into
+`python -m relocaitor.immigration build` turns `data/visas.json` (what the eligibility engine reads) into
 `data/immigration/records.json`. Every one of the 117 routes reports the same 24 fields, grouped as
 requirements, costs, timeline, rights and identity (`immigration/catalogue.py`). A field we have never
 collected is still listed as **unknown**, so gaps are visible instead of silently missing.
@@ -25,7 +25,7 @@ Rules that keep the labels honest:
   its underlying status with a note that the old sign-off no longer matches.
 - `difficulty` is always an editorial rating, never "sourced".
 
-The baseline on 16 November 2026 (`python -m immigration report`): nothing verified; fees sourced on
+The baseline on 16 November 2026 (`python -m relocaitor.immigration report`): nothing verified; fees sourced on
 25 routes, processing times on 7, PR timelines on 12, family rules on 9; citizenship from a secondary
 source on 109; minimum income, investment, duration and PR route are unsourced estimates on all 117;
 education, experience, language, savings, documents, renewal, residence rules, spouse work rights,
@@ -52,16 +52,16 @@ the real rules, once with the old value and once with the new: `now_eligible`, `
 #    {"route": "GBR-skilled-worker-visa", "changes": {"fee": {...}},
 #     "sources": ["https://www.gov.uk/skilled-worker-visa/how-much-it-costs"],
 #     "checked": "2027-04-01", "evidence": "<the exact wording on the page>", "proposed_by": "..."}
-python -m immigration review                          # diff + anything that blocks approval
-python -m immigration approve uk-skilled-2027.json --by "Your Name"   # the human step
+python -m relocaitor.immigration review                          # diff + anything that blocks approval
+python -m relocaitor.immigration approve uk-skilled-2027.json --by "Your Name"   # the human step
 python -m pipeline.visa_details                       # merge approved updates into visas.json
-python -m immigration build                           # version, log changes, refresh sources
+python -m relocaitor.immigration build                           # version, log changes, refresh sources
 python -m pipeline.validate && python -m pytest -q --ignore=tests/e2e
 ```
 
 Proposals are refused when the route or field is unknown, a source isn't https or is a secondary
 site, the check date is missing, or there is no quoted evidence. To confirm a value without changing
-it: `python -m immigration verify ROUTE FIELD --by NAME --source URL`.
+it: `python -m relocaitor.immigration verify ROUTE FIELD --by NAME --source URL`.
 
 ## The official source registry and page monitor
 
@@ -69,7 +69,7 @@ it: `python -m immigration verify ROUTE FIELD --by NAME --source URL`.
 which countries and routes rely on it, and how it may be read (`manual` for all of them: none has
 an API or feed agreement yet). Notes and access methods a person adds survive rebuilds.
 
-`python -m immigration monitor` fetches each cited page that robots.txt allows, fingerprints its
+`python -m relocaitor.immigration monitor` fetches each cited page that robots.txt allows, fingerprints its
 visible text and reports pages that changed since the last run, with the routes that cite them. It
 does not extract figures: immigration pages change layout often and many render with JavaScript, so
 automated extraction would produce confident wrong numbers. A changed page is a prompt for a person

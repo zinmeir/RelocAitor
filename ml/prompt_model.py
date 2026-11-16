@@ -23,7 +23,7 @@ CHAR_NS = (3, 4)
 
 
 def _stem(w: str) -> str:
-    from search import stem
+    from relocaitor.nlp.search import stem
     return stem(w)
 
 

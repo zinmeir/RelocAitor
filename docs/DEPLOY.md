@@ -51,5 +51,5 @@ the assistant need the server and are hidden or labelled there.
 - Serve over HTTPS and set `RELOC_SECURE_COOKIES=1`.
 - One gunicorn process per machine keeps the in-memory rate limiter exact; with more, add a shared limiter.
 - Read `docs/SECURITY.md`, "Known gaps".
-- Data upkeep: `python -m immigration review` / `approve`, `python -m pipeline fetch && build` (needs internet),
+- Data upkeep: `python -m relocaitor.immigration review` / `approve`, `python -m pipeline fetch && build` (needs internet),
   `python -m pipeline currencies`, then `python -m pipeline.validate` and the tests. CI checks the data on every push.

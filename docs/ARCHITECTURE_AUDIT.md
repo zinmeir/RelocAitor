@@ -1,7 +1,8 @@
 # Architecture audit
 
 *Written 16 November 2026, before the Global Mobility Platform work began. Every number below was
-measured in the repository on that date.*
+measured in the repository on that date. File names are as they were then: the code has since moved into
+the `relocaitor` package (see the README's project structure).*
 
 ## 1. What exists and works
 

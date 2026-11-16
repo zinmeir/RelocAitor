@@ -26,7 +26,7 @@ FIXTURES = Path(__file__).parent / "fixtures"
 @pytest.fixture(scope="session")
 def server():
     from werkzeug.serving import make_server
-    from app import app
+    from relocaitor.web.app import app
 
     srv = make_server("127.0.0.1", 0, app, threaded=True)
     thread = threading.Thread(target=srv.serve_forever, daemon=True)

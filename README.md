@@ -145,7 +145,7 @@ Every visa route reports the same 24 fields (requirements, costs, timelines, rig
 | **Unknown** | Not collected yet: shown as a gap, never guessed |
 | **Outdated** | Sourced or verified, but older than that field's freshness window |
 
-Each route has a rule version, and every change is logged with its old and new value. `POST /api/immigration/impact` recomputes a person's eligibility before and after a change. Updates enter only through a reviewed proposal that a person approves by name (`python -m immigration review`, then `approve --by NAME`). Today nothing is verified yet and most requirement fields are unknown; `python -m immigration report` prints the full picture. Details: [docs/IMMIGRATION_DATA.md](docs/IMMIGRATION_DATA.md).
+Each route has a rule version, and every change is logged with its old and new value. `POST /api/immigration/impact` recomputes a person's eligibility before and after a change. Updates enter only through a reviewed proposal that a person approves by name (`python -m relocaitor.immigration review`, then `approve --by NAME`). Today nothing is verified yet and most requirement fields are unknown; `python -m relocaitor.immigration report` prints the full picture. Details: [docs/IMMIGRATION_DATA.md](docs/IMMIGRATION_DATA.md).
 
 Country scores are generated, not hand-typed. A pipeline downloads public data, scales it with a documented formula, and records the method, source, year and raw value behind each of the 792 numbers in `data/provenance.csv`. Every data file has a JSON Schema, and CI fails on a typo, an impossible value or files that disagree.
 
@@ -176,7 +176,7 @@ python -m pipeline fetch      # refresh World Bank + WHO data (needs internet)
 python -m pipeline build      # rebuild countries.csv, provenance.csv, clusters and SOURCES.md
 python -m pipeline check      # fail if countries.csv is out of date with its sources (CI)
 python -m pipeline.validate   # every data file against its schema, plus cross-file checks (CI)
-python -m immigration check   # immigration records match their sources (CI)
+python -m relocaitor.immigration check   # immigration records match their sources (CI)
 ```
 
 </details>
@@ -432,27 +432,27 @@ Full checklist: [docs/DEPLOY.md](docs/DEPLOY.md). Security and privacy: [docs/SE
 
 ```text
 relocator/
-├── app.py                 Flask routes: parse → engine → JSON
-├── engine.py, scoring.py  Ranking pipeline, weighted scoring, what-if
-├── eligibility.py         Visa rules interpreter (data/rules.json); free-movement blocs
-├── pathways.py            How to qualify: counterfactual eligibility
-├── confidence.py          Monte Carlo ranking confidence and data reliability
-├── search.py, refine.py   Prompt understanding, visa search, follow-up conversation
-├── dimensions.py          Six separate scores per country
-├── security.py            Request logs, rate limits, security headers
-├── immigration/           Route records, statuses, versions, change log, proposals, monitor, impact
-├── planner/               Routes to permanent residence, single and multi-stage; what-if
-├── finance/               Take-home pay, costs and projections
-├── career/                Shortage lists, indicators, skills roadmap; job API connector
-├── agents/                Orchestrator and agents over the deterministic engines
-├── workspace/             Accounts, encrypted profiles, checklist, tracker, timeline (SQLite)
-├── pipeline/              fetch → impute → scale → countries.csv + provenance; visa research record
-├── ml/                    Semantic search, preference model, prompt classifier, evaluations
-├── data/                  Every dataset and rule file, with JSON Schemas in data/schemas/
-├── templates/, static/    Pages, CSS and JavaScript (app.js, workspace.js, map.js, glass.js)
-├── preview/               Static build: the API ported to JavaScript
-├── tests/                 pytest and Playwright suites
-├── docs/                  Architecture, audit, roadmap, status, API, security, deployment, data
+├── app.py                    Entry point: python app.py · gunicorn app:app
+├── relocaitor/               The application package
+│   ├── ranking/              Factors, presets, scoring, ranking engine, confidence, explanations, six views
+│   ├── nlp/                  Prompt understanding (search), the conversation (refine), Q&A (assistant)
+│   ├── visas/                Visa catalogue, eligibility rules, costs and timelines, how to qualify
+│   ├── immigration/          Route records, statuses, versions, changes, proposals, monitor (python -m relocaitor.immigration)
+│   ├── planner/              Routes to permanent residence, single and multi-stage; what-if
+│   ├── finance/              Take-home pay, costs and projections
+│   ├── career/               Shortage lists, indicators, skills roadmap; job API connector
+│   ├── agents/               The assistant's orchestrator and agents
+│   ├── workspace/            Accounts, encrypted profiles, checklist, tracker, timeline (SQLite)
+│   ├── web/                  Flask app and routes, input validation, security middleware, icons
+│   ├── datasets.py           Loads the country dataset, provenance and the world list
+│   └── paths.py              Where data/, static/ and templates/ are
+├── ml/                       Semantic search, preference model, prompt classifier, training and evaluation
+├── pipeline/                 Data pipeline: fetch → impute → scale → countries.csv; visa research; validation
+├── preview/                  No-server build: the API ported to JavaScript
+├── data/                     Every dataset and rule file; JSON Schemas in data/schemas/
+├── templates/, static/       Pages, CSS and JavaScript
+├── tests/                    One folder per package (ranking, nlp, visas, platform, data, ml, web, parity) + e2e
+├── docs/                     Architecture, roadmap, status, API, security, deployment, data
 └── run.sh, run.bat, Dockerfile, Procfile, render.yaml, .github/workflows/
 ```
 

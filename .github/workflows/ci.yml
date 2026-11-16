@@ -23,7 +23,7 @@ jobs:
       - name: Data files match their schemas and agree with each other
         run: python -m pipeline.validate
       - name: Immigration records match their sources
-        run: python -m immigration check
+        run: python -m relocaitor.immigration check
       - name: Semantic index matches visas.json and the concept prototypes
         run: python -m ml.build_semantic_index --check
       # Browser tests skip themselves here (no browser installed); they run in the e2e job.
@@ -59,7 +59,7 @@ jobs:
       - name: Download the model and re-embed the corpus
         run: python -m ml.build_semantic_index --download
       - name: Real-model tests
-        run: python -m pytest -q tests/test_semantic.py
+        run: python -m pytest -q tests/ml/test_semantic.py
       - name: Tune on dev data, score on test data
         run: python -m ml.evaluate_semantic
       - uses: actions/upload-artifact@v4

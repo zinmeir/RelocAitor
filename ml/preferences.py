@@ -23,7 +23,7 @@ from typing import Optional
 
 import numpy as np
 
-from factors import FACTOR_KEYS, FACTORS
+from relocaitor.ranking.factors import FACTOR_KEYS, FACTORS
 
 BETA = 6.0            # sharpness of choices
 PRIOR_MEAN = 0.5      # neutral weight for every factor

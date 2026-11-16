@@ -76,7 +76,7 @@ def cross_file_errors() -> list:
                 out.append(f"countries.csv: {r['country_code']}: not in world.csv")
     fields, rates = set(occ["fields"]), set(fx["usd_per_unit"])
     if (DATA / "transitions.json").exists():
-        from immigration.records import route_id as _rid
+        from relocaitor.immigration.records import route_id as _rid
         ids = {_rid(c, v["name"]) for c, e in visas.items() for v in e["visas"]}
         for p in _load("transitions.json")["pathways"]:
             for st in p["steps"]:
@@ -85,9 +85,9 @@ def cross_file_errors() -> list:
             if not any(st.get("pr") for st in p["steps"]):
                 out.append(f"transitions.json: {p['id']}: no step leads to permanent residence")
     if (DATA / "immigration" / "records.json").exists():
-        from immigration import store as imm
+        from relocaitor.immigration import store as imm
         if not imm.is_up_to_date():
-            out.append("immigration/records.json is out of date: run python -m immigration build")
+            out.append("immigration/records.json is out of date: run python -m relocaitor.immigration build")
         robots = {"claude", "gpt", "llm", "ai", "model", "bot"}
         for v in imm.load("verifications"):
             if v["by"].strip().lower() in robots:
@@ -100,7 +100,7 @@ def cross_file_errors() -> list:
                 out.append(f"currencies.json: {code}: not a country in world.csv")
         if cur != json.loads(json.dumps(build_currencies(DATA))):
             out.append("currencies.json is out of date: run python -m pipeline currencies")
-    from data import get_nationalities
+    from relocaitor.datasets import get_nationalities
     passports = {n["code"] for n in get_nationalities()}
 
     dates = [fx["date"], cities["checked"]]
@@ -141,7 +141,7 @@ def cross_file_errors() -> list:
 
     rules_path = DATA / FILES["rules"]
     if rules_path.exists():
-        from eligibility import Profile
+        from relocaitor.visas.eligibility import Profile
         profile_fields = set(Profile.__dataclass_fields__)
         visa_fields = set(_load("schemas/visas.schema.json")["$defs"]["visa"]["properties"])
         for r in _load(FILES["rules"])["visa_rules"]:
