@@ -1,0 +1,3866 @@
+{
+  "version": 1,
+  "factors": {
+    "salary": {
+      "positive": [
+        "salary",
+        "salaries",
+        "high salary",
+        "high salaries",
+        "well paid",
+        "well paying",
+        "high paying",
+        "good pay",
+        "pay",
+        "paid",
+        "earn",
+        "earning",
+        "earnings",
+        "money",
+        "make money",
+        "wages",
+        "wage",
+        "compensation",
+        "income potential",
+        "rich",
+        "wealth",
+        "wealthy",
+        "lucrative",
+        "high income",
+        "save more",
+        "savings potential",
+        "financial growth",
+        "earn more",
+        "big money"
+      ],
+      "negative": [
+        "low salary",
+        "low pay",
+        "money isnt important"
+      ]
+    },
+    "cost": {
+      "positive": [
+        "cheap",
+        "cheaper",
+        "cheapest",
+        "affordable",
+        "affordability",
+        "low cost",
+        "low cost of living",
+        "cost of living",
+        "inexpensive",
+        "budget friendly",
+        "budget",
+        "low rent",
+        "cheap rent",
+        "low prices",
+        "value for money",
+        "frugal",
+        "stretch my money",
+        "save money",
+        "not too expensive",
+        "reasonable prices",
+        "costs",
+        "cost",
+        "living costs",
+        "rent",
+        "economical",
+        "tight budget",
+        "budget is tight",
+        "limited budget",
+        "on a budget",
+        "low budget",
+        "small budget"
+      ],
+      "negative": [
+        "expensive",
+        "pricey",
+        "high cost",
+        "costly",
+        "luxury",
+        "luxurious"
+      ]
+    },
+    "pr": {
+      "positive": [
+        "permanent residency",
+        "permanent residence",
+        "permanent resident",
+        "pr",
+        "residency",
+        "settle",
+        "settle down",
+        "settling",
+        "citizenship",
+        "second passport",
+        "new passport",
+        "long term",
+        "longterm",
+        "permanently",
+        "stay permanently",
+        "green card",
+        "immigrate",
+        "immigration",
+        "emigrate",
+        "move permanently",
+        "forever",
+        "path to pr",
+        "route to pr",
+        "pathway to pr",
+        "naturalize",
+        "naturalise",
+        "naturalization",
+        "stay long term",
+        "for good"
+      ],
+      "negative": [
+        "short term",
+        "temporary",
+        "temporarily",
+        "few months",
+        "short stay"
+      ]
+    },
+    "job": {
+      "positive": [
+        "job",
+        "jobs",
+        "career",
+        "careers",
+        "employment",
+        "employer",
+        "work opportunities",
+        "opportunities",
+        "hiring",
+        "job market",
+        "job opportunities",
+        "career growth",
+        "tech jobs",
+        "tech scene",
+        "tech industry",
+        "find work",
+        "find a job",
+        "get a job",
+        "work",
+        "working",
+        "professional growth",
+        "promotion",
+        "industry",
+        "labour market",
+        "labor market"
+      ],
+      "negative": []
+    },
+    "climate": {
+      "positive": [
+        "warm",
+        "warmer",
+        "warmth",
+        "sunny",
+        "sun",
+        "sunshine",
+        "beach",
+        "beaches",
+        "good weather",
+        "nice weather",
+        "great weather",
+        "mild",
+        "mild winters",
+        "tropical",
+        "hot",
+        "weather",
+        "climate",
+        "mediterranean",
+        "summer",
+        "summers",
+        "seaside",
+        "coast",
+        "coastal",
+        "pleasant"
+      ],
+      "negative": [
+        "cold",
+        "snow",
+        "snowy",
+        "winter",
+        "winters",
+        "freezing",
+        "chilly",
+        "cool climate",
+        "dark winters",
+        "rain",
+        "rainy"
+      ]
+    },
+    "safety": {
+      "positive": [
+        "safe",
+        "safety",
+        "safest",
+        "secure",
+        "security",
+        "low crime",
+        "crime",
+        "peaceful",
+        "peace",
+        "stable",
+        "stability",
+        "political stability",
+        "safe for women",
+        "safe for kids",
+        "danger",
+        "dangerous",
+        "violence",
+        "personal safety",
+        "law and order"
+      ],
+      "negative": []
+    },
+    "healthcare": {
+      "positive": [
+        "healthcare",
+        "health care",
+        "health",
+        "hospital",
+        "hospitals",
+        "good doctors",
+        "access to doctors",
+        "great doctors",
+        "doctors and hospitals",
+        "medical",
+        "medicine",
+        "universal healthcare",
+        "public healthcare",
+        "health system",
+        "health insurance",
+        "clinic",
+        "clinics",
+        "medical care",
+        "good hospitals"
+      ],
+      "negative": []
+    },
+    "english": {
+      "positive": [
+        "english",
+        "english speaking",
+        "speak english",
+        "speaks english",
+        "english friendly",
+        "english widely spoken",
+        "language barrier",
+        "without learning",
+        "dont want to learn",
+        "dont speak",
+        "only speak english",
+        "language",
+        "languages",
+        "anglophone",
+        "communicate easily",
+        "native english"
+      ],
+      "negative": [
+        "learn the language",
+        "happy to learn",
+        "want to learn a language",
+        "immersion"
+      ]
+    },
+    "internet": {
+      "positive": [
+        "internet",
+        "fast internet",
+        "wifi",
+        "wi fi",
+        "broadband",
+        "connectivity",
+        "connection",
+        "fiber",
+        "fibre",
+        "digital",
+        "digital infrastructure",
+        "online",
+        "internet speed",
+        "fast wifi",
+        "good wifi",
+        "fast connection",
+        "high speed internet",
+        "reliable internet",
+        "5g",
+        "tech infrastructure"
+      ],
+      "negative": []
+    }
+  },
+  "intents": [
+    {
+      "id": "nomad",
+      "label": "Remote worker / digital nomad",
+      "visa_type": "nomad",
+      "phrases": [
+        "digital nomad",
+        "nomad",
+        "remote work",
+        "remote worker",
+        "work remotely",
+        "working remotely",
+        "remote job",
+        "remotely",
+        "freelance",
+        "freelancer",
+        "freelancing",
+        "work from anywhere",
+        "location independent",
+        "online business",
+        "remote",
+        "work online",
+        "nomad visa",
+        "foreign employer",
+        "my company is abroad",
+        "self employed",
+        "contractor",
+        "upwork",
+        "fiverr"
+      ],
+      "boosts": {
+        "internet": 0.9,
+        "cost": 0.7,
+        "climate": 0.6,
+        "job": 0.1,
+        "salary": 0.1
+      }
+    },
+    {
+      "id": "student",
+      "label": "Student",
+      "visa_type": "study",
+      "phrases": [
+        "study",
+        "studying",
+        "student",
+        "students",
+        "university",
+        "universities",
+        "college",
+        "masters",
+        "phd",
+        "bachelor",
+        "bachelors",
+        "degree",
+        "postgraduate",
+        "undergraduate",
+        "scholarship",
+        "study abroad",
+        "student visa",
+        "mba",
+        "grad school"
+      ],
+      "boosts": {
+        "cost": 0.8,
+        "english": 0.7,
+        "job": 0.6,
+        "pr": 0.5
+      }
+    },
+    {
+      "id": "retiree",
+      "label": "Retiree / passive income",
+      "visa_type": "passive",
+      "phrases": [
+        "retire",
+        "retired",
+        "retiring",
+        "retirement",
+        "retiree",
+        "pension",
+        "pensioner",
+        "passive income",
+        "rental income",
+        "dividends",
+        "live off savings",
+        "early retirement",
+        "golden years"
+      ],
+      "boosts": {
+        "healthcare": 1.0,
+        "safety": 0.9,
+        "climate": 0.9,
+        "cost": 0.8,
+        "salary": 0.0,
+        "job": 0.0
+      }
+    },
+    {
+      "id": "investor",
+      "label": "Investor / golden visa",
+      "visa_type": "investor",
+      "phrases": [
+        "invest",
+        "investor",
+        "investment",
+        "investing",
+        "golden visa",
+        "buy property",
+        "buy a house",
+        "real estate",
+        "property investment",
+        "citizenship by investment",
+        "residency by investment",
+        "wealthy investor"
+      ],
+      "boosts": {
+        "pr": 0.8,
+        "safety": 0.7
+      }
+    },
+    {
+      "id": "startup",
+      "label": "Startup founder",
+      "visa_type": "startup",
+      "phrases": [
+        "startup",
+        "start up",
+        "start-up",
+        "founder",
+        "found a company",
+        "start a company",
+        "start a business",
+        "my own company",
+        "my own business",
+        "entrepreneur",
+        "entrepreneurship",
+        "launch a company",
+        "incubator",
+        "venture capital",
+        "business visa"
+      ],
+      "boosts": {
+        "job": 0.7,
+        "internet": 0.6
+      }
+    },
+    {
+      "id": "family_visa",
+      "label": "Joining a partner / family",
+      "visa_type": "family",
+      "phrases": [
+        "spouse visa",
+        "partner visa",
+        "family visa",
+        "join my wife",
+        "join my husband",
+        "join my partner",
+        "join my spouse",
+        "join my family",
+        "my wife is",
+        "my husband is",
+        "my partner is",
+        "my spouse is",
+        "family reunification",
+        "marriage visa",
+        "fiance visa",
+        "fiancee",
+        "fiance"
+      ],
+      "boosts": {}
+    },
+    {
+      "id": "family_kids",
+      "label": "Moving with family / kids",
+      "visa_type": null,
+      "phrases": [
+        "kids",
+        "children",
+        "child",
+        "family",
+        "my family",
+        "with family",
+        "with my family",
+        "raise a family",
+        "raise kids",
+        "schools for kids",
+        "good schools",
+        "schools",
+        "school",
+        "education for kids",
+        "son",
+        "daughter",
+        "baby",
+        "families",
+        "wife and kids",
+        "husband and kids"
+      ],
+      "boosts": {
+        "safety": 1.0,
+        "healthcare": 0.9,
+        "pr": 0.8
+      },
+      "require_pr": true
+    },
+    {
+      "id": "skilled",
+      "label": "Skilled worker",
+      "visa_type": "skilled",
+      "phrases": [
+        "software engineer",
+        "engineer",
+        "developer",
+        "programmer",
+        "data scientist",
+        "nurse",
+        "doctor",
+        "physician",
+        "accountant",
+        "teacher",
+        "architect",
+        "designer",
+        "it professional",
+        "skilled worker",
+        "skilled",
+        "work visa",
+        "work permit",
+        "job offer",
+        "employer sponsored",
+        "sponsorship",
+        "blue card",
+        "professional",
+        "electrician",
+        "mechanic",
+        "chef",
+        "pharmacist",
+        "dentist",
+        "lawyer",
+        "analyst",
+        "consultant",
+        "manager",
+        "researcher",
+        "scientist"
+      ],
+      "boosts": {
+        "job": 0.9,
+        "salary": 0.8
+      }
+    }
+  ],
+  "strong": [
+    "very",
+    "really",
+    "extremely",
+    "super",
+    "must",
+    "need",
+    "needs",
+    "essential",
+    "crucial",
+    "critical",
+    "most important",
+    "top priority",
+    "priority",
+    "important",
+    "absolutely",
+    "definitely",
+    "highly",
+    "mainly",
+    "mostly",
+    "above all",
+    "especially",
+    "key",
+    "non negotiable",
+    "a lot",
+    "care most",
+    "high",
+    "great",
+    "excellent",
+    "best",
+    "top",
+    "strong",
+    "good"
+  ],
+  "mild": [
+    "bit",
+    "somewhat",
+    "slightly",
+    "prefer",
+    "preferably",
+    "ideally",
+    "nice to have",
+    "would be nice",
+    "if possible",
+    "bonus",
+    "kind of",
+    "kinda",
+    "maybe",
+    "some",
+    "decent",
+    "okay",
+    "ok"
+  ],
+  "negators": [
+    "not",
+    "no",
+    "dont",
+    "doesnt",
+    "isnt",
+    "arent",
+    "without",
+    "never",
+    "avoid",
+    "hate",
+    "dislike",
+    "less",
+    "lower",
+    "nothing",
+    "zero",
+    "away from",
+    "escape",
+    "tired of",
+    "sick of",
+    "fed up with",
+    "hates",
+    "cant stand",
+    "too much",
+    "fewer"
+  ],
+  "deprioritise": [
+    "dont care",
+    "do not care",
+    "doesnt matter",
+    "does not matter",
+    "not important",
+    "not a priority",
+    "dont need",
+    "do not need",
+    "no need",
+    "dont mind",
+    "do not mind",
+    "not bothered",
+    "irrelevant",
+    "whatever",
+    "not a concern",
+    "not an issue",
+    "not care",
+    "matters less",
+    "less important",
+    "unimportant",
+    "can compromise",
+    "flexible on",
+    "fine with",
+    "ok with",
+    "okay with",
+    "dont really care",
+    "least important",
+    "is fine",
+    "are fine",
+    "is ok",
+    "is okay",
+    "are ok",
+    "can handle",
+    "can live with",
+    "doesnt bother me"
+  ],
+  "clause_breakers": [
+    "but",
+    "however",
+    "although",
+    "though",
+    "whereas",
+    "while",
+    "yet",
+    "also",
+    "plus"
+  ],
+  "difficulty": {
+    "Easy": [
+      "easy visa",
+      "easiest visa",
+      "easy to get",
+      "easy to move",
+      "easy process",
+      "simple visa",
+      "simple process",
+      "quick visa",
+      "fast visa",
+      "straightforward",
+      "easy immigration",
+      "easiest",
+      "least paperwork",
+      "no hassle",
+      "hassle free",
+      "easy visas",
+      "easy residency"
+    ],
+    "Moderate": [
+      "not too hard",
+      "not too difficult",
+      "moderate difficulty",
+      "reasonably easy"
+    ]
+  },
+  "qualify": [
+    "i qualify",
+    "i can qualify",
+    "qualify for",
+    "can i get",
+    "i can get",
+    "eligible",
+    "realistic",
+    "actually get",
+    "able to get",
+    "possible for me",
+    "can i move",
+    "open to me",
+    "available to me",
+    "options for me",
+    "where can i go",
+    "where can i move"
+  ],
+  "regions": {
+    "Europe": [
+      "europe",
+      "european",
+      "eu",
+      "schengen",
+      "western europe",
+      "eastern europe",
+      "scandinavia",
+      "nordic",
+      "nordics",
+      "baltic",
+      "balkans",
+      "mediterranean europe"
+    ],
+    "Asia": [
+      "asia",
+      "asian",
+      "east asia",
+      "southeast asia",
+      "south east asia",
+      "far east"
+    ],
+    "Middle East": [
+      "middle east",
+      "gulf",
+      "gcc",
+      "arab",
+      "arabian",
+      "mena"
+    ],
+    "Africa": [
+      "africa",
+      "african",
+      "north africa",
+      "sub saharan",
+      "east africa",
+      "west africa"
+    ],
+    "Oceania": [
+      "oceania",
+      "australasia",
+      "down under",
+      "pacific"
+    ],
+    "North America": [
+      "north america",
+      "central america",
+      "caribbean",
+      "north american"
+    ],
+    "South America": [
+      "south america",
+      "latin america",
+      "latam",
+      "south american",
+      "latin"
+    ]
+  },
+  "origin_before": [
+    "from",
+    "im",
+    "i am",
+    "born in",
+    "citizen of",
+    "national of",
+    "passport from",
+    "holder of",
+    "native of",
+    "grew up in",
+    "moving from",
+    "leaving",
+    "leave",
+    "come from",
+    "originally from"
+  ],
+  "residence_before": [
+    "live in",
+    "living in",
+    "based in",
+    "currently in",
+    "reside in",
+    "residing in",
+    "resident of",
+    "staying in",
+    "working in"
+  ],
+  "not_residence_before": [
+    "to",
+    "want",
+    "would",
+    "wanna",
+    "could",
+    "should",
+    "can",
+    "rather",
+    "prefer"
+  ],
+  "fillers": [
+    "the",
+    "a",
+    "an",
+    "in"
+  ],
+  "origin_after": [
+    "passport",
+    "citizen",
+    "citizenship",
+    "national",
+    "nationality",
+    "passport holder"
+  ],
+  "exclude_before": [
+    "not",
+    "no",
+    "except",
+    "anywhere but",
+    "avoid",
+    "excluding",
+    "exclude",
+    "other than",
+    "but not",
+    "apart from",
+    "rather than",
+    "instead of",
+    "anything but",
+    "without",
+    "drop",
+    "remove",
+    "skip",
+    "rule out",
+    "get rid of",
+    "cross off"
+  ],
+  "similar_before": [
+    "like",
+    "similar to",
+    "such as",
+    "comparable to",
+    "alternatives to",
+    "alternative to",
+    "something like",
+    "places like",
+    "countries like",
+    "same as",
+    "similar"
+  ],
+  "compare_words": [
+    "compare",
+    "comparison",
+    "versus",
+    "vs",
+    "or",
+    "between"
+  ],
+  "language_words": [
+    "speak",
+    "speaking",
+    "language",
+    "learn",
+    "fluent"
+  ],
+  "investment_words": [
+    "invest",
+    "investment",
+    "investing",
+    "savings",
+    "saved",
+    "save",
+    "capital",
+    "budget",
+    "property",
+    "buy",
+    "deposit",
+    "net worth",
+    "assets",
+    "lump sum",
+    "have"
+  ],
+  "income_words": [
+    "income",
+    "earn",
+    "earning",
+    "earns",
+    "make",
+    "making",
+    "salary",
+    "paid",
+    "pay",
+    "wage",
+    "remote",
+    "job",
+    "pension",
+    "revenue",
+    "monthly",
+    "per month"
+  ],
+  "period_month": [
+    "per month",
+    "a month",
+    "month",
+    "monthly",
+    "pm",
+    "mo",
+    "p m",
+    "every month",
+    "each month"
+  ],
+  "period_year": [
+    "per year",
+    "a year",
+    "year",
+    "yearly",
+    "annually",
+    "annual",
+    "pa",
+    "per annum",
+    "yr"
+  ],
+  "currencies": {
+    "usd": {
+      "rate": 1.0,
+      "words": [
+        "$",
+        "usd",
+        "dollar",
+        "dollars",
+        "us dollars",
+        "bucks"
+      ]
+    },
+    "eur": {
+      "rate": 1.08,
+      "words": [
+        "€",
+        "eur",
+        "euro",
+        "euros"
+      ]
+    },
+    "gbp": {
+      "rate": 1.27,
+      "words": [
+        "£",
+        "gbp",
+        "pound",
+        "pounds",
+        "quid"
+      ]
+    },
+    "pkr": {
+      "rate": 0.00357,
+      "words": [
+        "pkr",
+        "rs",
+        "rupees",
+        "rupee"
+      ]
+    },
+    "inr": {
+      "rate": 0.012,
+      "words": [
+        "inr",
+        "₹"
+      ]
+    },
+    "aed": {
+      "rate": 0.272,
+      "words": [
+        "aed",
+        "dirham",
+        "dirhams"
+      ]
+    },
+    "cad": {
+      "rate": 0.73,
+      "words": [
+        "cad",
+        "canadian dollars"
+      ]
+    },
+    "aud": {
+      "rate": 0.66,
+      "words": [
+        "aud",
+        "australian dollars"
+      ]
+    }
+  },
+  "stopwords": [
+    "i",
+    "me",
+    "my",
+    "a",
+    "an",
+    "the",
+    "to",
+    "of",
+    "and",
+    "for",
+    "in",
+    "on",
+    "at",
+    "with",
+    "is",
+    "are",
+    "be",
+    "want",
+    "wants",
+    "wanna",
+    "looking",
+    "look",
+    "would",
+    "like",
+    "id",
+    "ill",
+    "im",
+    "country",
+    "countries",
+    "place",
+    "places",
+    "somewhere",
+    "where",
+    "which",
+    "what",
+    "move",
+    "moving",
+    "relocate",
+    "relocating",
+    "live",
+    "living",
+    "go",
+    "find",
+    "show",
+    "give",
+    "options",
+    "option",
+    "can",
+    "could",
+    "should",
+    "please",
+    "that",
+    "this",
+    "it",
+    "its",
+    "has",
+    "have",
+    "do",
+    "does",
+    "good",
+    "best",
+    "great",
+    "nice",
+    "some",
+    "any",
+    "there",
+    "about",
+    "into",
+    "as",
+    "so",
+    "very",
+    "really",
+    "also",
+    "am",
+    "will",
+    "get",
+    "how",
+    "who",
+    "or",
+    "by",
+    "from",
+    "visa",
+    "visas",
+    "all",
+    "list",
+    "me",
+    "us",
+    "compare",
+    "versus",
+    "vs",
+    "between",
+    "need",
+    "want",
+    "please",
+    "something",
+    "anywhere",
+    "abroad",
+    "new",
+    "one",
+    "know",
+    "think",
+    "tell",
+    "help",
+    "here",
+    "now",
+    "then",
+    "than",
+    "more",
+    "most",
+    "much",
+    "too",
+    "just",
+    "only",
+    "be",
+    "been",
+    "being",
+    "we",
+    "our",
+    "they",
+    "them",
+    "their",
+    "you",
+    "your",
+    "he",
+    "she",
+    "his",
+    "her",
+    "was",
+    "were",
+    "if",
+    "when",
+    "because",
+    "since",
+    "after",
+    "before",
+    "who",
+    "whom",
+    "why",
+    "these",
+    "those",
+    "other",
+    "such",
+    "own",
+    "same",
+    "out",
+    "up",
+    "down",
+    "over",
+    "under",
+    "again",
+    "further",
+    "once",
+    "both",
+    "each",
+    "few",
+    "many",
+    "per",
+    "via",
+    "etc",
+    "lot",
+    "lots",
+    "thing",
+    "things",
+    "stuff",
+    "way",
+    "time",
+    "year",
+    "years",
+    "old",
+    "age",
+    "aged",
+    "month",
+    "months",
+    "route",
+    "routes",
+    "path",
+    "pathway",
+    "pathways",
+    "way",
+    "ways",
+    "let",
+    "lets",
+    "allow",
+    "allows",
+    "best",
+    "top"
+  ],
+  "countries": {
+    "USA": {
+      "aliases": [
+        "usa",
+        "us",
+        "america",
+        "united states",
+        "the states",
+        "united states of america"
+      ],
+      "cities": [
+        "new york",
+        "san francisco",
+        "los angeles",
+        "seattle",
+        "chicago",
+        "boston",
+        "austin",
+        "miami"
+      ],
+      "demonyms": [
+        "american"
+      ]
+    },
+    "CAN": {
+      "aliases": [
+        "canada"
+      ],
+      "cities": [
+        "toronto",
+        "vancouver",
+        "montreal",
+        "calgary",
+        "ottawa"
+      ],
+      "demonyms": [
+        "canadian"
+      ]
+    },
+    "MEX": {
+      "aliases": [
+        "mexico"
+      ],
+      "cities": [
+        "mexico city",
+        "cdmx",
+        "guadalajara",
+        "cancun",
+        "playa del carmen"
+      ],
+      "demonyms": [
+        "mexican"
+      ]
+    },
+    "CRI": {
+      "aliases": [
+        "costa rica"
+      ],
+      "cities": [
+        "san jose"
+      ],
+      "demonyms": [
+        "costa rican",
+        "tico"
+      ]
+    },
+    "PAN": {
+      "aliases": [
+        "panama"
+      ],
+      "cities": [
+        "panama city"
+      ],
+      "demonyms": [
+        "panamanian"
+      ]
+    },
+    "BRA": {
+      "aliases": [
+        "brazil",
+        "brasil"
+      ],
+      "cities": [
+        "sao paulo",
+        "rio",
+        "rio de janeiro",
+        "florianopolis"
+      ],
+      "demonyms": [
+        "brazilian"
+      ]
+    },
+    "ARG": {
+      "aliases": [
+        "argentina"
+      ],
+      "cities": [
+        "buenos aires"
+      ],
+      "demonyms": [
+        "argentinian",
+        "argentine"
+      ]
+    },
+    "CHL": {
+      "aliases": [
+        "chile"
+      ],
+      "cities": [
+        "santiago"
+      ],
+      "demonyms": [
+        "chilean"
+      ]
+    },
+    "URY": {
+      "aliases": [
+        "uruguay"
+      ],
+      "cities": [
+        "montevideo"
+      ],
+      "demonyms": [
+        "uruguayan"
+      ]
+    },
+    "COL": {
+      "aliases": [
+        "colombia"
+      ],
+      "cities": [
+        "bogota",
+        "medellin",
+        "cartagena"
+      ],
+      "demonyms": [
+        "colombian"
+      ]
+    },
+    "PER": {
+      "aliases": [
+        "peru"
+      ],
+      "cities": [
+        "lima",
+        "cusco"
+      ],
+      "demonyms": [
+        "peruvian"
+      ]
+    },
+    "GBR": {
+      "aliases": [
+        "uk",
+        "united kingdom",
+        "britain",
+        "great britain",
+        "england",
+        "scotland",
+        "wales"
+      ],
+      "cities": [
+        "london",
+        "manchester",
+        "edinburgh",
+        "birmingham",
+        "glasgow"
+      ],
+      "demonyms": [
+        "british",
+        "english person",
+        "scottish",
+        "welsh"
+      ]
+    },
+    "IRL": {
+      "aliases": [
+        "ireland",
+        "eire"
+      ],
+      "cities": [
+        "dublin",
+        "cork"
+      ],
+      "demonyms": [
+        "irish"
+      ]
+    },
+    "DEU": {
+      "aliases": [
+        "germany",
+        "deutschland"
+      ],
+      "cities": [
+        "berlin",
+        "munich",
+        "hamburg",
+        "frankfurt",
+        "cologne"
+      ],
+      "demonyms": [
+        "german"
+      ]
+    },
+    "FRA": {
+      "aliases": [
+        "france"
+      ],
+      "cities": [
+        "paris",
+        "lyon",
+        "marseille",
+        "bordeaux"
+      ],
+      "demonyms": [
+        "french"
+      ]
+    },
+    "NLD": {
+      "aliases": [
+        "netherlands",
+        "holland",
+        "the netherlands"
+      ],
+      "cities": [
+        "amsterdam",
+        "rotterdam",
+        "the hague",
+        "utrecht",
+        "eindhoven"
+      ],
+      "demonyms": [
+        "dutch"
+      ]
+    },
+    "BEL": {
+      "aliases": [
+        "belgium"
+      ],
+      "cities": [
+        "brussels",
+        "antwerp",
+        "ghent"
+      ],
+      "demonyms": [
+        "belgian"
+      ]
+    },
+    "SWE": {
+      "aliases": [
+        "sweden"
+      ],
+      "cities": [
+        "stockholm",
+        "gothenburg",
+        "malmo"
+      ],
+      "demonyms": [
+        "swedish",
+        "swede"
+      ]
+    },
+    "NOR": {
+      "aliases": [
+        "norway"
+      ],
+      "cities": [
+        "oslo",
+        "bergen"
+      ],
+      "demonyms": [
+        "norwegian"
+      ]
+    },
+    "DNK": {
+      "aliases": [
+        "denmark"
+      ],
+      "cities": [
+        "copenhagen",
+        "aarhus"
+      ],
+      "demonyms": [
+        "danish",
+        "dane"
+      ]
+    },
+    "FIN": {
+      "aliases": [
+        "finland"
+      ],
+      "cities": [
+        "helsinki",
+        "tampere"
+      ],
+      "demonyms": [
+        "finnish",
+        "finn"
+      ]
+    },
+    "ISL": {
+      "aliases": [
+        "iceland"
+      ],
+      "cities": [
+        "reykjavik"
+      ],
+      "demonyms": [
+        "icelandic",
+        "icelander"
+      ]
+    },
+    "CHE": {
+      "aliases": [
+        "switzerland",
+        "swiss confederation"
+      ],
+      "cities": [
+        "zurich",
+        "geneva",
+        "basel",
+        "bern",
+        "lausanne"
+      ],
+      "demonyms": [
+        "swiss"
+      ]
+    },
+    "AUT": {
+      "aliases": [
+        "austria"
+      ],
+      "cities": [
+        "vienna",
+        "salzburg",
+        "graz"
+      ],
+      "demonyms": [
+        "austrian"
+      ]
+    },
+    "ESP": {
+      "aliases": [
+        "spain",
+        "espana"
+      ],
+      "cities": [
+        "madrid",
+        "barcelona",
+        "valencia",
+        "seville",
+        "malaga"
+      ],
+      "demonyms": [
+        "spanish",
+        "spaniard"
+      ]
+    },
+    "PRT": {
+      "aliases": [
+        "portugal"
+      ],
+      "cities": [
+        "lisbon",
+        "porto",
+        "madeira",
+        "algarve"
+      ],
+      "demonyms": [
+        "portuguese"
+      ]
+    },
+    "ITA": {
+      "aliases": [
+        "italy",
+        "italia"
+      ],
+      "cities": [
+        "rome",
+        "milan",
+        "florence",
+        "naples",
+        "turin"
+      ],
+      "demonyms": [
+        "italian"
+      ]
+    },
+    "GRC": {
+      "aliases": [
+        "greece"
+      ],
+      "cities": [
+        "athens",
+        "thessaloniki",
+        "crete"
+      ],
+      "demonyms": [
+        "greek"
+      ]
+    },
+    "CZE": {
+      "aliases": [
+        "czech republic",
+        "czechia",
+        "czech"
+      ],
+      "cities": [
+        "prague",
+        "brno"
+      ],
+      "demonyms": [
+        "czech"
+      ]
+    },
+    "POL": {
+      "aliases": [
+        "poland"
+      ],
+      "cities": [
+        "warsaw",
+        "krakow",
+        "wroclaw",
+        "gdansk"
+      ],
+      "demonyms": [
+        "polish",
+        "pole"
+      ]
+    },
+    "HUN": {
+      "aliases": [
+        "hungary"
+      ],
+      "cities": [
+        "budapest"
+      ],
+      "demonyms": [
+        "hungarian"
+      ]
+    },
+    "EST": {
+      "aliases": [
+        "estonia"
+      ],
+      "cities": [
+        "tallinn",
+        "tartu"
+      ],
+      "demonyms": [
+        "estonian"
+      ]
+    },
+    "ROU": {
+      "aliases": [
+        "romania"
+      ],
+      "cities": [
+        "bucharest",
+        "cluj"
+      ],
+      "demonyms": [
+        "romanian"
+      ]
+    },
+    "HRV": {
+      "aliases": [
+        "croatia"
+      ],
+      "cities": [
+        "zagreb",
+        "dubrovnik"
+      ],
+      "demonyms": [
+        "croatian",
+        "croat"
+      ]
+    },
+    "SVN": {
+      "aliases": [
+        "slovenia"
+      ],
+      "cities": [
+        "ljubljana"
+      ],
+      "demonyms": [
+        "slovenian",
+        "slovene"
+      ]
+    },
+    "AUS": {
+      "aliases": [
+        "australia",
+        "oz"
+      ],
+      "cities": [
+        "sydney",
+        "melbourne",
+        "brisbane",
+        "perth",
+        "adelaide"
+      ],
+      "demonyms": [
+        "australian",
+        "aussie"
+      ]
+    },
+    "NZL": {
+      "aliases": [
+        "new zealand",
+        "nz",
+        "aotearoa"
+      ],
+      "cities": [
+        "auckland",
+        "wellington",
+        "christchurch"
+      ],
+      "demonyms": [
+        "new zealander",
+        "kiwi"
+      ]
+    },
+    "JPN": {
+      "aliases": [
+        "japan",
+        "nippon"
+      ],
+      "cities": [
+        "tokyo",
+        "osaka",
+        "kyoto",
+        "fukuoka"
+      ],
+      "demonyms": [
+        "japanese"
+      ]
+    },
+    "KOR": {
+      "aliases": [
+        "south korea",
+        "korea"
+      ],
+      "cities": [
+        "seoul",
+        "busan"
+      ],
+      "demonyms": [
+        "korean",
+        "south korean"
+      ]
+    },
+    "SGP": {
+      "aliases": [
+        "singapore"
+      ],
+      "cities": [],
+      "demonyms": [
+        "singaporean"
+      ]
+    },
+    "TWN": {
+      "aliases": [
+        "taiwan"
+      ],
+      "cities": [
+        "taipei",
+        "taichung"
+      ],
+      "demonyms": [
+        "taiwanese"
+      ]
+    },
+    "HKG": {
+      "aliases": [
+        "hong kong",
+        "hk"
+      ],
+      "cities": [],
+      "demonyms": [
+        "hong konger",
+        "hongkonger"
+      ]
+    },
+    "CHN": {
+      "aliases": [
+        "china",
+        "prc",
+        "mainland china"
+      ],
+      "cities": [
+        "beijing",
+        "shanghai",
+        "shenzhen",
+        "guangzhou"
+      ],
+      "demonyms": [
+        "chinese"
+      ]
+    },
+    "VNM": {
+      "aliases": [
+        "vietnam",
+        "viet nam"
+      ],
+      "cities": [
+        "hanoi",
+        "ho chi minh",
+        "saigon",
+        "da nang"
+      ],
+      "demonyms": [
+        "vietnamese"
+      ]
+    },
+    "IND": {
+      "aliases": [
+        "india",
+        "bharat"
+      ],
+      "cities": [
+        "mumbai",
+        "delhi",
+        "bangalore",
+        "bengaluru",
+        "hyderabad",
+        "goa",
+        "pune",
+        "chennai"
+      ],
+      "demonyms": [
+        "indian"
+      ]
+    },
+    "IDN": {
+      "aliases": [
+        "indonesia"
+      ],
+      "cities": [
+        "bali",
+        "jakarta",
+        "canggu",
+        "ubud"
+      ],
+      "demonyms": [
+        "indonesian"
+      ]
+    },
+    "PHL": {
+      "aliases": [
+        "philippines",
+        "the philippines"
+      ],
+      "cities": [
+        "manila",
+        "cebu"
+      ],
+      "demonyms": [
+        "filipino",
+        "filipina",
+        "philippine"
+      ]
+    },
+    "MYS": {
+      "aliases": [
+        "malaysia"
+      ],
+      "cities": [
+        "kuala lumpur",
+        "kl",
+        "penang"
+      ],
+      "demonyms": [
+        "malaysian"
+      ]
+    },
+    "THA": {
+      "aliases": [
+        "thailand"
+      ],
+      "cities": [
+        "bangkok",
+        "chiang mai",
+        "phuket"
+      ],
+      "demonyms": [
+        "thai"
+      ]
+    },
+    "LKA": {
+      "aliases": [
+        "sri lanka",
+        "ceylon"
+      ],
+      "cities": [
+        "colombo"
+      ],
+      "demonyms": [
+        "sri lankan"
+      ]
+    },
+    "ARE": {
+      "aliases": [
+        "uae",
+        "united arab emirates",
+        "emirates"
+      ],
+      "cities": [
+        "dubai",
+        "abu dhabi",
+        "sharjah"
+      ],
+      "demonyms": [
+        "emirati"
+      ]
+    },
+    "QAT": {
+      "aliases": [
+        "qatar"
+      ],
+      "cities": [
+        "doha"
+      ],
+      "demonyms": [
+        "qatari"
+      ]
+    },
+    "SAU": {
+      "aliases": [
+        "saudi arabia",
+        "saudi",
+        "ksa"
+      ],
+      "cities": [
+        "riyadh",
+        "jeddah"
+      ],
+      "demonyms": [
+        "saudi"
+      ]
+    },
+    "ISR": {
+      "aliases": [
+        "israel"
+      ],
+      "cities": [
+        "tel aviv",
+        "jerusalem",
+        "haifa"
+      ],
+      "demonyms": [
+        "israeli"
+      ]
+    },
+    "TUR": {
+      "aliases": [
+        "turkey",
+        "turkiye"
+      ],
+      "cities": [
+        "istanbul",
+        "ankara",
+        "antalya",
+        "izmir"
+      ],
+      "demonyms": [
+        "turkish",
+        "turk"
+      ]
+    },
+    "BHR": {
+      "aliases": [
+        "bahrain"
+      ],
+      "cities": [
+        "manama"
+      ],
+      "demonyms": [
+        "bahraini"
+      ]
+    },
+    "ZAF": {
+      "aliases": [
+        "south africa",
+        "rsa"
+      ],
+      "cities": [
+        "cape town",
+        "johannesburg",
+        "durban"
+      ],
+      "demonyms": [
+        "south african"
+      ]
+    },
+    "EGY": {
+      "aliases": [
+        "egypt"
+      ],
+      "cities": [
+        "cairo",
+        "alexandria"
+      ],
+      "demonyms": [
+        "egyptian"
+      ]
+    },
+    "MAR": {
+      "aliases": [
+        "morocco"
+      ],
+      "cities": [
+        "marrakech",
+        "casablanca",
+        "rabat"
+      ],
+      "demonyms": [
+        "moroccan"
+      ]
+    },
+    "KEN": {
+      "aliases": [
+        "kenya"
+      ],
+      "cities": [
+        "nairobi",
+        "mombasa"
+      ],
+      "demonyms": [
+        "kenyan"
+      ]
+    },
+    "NGA": {
+      "aliases": [
+        "nigeria"
+      ],
+      "cities": [
+        "lagos",
+        "abuja"
+      ],
+      "demonyms": [
+        "nigerian"
+      ]
+    },
+    "GHA": {
+      "aliases": [
+        "ghana"
+      ],
+      "cities": [
+        "accra"
+      ],
+      "demonyms": [
+        "ghanaian"
+      ]
+    },
+    "MUS": {
+      "aliases": [
+        "mauritius"
+      ],
+      "cities": [
+        "port louis"
+      ],
+      "demonyms": [
+        "mauritian"
+      ]
+    },
+    "RUS": {
+      "aliases": [
+        "russia",
+        "russian federation"
+      ],
+      "cities": [
+        "moscow",
+        "st petersburg",
+        "saint petersburg"
+      ],
+      "demonyms": [
+        "russian"
+      ]
+    },
+    "GEO": {
+      "aliases": [
+        "georgia"
+      ],
+      "cities": [
+        "tbilisi",
+        "batumi"
+      ],
+      "demonyms": [
+        "georgian"
+      ]
+    },
+    "CYP": {
+      "aliases": [
+        "cyprus"
+      ],
+      "cities": [
+        "limassol",
+        "nicosia",
+        "larnaca",
+        "paphos"
+      ],
+      "demonyms": [
+        "cypriot"
+      ]
+    },
+    "PAK": {
+      "aliases": [
+        "pakistan"
+      ],
+      "cities": [
+        "karachi",
+        "lahore",
+        "islamabad"
+      ],
+      "demonyms": [
+        "pakistani"
+      ]
+    },
+    "BGD": {
+      "aliases": [
+        "bangladesh"
+      ],
+      "cities": [
+        "dhaka"
+      ],
+      "demonyms": [
+        "bangladeshi"
+      ]
+    },
+    "NPL": {
+      "aliases": [
+        "nepal"
+      ],
+      "cities": [
+        "kathmandu"
+      ],
+      "demonyms": [
+        "nepali",
+        "nepalese"
+      ]
+    },
+    "UKR": {
+      "aliases": [
+        "ukraine"
+      ],
+      "cities": [
+        "kyiv",
+        "kiev"
+      ],
+      "demonyms": [
+        "ukrainian"
+      ]
+    },
+    "BGR": {
+      "aliases": [
+        "bulgaria"
+      ],
+      "cities": [
+        "sofia"
+      ],
+      "demonyms": [
+        "bulgarian"
+      ]
+    },
+    "LVA": {
+      "aliases": [
+        "latvia"
+      ],
+      "cities": [
+        "riga"
+      ],
+      "demonyms": [
+        "latvian"
+      ]
+    },
+    "LTU": {
+      "aliases": [
+        "lithuania"
+      ],
+      "cities": [
+        "vilnius"
+      ],
+      "demonyms": [
+        "lithuanian"
+      ]
+    },
+    "LUX": {
+      "aliases": [
+        "luxembourg"
+      ],
+      "cities": [],
+      "demonyms": [
+        "luxembourgish"
+      ]
+    },
+    "MLT": {
+      "aliases": [
+        "malta"
+      ],
+      "cities": [
+        "valletta"
+      ],
+      "demonyms": [
+        "maltese"
+      ]
+    },
+    "SVK": {
+      "aliases": [
+        "slovakia"
+      ],
+      "cities": [
+        "bratislava"
+      ],
+      "demonyms": [
+        "slovak"
+      ]
+    },
+    "LIE": {
+      "aliases": [
+        "liechtenstein"
+      ],
+      "cities": [],
+      "demonyms": []
+    },
+    "SRB": {
+      "aliases": [
+        "serbia"
+      ],
+      "cities": [
+        "belgrade"
+      ],
+      "demonyms": [
+        "serbian",
+        "serb"
+      ]
+    },
+    "BLR": {
+      "aliases": [
+        "belarus"
+      ],
+      "cities": [
+        "minsk"
+      ],
+      "demonyms": [
+        "belarusian"
+      ]
+    },
+    "KAZ": {
+      "aliases": [
+        "kazakhstan"
+      ],
+      "cities": [
+        "almaty",
+        "astana"
+      ],
+      "demonyms": [
+        "kazakh"
+      ]
+    },
+    "UZB": {
+      "aliases": [
+        "uzbekistan"
+      ],
+      "cities": [
+        "tashkent"
+      ],
+      "demonyms": [
+        "uzbek"
+      ]
+    },
+    "IRN": {
+      "aliases": [
+        "iran"
+      ],
+      "cities": [
+        "tehran"
+      ],
+      "demonyms": [
+        "iranian",
+        "persian"
+      ]
+    },
+    "IRQ": {
+      "aliases": [
+        "iraq"
+      ],
+      "cities": [
+        "baghdad"
+      ],
+      "demonyms": [
+        "iraqi"
+      ]
+    },
+    "JOR": {
+      "aliases": [
+        "jordan"
+      ],
+      "cities": [
+        "amman"
+      ],
+      "demonyms": [
+        "jordanian"
+      ]
+    },
+    "LBN": {
+      "aliases": [
+        "lebanon"
+      ],
+      "cities": [
+        "beirut"
+      ],
+      "demonyms": [
+        "lebanese"
+      ]
+    },
+    "KWT": {
+      "aliases": [
+        "kuwait"
+      ],
+      "cities": [],
+      "demonyms": [
+        "kuwaiti"
+      ]
+    },
+    "OMN": {
+      "aliases": [
+        "oman"
+      ],
+      "cities": [
+        "muscat"
+      ],
+      "demonyms": [
+        "omani"
+      ]
+    },
+    "ECU": {
+      "aliases": [
+        "ecuador"
+      ],
+      "cities": [
+        "quito"
+      ],
+      "demonyms": [
+        "ecuadorian"
+      ]
+    },
+    "PRY": {
+      "aliases": [
+        "paraguay"
+      ],
+      "cities": [
+        "asuncion"
+      ],
+      "demonyms": [
+        "paraguayan"
+      ]
+    },
+    "BOL": {
+      "aliases": [
+        "bolivia"
+      ],
+      "cities": [
+        "la paz"
+      ],
+      "demonyms": [
+        "bolivian"
+      ]
+    },
+    "VEN": {
+      "aliases": [
+        "venezuela"
+      ],
+      "cities": [
+        "caracas"
+      ],
+      "demonyms": [
+        "venezuelan"
+      ]
+    },
+    "ETH": {
+      "aliases": [
+        "ethiopia"
+      ],
+      "cities": [
+        "addis ababa"
+      ],
+      "demonyms": [
+        "ethiopian"
+      ]
+    },
+    "TZA": {
+      "aliases": [
+        "tanzania"
+      ],
+      "cities": [
+        "dar es salaam"
+      ],
+      "demonyms": [
+        "tanzanian"
+      ]
+    },
+    "UGA": {
+      "aliases": [
+        "uganda"
+      ],
+      "cities": [
+        "kampala"
+      ],
+      "demonyms": [
+        "ugandan"
+      ]
+    },
+    "DZA": {
+      "aliases": [
+        "algeria"
+      ],
+      "cities": [
+        "algiers"
+      ],
+      "demonyms": [
+        "algerian"
+      ]
+    },
+    "TUN": {
+      "aliases": [
+        "tunisia"
+      ],
+      "cities": [
+        "tunis"
+      ],
+      "demonyms": [
+        "tunisian"
+      ]
+    },
+    "MMR": {
+      "aliases": [
+        "myanmar",
+        "burma"
+      ],
+      "cities": [
+        "yangon"
+      ],
+      "demonyms": [
+        "burmese"
+      ]
+    },
+    "KHM": {
+      "aliases": [
+        "cambodia"
+      ],
+      "cities": [
+        "phnom penh"
+      ],
+      "demonyms": [
+        "cambodian",
+        "khmer"
+      ]
+    },
+    "AFG": {
+      "aliases": [
+        "afghanistan"
+      ],
+      "cities": [
+        "kabul"
+      ],
+      "demonyms": [
+        "afghan"
+      ]
+    },
+    "ALB": {
+      "aliases": [
+        "albania"
+      ],
+      "cities": [
+        "tirana"
+      ],
+      "demonyms": [
+        "albanian"
+      ]
+    },
+    "AND": {
+      "aliases": [
+        "andorra"
+      ],
+      "cities": [],
+      "demonyms": [
+        "andorran"
+      ]
+    },
+    "AGO": {
+      "aliases": [
+        "angola"
+      ],
+      "cities": [
+        "luanda"
+      ],
+      "demonyms": [
+        "angolan"
+      ]
+    },
+    "ATG": {
+      "aliases": [
+        "antigua and barbuda",
+        "antigua"
+      ],
+      "cities": [
+        "st johns"
+      ],
+      "demonyms": [
+        "antiguan"
+      ]
+    },
+    "ARM": {
+      "aliases": [
+        "armenia"
+      ],
+      "cities": [
+        "yerevan"
+      ],
+      "demonyms": [
+        "armenian"
+      ]
+    },
+    "AZE": {
+      "aliases": [
+        "azerbaijan"
+      ],
+      "cities": [
+        "baku"
+      ],
+      "demonyms": [
+        "azerbaijani"
+      ]
+    },
+    "BHS": {
+      "aliases": [
+        "bahamas",
+        "the bahamas"
+      ],
+      "cities": [
+        "nassau"
+      ],
+      "demonyms": [
+        "bahamian"
+      ]
+    },
+    "BRB": {
+      "aliases": [
+        "barbados"
+      ],
+      "cities": [
+        "bridgetown"
+      ],
+      "demonyms": [
+        "barbadian"
+      ]
+    },
+    "BLZ": {
+      "aliases": [
+        "belize"
+      ],
+      "cities": [
+        "belmopan"
+      ],
+      "demonyms": [
+        "belizean"
+      ]
+    },
+    "BEN": {
+      "aliases": [
+        "benin"
+      ],
+      "cities": [
+        "porto novo"
+      ],
+      "demonyms": [
+        "beninese"
+      ]
+    },
+    "BTN": {
+      "aliases": [
+        "bhutan"
+      ],
+      "cities": [
+        "thimphu"
+      ],
+      "demonyms": [
+        "bhutanese"
+      ]
+    },
+    "BIH": {
+      "aliases": [
+        "bosnia and herzegovina",
+        "bosnia"
+      ],
+      "cities": [
+        "sarajevo"
+      ],
+      "demonyms": [
+        "bosnian"
+      ]
+    },
+    "BWA": {
+      "aliases": [
+        "botswana",
+        "batswana"
+      ],
+      "cities": [
+        "gaborone"
+      ],
+      "demonyms": [
+        "motswana"
+      ]
+    },
+    "BRN": {
+      "aliases": [
+        "brunei"
+      ],
+      "cities": [
+        "bandar seri begawan"
+      ],
+      "demonyms": [
+        "bruneian"
+      ]
+    },
+    "BFA": {
+      "aliases": [
+        "burkina faso"
+      ],
+      "cities": [
+        "ouagadougou"
+      ],
+      "demonyms": [
+        "burkinabe"
+      ]
+    },
+    "BDI": {
+      "aliases": [
+        "burundi"
+      ],
+      "cities": [
+        "gitega"
+      ],
+      "demonyms": [
+        "burundian"
+      ]
+    },
+    "CMR": {
+      "aliases": [
+        "cameroon"
+      ],
+      "cities": [
+        "yaounde"
+      ],
+      "demonyms": [
+        "cameroonian"
+      ]
+    },
+    "CPV": {
+      "aliases": [
+        "cape verde",
+        "cabo verde"
+      ],
+      "cities": [],
+      "demonyms": [
+        "cape verdean"
+      ]
+    },
+    "CAF": {
+      "aliases": [
+        "central african republic"
+      ],
+      "cities": [
+        "bangui"
+      ],
+      "demonyms": [
+        "central african"
+      ]
+    },
+    "TCD": {
+      "aliases": [
+        "chad"
+      ],
+      "cities": [
+        "ndjamena"
+      ],
+      "demonyms": [
+        "chadian"
+      ]
+    },
+    "COM": {
+      "aliases": [
+        "comoros"
+      ],
+      "cities": [
+        "moroni"
+      ],
+      "demonyms": [
+        "comorian"
+      ]
+    },
+    "CUB": {
+      "aliases": [
+        "cuba"
+      ],
+      "cities": [
+        "havana"
+      ],
+      "demonyms": [
+        "cuban"
+      ]
+    },
+    "CIV": {
+      "aliases": [
+        "cote divoire",
+        "ivory coast"
+      ],
+      "cities": [
+        "yamoussoukro"
+      ],
+      "demonyms": [
+        "ivorian"
+      ]
+    },
+    "COD": {
+      "aliases": [
+        "dr congo",
+        "democratic republic of the congo",
+        "drc"
+      ],
+      "cities": [
+        "kinshasa"
+      ],
+      "demonyms": [
+        "congolese"
+      ]
+    },
+    "DJI": {
+      "aliases": [
+        "djibouti"
+      ],
+      "cities": [],
+      "demonyms": [
+        "djiboutian"
+      ]
+    },
+    "DMA": {
+      "aliases": [
+        "dominica"
+      ],
+      "cities": [
+        "roseau"
+      ],
+      "demonyms": []
+    },
+    "DOM": {
+      "aliases": [
+        "dominican republic"
+      ],
+      "cities": [
+        "santo domingo"
+      ],
+      "demonyms": [
+        "dominican"
+      ]
+    },
+    "SLV": {
+      "aliases": [
+        "el salvador"
+      ],
+      "cities": [
+        "san salvador"
+      ],
+      "demonyms": [
+        "salvadoran"
+      ]
+    },
+    "GNQ": {
+      "aliases": [
+        "equatorial guinea"
+      ],
+      "cities": [
+        "malabo"
+      ],
+      "demonyms": [
+        "equatoguinean"
+      ]
+    },
+    "ERI": {
+      "aliases": [
+        "eritrea"
+      ],
+      "cities": [
+        "asmara"
+      ],
+      "demonyms": [
+        "eritrean"
+      ]
+    },
+    "SWZ": {
+      "aliases": [
+        "eswatini",
+        "swaziland"
+      ],
+      "cities": [
+        "mbabane"
+      ],
+      "demonyms": [
+        "swazi"
+      ]
+    },
+    "FJI": {
+      "aliases": [
+        "fiji"
+      ],
+      "cities": [
+        "suva"
+      ],
+      "demonyms": [
+        "fijian"
+      ]
+    },
+    "GAB": {
+      "aliases": [
+        "gabon"
+      ],
+      "cities": [
+        "libreville"
+      ],
+      "demonyms": [
+        "gabonese"
+      ]
+    },
+    "GMB": {
+      "aliases": [
+        "gambia",
+        "the gambia"
+      ],
+      "cities": [
+        "banjul"
+      ],
+      "demonyms": [
+        "gambian"
+      ]
+    },
+    "GRD": {
+      "aliases": [
+        "grenada"
+      ],
+      "cities": [
+        "st georges"
+      ],
+      "demonyms": [
+        "grenadian"
+      ]
+    },
+    "GTM": {
+      "aliases": [
+        "guatemala"
+      ],
+      "cities": [],
+      "demonyms": [
+        "guatemalan"
+      ]
+    },
+    "GIN": {
+      "aliases": [
+        "guinea"
+      ],
+      "cities": [
+        "conakry"
+      ],
+      "demonyms": [
+        "guinean"
+      ]
+    },
+    "GNB": {
+      "aliases": [
+        "guinea bissau"
+      ],
+      "cities": [
+        "bissau"
+      ],
+      "demonyms": [
+        "bissau guinean"
+      ]
+    },
+    "GUY": {
+      "aliases": [
+        "guyana"
+      ],
+      "cities": [
+        "georgetown"
+      ],
+      "demonyms": [
+        "guyanese"
+      ]
+    },
+    "HTI": {
+      "aliases": [
+        "haiti"
+      ],
+      "cities": [
+        "port au prince"
+      ],
+      "demonyms": [
+        "haitian"
+      ]
+    },
+    "HND": {
+      "aliases": [
+        "honduras"
+      ],
+      "cities": [
+        "tegucigalpa"
+      ],
+      "demonyms": [
+        "honduran"
+      ]
+    },
+    "JAM": {
+      "aliases": [
+        "jamaica"
+      ],
+      "cities": [
+        "kingston"
+      ],
+      "demonyms": [
+        "jamaican"
+      ]
+    },
+    "KIR": {
+      "aliases": [
+        "kiribati"
+      ],
+      "cities": [],
+      "demonyms": [
+        "i kiribati"
+      ]
+    },
+    "KGZ": {
+      "aliases": [
+        "kyrgyzstan"
+      ],
+      "cities": [
+        "bishkek"
+      ],
+      "demonyms": [
+        "kyrgyz"
+      ]
+    },
+    "LAO": {
+      "aliases": [
+        "laos"
+      ],
+      "cities": [
+        "vientiane"
+      ],
+      "demonyms": []
+    },
+    "LSO": {
+      "aliases": [
+        "lesotho"
+      ],
+      "cities": [
+        "maseru"
+      ],
+      "demonyms": [
+        "basotho"
+      ]
+    },
+    "LBR": {
+      "aliases": [
+        "liberia"
+      ],
+      "cities": [
+        "monrovia"
+      ],
+      "demonyms": [
+        "liberian"
+      ]
+    },
+    "LBY": {
+      "aliases": [
+        "libya"
+      ],
+      "cities": [
+        "tripoli"
+      ],
+      "demonyms": [
+        "libyan"
+      ]
+    },
+    "MDG": {
+      "aliases": [
+        "madagascar"
+      ],
+      "cities": [
+        "antananarivo"
+      ],
+      "demonyms": [
+        "malagasy"
+      ]
+    },
+    "MWI": {
+      "aliases": [
+        "malawi"
+      ],
+      "cities": [
+        "lilongwe"
+      ],
+      "demonyms": [
+        "malawian"
+      ]
+    },
+    "MDV": {
+      "aliases": [
+        "maldives"
+      ],
+      "cities": [],
+      "demonyms": [
+        "maldivian"
+      ]
+    },
+    "MLI": {
+      "aliases": [
+        "mali"
+      ],
+      "cities": [
+        "bamako"
+      ],
+      "demonyms": [
+        "malian"
+      ]
+    },
+    "MHL": {
+      "aliases": [
+        "marshall islands"
+      ],
+      "cities": [
+        "majuro"
+      ],
+      "demonyms": [
+        "marshallese"
+      ]
+    },
+    "MRT": {
+      "aliases": [
+        "mauritania"
+      ],
+      "cities": [
+        "nouakchott"
+      ],
+      "demonyms": [
+        "mauritanian"
+      ]
+    },
+    "FSM": {
+      "aliases": [
+        "micronesia"
+      ],
+      "cities": [
+        "palikir"
+      ],
+      "demonyms": [
+        "micronesian"
+      ]
+    },
+    "MDA": {
+      "aliases": [
+        "moldova"
+      ],
+      "cities": [
+        "chisinau"
+      ],
+      "demonyms": [
+        "moldovan"
+      ]
+    },
+    "MCO": {
+      "aliases": [
+        "monaco"
+      ],
+      "cities": [],
+      "demonyms": [
+        "monegasque"
+      ]
+    },
+    "MNG": {
+      "aliases": [
+        "mongolia"
+      ],
+      "cities": [
+        "ulaanbaatar"
+      ],
+      "demonyms": [
+        "mongolian"
+      ]
+    },
+    "MNE": {
+      "aliases": [
+        "montenegro"
+      ],
+      "cities": [
+        "podgorica"
+      ],
+      "demonyms": [
+        "montenegrin"
+      ]
+    },
+    "MOZ": {
+      "aliases": [
+        "mozambique"
+      ],
+      "cities": [
+        "maputo"
+      ],
+      "demonyms": [
+        "mozambican"
+      ]
+    },
+    "NAM": {
+      "aliases": [
+        "namibia"
+      ],
+      "cities": [
+        "windhoek"
+      ],
+      "demonyms": [
+        "namibian"
+      ]
+    },
+    "NRU": {
+      "aliases": [
+        "nauru"
+      ],
+      "cities": [],
+      "demonyms": [
+        "nauruan"
+      ]
+    },
+    "NIC": {
+      "aliases": [
+        "nicaragua"
+      ],
+      "cities": [
+        "managua"
+      ],
+      "demonyms": [
+        "nicaraguan"
+      ]
+    },
+    "NER": {
+      "aliases": [
+        "niger"
+      ],
+      "cities": [
+        "niamey"
+      ],
+      "demonyms": [
+        "nigerien"
+      ]
+    },
+    "PRK": {
+      "aliases": [
+        "north korea"
+      ],
+      "cities": [
+        "pyongyang"
+      ],
+      "demonyms": [
+        "north korean"
+      ]
+    },
+    "MKD": {
+      "aliases": [
+        "north macedonia",
+        "macedonia"
+      ],
+      "cities": [
+        "skopje"
+      ],
+      "demonyms": [
+        "macedonian"
+      ]
+    },
+    "PLW": {
+      "aliases": [
+        "palau"
+      ],
+      "cities": [
+        "ngerulmud"
+      ],
+      "demonyms": [
+        "palauan"
+      ]
+    },
+    "PSE": {
+      "aliases": [
+        "palestine"
+      ],
+      "cities": [
+        "ramallah"
+      ],
+      "demonyms": [
+        "palestinian"
+      ]
+    },
+    "PNG": {
+      "aliases": [
+        "papua new guinea"
+      ],
+      "cities": [
+        "port moresby"
+      ],
+      "demonyms": [
+        "papua new guinean"
+      ]
+    },
+    "COG": {
+      "aliases": [
+        "republic of the congo",
+        "congo brazzaville"
+      ],
+      "cities": [
+        "brazzaville"
+      ],
+      "demonyms": []
+    },
+    "RWA": {
+      "aliases": [
+        "rwanda"
+      ],
+      "cities": [
+        "kigali"
+      ],
+      "demonyms": [
+        "rwandan"
+      ]
+    },
+    "KNA": {
+      "aliases": [
+        "saint kitts and nevis",
+        "st kitts",
+        "st kitts and nevis"
+      ],
+      "cities": [
+        "basseterre"
+      ],
+      "demonyms": [
+        "kittitian"
+      ]
+    },
+    "LCA": {
+      "aliases": [
+        "saint lucia",
+        "st lucia"
+      ],
+      "cities": [
+        "castries"
+      ],
+      "demonyms": [
+        "saint lucian"
+      ]
+    },
+    "VCT": {
+      "aliases": [
+        "saint vincent and the grenadines",
+        "st vincent"
+      ],
+      "cities": [
+        "kingstown"
+      ],
+      "demonyms": [
+        "vincentian"
+      ]
+    },
+    "WSM": {
+      "aliases": [
+        "samoa"
+      ],
+      "cities": [
+        "apia"
+      ],
+      "demonyms": [
+        "samoan"
+      ]
+    },
+    "SMR": {
+      "aliases": [
+        "san marino"
+      ],
+      "cities": [],
+      "demonyms": [
+        "sammarinese"
+      ]
+    },
+    "SEN": {
+      "aliases": [
+        "senegal"
+      ],
+      "cities": [
+        "dakar"
+      ],
+      "demonyms": [
+        "senegalese"
+      ]
+    },
+    "SYC": {
+      "aliases": [
+        "seychelles"
+      ],
+      "cities": [],
+      "demonyms": [
+        "seychellois"
+      ]
+    },
+    "SLE": {
+      "aliases": [
+        "sierra leone"
+      ],
+      "cities": [
+        "freetown"
+      ],
+      "demonyms": [
+        "sierra leonean"
+      ]
+    },
+    "SLB": {
+      "aliases": [
+        "solomon islands"
+      ],
+      "cities": [
+        "honiara"
+      ],
+      "demonyms": [
+        "solomon islander"
+      ]
+    },
+    "SOM": {
+      "aliases": [
+        "somalia"
+      ],
+      "cities": [
+        "mogadishu"
+      ],
+      "demonyms": [
+        "somali"
+      ]
+    },
+    "SSD": {
+      "aliases": [
+        "south sudan"
+      ],
+      "cities": [
+        "juba"
+      ],
+      "demonyms": [
+        "south sudanese"
+      ]
+    },
+    "SDN": {
+      "aliases": [
+        "sudan"
+      ],
+      "cities": [
+        "khartoum"
+      ],
+      "demonyms": [
+        "sudanese"
+      ]
+    },
+    "SUR": {
+      "aliases": [
+        "suriname"
+      ],
+      "cities": [
+        "paramaribo"
+      ],
+      "demonyms": [
+        "surinamese"
+      ]
+    },
+    "SYR": {
+      "aliases": [
+        "syria"
+      ],
+      "cities": [
+        "damascus"
+      ],
+      "demonyms": [
+        "syrian"
+      ]
+    },
+    "STP": {
+      "aliases": [
+        "sao tome and principe",
+        "sao tome"
+      ],
+      "cities": [],
+      "demonyms": [
+        "santomean"
+      ]
+    },
+    "TJK": {
+      "aliases": [
+        "tajikistan"
+      ],
+      "cities": [
+        "dushanbe"
+      ],
+      "demonyms": [
+        "tajik"
+      ]
+    },
+    "TLS": {
+      "aliases": [
+        "timor leste",
+        "east timor"
+      ],
+      "cities": [],
+      "demonyms": [
+        "timorese"
+      ]
+    },
+    "TGO": {
+      "aliases": [
+        "togo"
+      ],
+      "cities": [
+        "lome"
+      ],
+      "demonyms": [
+        "togolese"
+      ]
+    },
+    "TON": {
+      "aliases": [
+        "tonga"
+      ],
+      "cities": [
+        "nukualofa"
+      ],
+      "demonyms": [
+        "tongan"
+      ]
+    },
+    "TTO": {
+      "aliases": [
+        "trinidad and tobago",
+        "trinidad"
+      ],
+      "cities": [
+        "port of spain"
+      ],
+      "demonyms": [
+        "trinidadian"
+      ]
+    },
+    "TKM": {
+      "aliases": [
+        "turkmenistan"
+      ],
+      "cities": [
+        "ashgabat"
+      ],
+      "demonyms": [
+        "turkmen"
+      ]
+    },
+    "TUV": {
+      "aliases": [
+        "tuvalu"
+      ],
+      "cities": [
+        "funafuti"
+      ],
+      "demonyms": [
+        "tuvaluan"
+      ]
+    },
+    "VUT": {
+      "aliases": [
+        "vanuatu"
+      ],
+      "cities": [
+        "port vila"
+      ],
+      "demonyms": [
+        "ni vanuatu"
+      ]
+    },
+    "YEM": {
+      "aliases": [
+        "yemen"
+      ],
+      "cities": [
+        "sanaa"
+      ],
+      "demonyms": [
+        "yemeni"
+      ]
+    },
+    "ZMB": {
+      "aliases": [
+        "zambia"
+      ],
+      "cities": [
+        "lusaka"
+      ],
+      "demonyms": [
+        "zambian"
+      ]
+    },
+    "ZWE": {
+      "aliases": [
+        "zimbabwe"
+      ],
+      "cities": [
+        "harare"
+      ],
+      "demonyms": [
+        "zimbabwean"
+      ]
+    }
+  },
+  "refine": {
+    "step": 0.25,
+    "comparatives": [
+      {
+        "factor": "cost",
+        "dir": 1,
+        "phrases": [
+          "cheaper",
+          "more affordable",
+          "less expensive",
+          "lower cost",
+          "lower costs",
+          "lower cost of living",
+          "lower rent",
+          "cheaper rent",
+          "more budget friendly",
+          "cheaper places",
+          "even cheaper"
+        ]
+      },
+      {
+        "factor": "cost",
+        "dir": -1,
+        "phrases": [
+          "pricier",
+          "more expensive is fine",
+          "cost matters less"
+        ]
+      },
+      {
+        "factor": "safety",
+        "dir": 1,
+        "phrases": [
+          "safer",
+          "less crime",
+          "less dangerous",
+          "more secure",
+          "more peaceful",
+          "lower crime"
+        ]
+      },
+      {
+        "factor": "climate",
+        "dir": 1,
+        "phrases": [
+          "warmer",
+          "sunnier",
+          "hotter",
+          "more sun",
+          "more sunshine",
+          "better weather",
+          "nicer weather"
+        ]
+      },
+      {
+        "factor": "climate",
+        "dir": -1,
+        "phrases": [
+          "colder",
+          "cooler",
+          "less hot",
+          "less heat",
+          "milder summers"
+        ]
+      },
+      {
+        "factor": "salary",
+        "dir": 1,
+        "phrases": [
+          "better paid",
+          "higher salaries",
+          "higher salary",
+          "higher pay",
+          "better pay",
+          "more money",
+          "earn more",
+          "richer"
+        ]
+      },
+      {
+        "factor": "job",
+        "dir": 1,
+        "phrases": [
+          "more jobs",
+          "better job market",
+          "easier to find work",
+          "easier to find a job",
+          "more opportunities",
+          "better career",
+          "better careers"
+        ]
+      },
+      {
+        "factor": "healthcare",
+        "dir": 1,
+        "phrases": [
+          "better healthcare",
+          "better hospitals",
+          "better health care",
+          "better doctors",
+          "better medical care"
+        ]
+      },
+      {
+        "factor": "english",
+        "dir": 1,
+        "phrases": [
+          "more english",
+          "more english speaking",
+          "better english",
+          "more english-speaking"
+        ]
+      },
+      {
+        "factor": "internet",
+        "dir": 1,
+        "phrases": [
+          "faster internet",
+          "better internet",
+          "better wifi",
+          "faster wifi",
+          "faster broadband"
+        ]
+      },
+      {
+        "factor": "pr",
+        "dir": 1,
+        "phrases": [
+          "easier pr",
+          "easier residency",
+          "easier permanent residency",
+          "easier citizenship",
+          "easier to stay"
+        ]
+      }
+    ],
+    "factor_words": {
+      "salary": [
+        "salary",
+        "salaries",
+        "pay",
+        "income",
+        "wages"
+      ],
+      "cost": [
+        "cost",
+        "costs",
+        "cost of living",
+        "price",
+        "prices",
+        "rent",
+        "affordability"
+      ],
+      "pr": [
+        "pr",
+        "residency",
+        "permanent residency",
+        "citizenship"
+      ],
+      "job": [
+        "jobs",
+        "job market",
+        "career",
+        "careers"
+      ],
+      "climate": [
+        "climate",
+        "weather",
+        "sunshine",
+        "warmth"
+      ],
+      "safety": [
+        "safety",
+        "crime",
+        "security"
+      ],
+      "healthcare": [
+        "healthcare",
+        "health care",
+        "health",
+        "hospitals",
+        "doctors"
+      ],
+      "english": [
+        "english",
+        "language"
+      ],
+      "internet": [
+        "internet",
+        "wifi",
+        "connectivity"
+      ]
+    },
+    "more_patterns": [
+      "{f} matters more",
+      "{f} is more important",
+      "more weight on {f}",
+      "prioritise {f}",
+      "prioritize {f}",
+      "focus on {f}",
+      "care more about {f}",
+      "more focus on {f}",
+      "{f} matter more",
+      "{f} are more important"
+    ],
+    "less_patterns": [
+      "{f} matters less",
+      "{f} is less important",
+      "less weight on {f}",
+      "care less about {f}",
+      "less focus on {f}",
+      "{f} matter less",
+      "{f} are less important"
+    ],
+    "easier_visa": [
+      "easier visa",
+      "easier visas",
+      "easier to get a visa",
+      "simpler visa",
+      "simpler visas",
+      "easy visas",
+      "easy visa",
+      "easiest visas"
+    ],
+    "any_difficulty": [
+      "any difficulty",
+      "harder visas are fine",
+      "hard visas are fine",
+      "any visa difficulty",
+      "difficulty doesnt matter"
+    ],
+    "any_region": [
+      "anywhere",
+      "any region",
+      "all regions",
+      "worldwide",
+      "whole world",
+      "everywhere",
+      "any continent",
+      "the world"
+    ],
+    "show_more": [
+      "show more",
+      "more countries",
+      "more options",
+      "more results"
+    ],
+    "show_fewer": [
+      "show fewer",
+      "fewer countries",
+      "fewer options",
+      "fewer results",
+      "show less"
+    ],
+    "add_back": [
+      "add back",
+      "bring back",
+      "put back",
+      "include again",
+      "re add",
+      "readd",
+      "undo excluding",
+      "stop excluding"
+    ],
+    "undo": [
+      "undo",
+      "go back",
+      "revert",
+      "undo that",
+      "take that back",
+      "previous results"
+    ],
+    "reset": [
+      "start over",
+      "reset",
+      "new search",
+      "clear everything",
+      "from scratch",
+      "start again",
+      "start fresh"
+    ],
+    "drop_words": [
+      "drop",
+      "remove",
+      "skip",
+      "rule out",
+      "get rid of",
+      "cross off",
+      "lose"
+    ],
+    "compare_top": "compare (?:the )?top (\\d+|two|three|four|five)",
+    "drop_patterns": [
+      "forget about {f}",
+      "forget {f}",
+      "ignore {f}",
+      "{f} doesnt matter",
+      "{f} does not matter",
+      "{f} dont matter",
+      "{f} do not matter",
+      "dont care about {f}",
+      "do not care about {f}",
+      "{f} is not important",
+      "{f} isnt important"
+    ]
+  },
+  "personal": {
+    "_about": "Reading age, family and job field from a prompt (search.extract_personal and its JavaScript port). Patterns are regular expressions that mean the same in Python and JavaScript; they run on lowercased text.",
+    "number_words": {
+      "a": 1,
+      "an": 1,
+      "one": 1,
+      "two": 2,
+      "three": 3,
+      "four": 4,
+      "five": 5,
+      "six": 6,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6
+    },
+    "cue_only_jobs": [
+      "academic",
+      "baker",
+      "butcher",
+      "carer",
+      "cook",
+      "fitter",
+      "gp",
+      "vet"
+    ],
+    "job_cue": "(?:\\bi\\s*am|\\bi'?m|\\bwork(?:ing)?\\s+as|\\bjob\\s+as|\\bemployed\\s+as|\\bas)\\s+(?:a|an)\\s+$",
+    "partner": "\\b(?:my\\s+|with\\s+(?:my\\s+)?|and\\s+(?:my\\s+)?)(wife|husband|spouse|partner|girlfriend|boyfriend|fianc[eé]e?)\\b|\\b(?:i'?m|i\\s+am|we'?re|we\\s+are)\\s+(married)\\b|\\b(couple)\\b",
+    "single": "\\bsingle\\b(?!\\s*(?:income|parent|mother|father|mom|mum|dad|room|bed|entry|market|family))|\\bjust\\s+me\\b|\\bon\\s+my\\s+own\\b|\\bmoving\\s+alone\\b",
+    "children": "\\b(a|an|one|two|three|four|five|six|[1-6])\\s+(?:young\\s+|little\\s+|small\\s+)?(kids?|children|child|sons?|daughters?|babies|baby|toddlers?)\\b|\\b(?:my|our|with)\\s+(?:\\w+\\s+)?(kids|children|child|son|daughter|baby|toddler)\\b",
+    "no_children": "\\bno\\s+(?:kids|children)\\b|\\bchild(?:less|-free)\\b|\\bwithout\\s+(?:kids|children)\\b",
+    "age": "\\b(?:i'?m|i\\s+am|aged?)\\s+(\\d{2})\\b(?!\\s*(?:k\\b|%|\\$|percent|countries|options|places|thousand|hours|minutes))|\\b(\\d{2})[\\s-]*(?:years?[\\s-]+old|yrs?[\\s-]+old|y/?o)\\b|\\bage\\s*(?:is\\s*|of\\s*|:\\s*)?(\\d{2})\\b",
+    "age_range": [
+      16,
+      90
+    ]
+  }
+}

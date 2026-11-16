@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================
-REM  AI Global Relocation Intelligence — One-click setup & run
+REM  RelocAitor — One-click setup & run
 REM
 REM  Place this file in the SAME folder as app.py, then double-click.
 REM  It will:
@@ -18,7 +18,7 @@ cd /d "%~dp0"
 
 echo.
 echo ============================================================
-echo   AI Global Relocation Intelligence  -  Setup ^& Run
+echo   RelocAitor  -  Setup ^& Run
 echo ============================================================
 echo.
 echo  Working folder: %CD%
@@ -52,6 +52,9 @@ if exist "style.css"     move /Y "style.css"     "static\css\"    >nul
 if exist "app.js"        move /Y "app.js"        "static\js\"     >nul
 if exist "countries.js"  move /Y "countries.js"  "static\js\"     >nul
 if exist "map.js"        move /Y "map.js"        "static\js\"     >nul
+if not exist "data\" mkdir data
+if exist "countries.csv" move /Y "countries.csv" "data\"         >nul
+if exist "visas.json"    move /Y "visas.json"    "data\"         >nul
 
 REM Verify the critical files now exist where Flask expects them
 set MISSING=0
@@ -61,11 +64,13 @@ if not exist "static\css\style.css"         (echo   MISSING: static\css\style.cs
 if not exist "static\js\app.js"             (echo   MISSING: static\js\app.js             & set MISSING=1)
 if not exist "static\js\countries.js"       (echo   MISSING: static\js\countries.js       & set MISSING=1)
 if not exist "static\js\map.js"             (echo   MISSING: static\js\map.js             & set MISSING=1)
+if not exist "data\countries.csv"           (echo   MISSING: data\countries.csv           & set MISSING=1)
+if not exist "data\visas.json"              (echo   MISSING: data\visas.json              & set MISSING=1)
 
 if "%MISSING%"=="1" (
     echo.
     echo  ERROR: Some required files are missing from this folder.
-    echo  Make sure you have all 11 files from the project.
+    echo  Make sure you downloaded the complete project folder.
     echo.
     pause
     exit /b 1
@@ -93,8 +98,8 @@ echo.
 echo [4/5] Installing dependencies...
 call "venv\Scripts\activate.bat"
 
-REM Only run pip install if Flask isn't already installed
-python -c "import flask" >nul 2>&1
+REM Only run pip install if any required package is missing
+python -c "import flask, pandas, numpy" >nul 2>&1
 if errorlevel 1 (
     echo       Installing packages ^(this takes ~30-60 seconds^)...
     python -m pip install --upgrade pip --quiet
@@ -107,6 +112,12 @@ if errorlevel 1 (
     echo       Dependencies installed
 ) else (
     echo       Dependencies already installed
+)
+
+REM ---------- Sentence-embedding model (optional, ~90 MB, once) ----------
+if not exist "ml\models\all-MiniLM-L6-v2\model.onnx" (
+    echo       Downloading the semantic search model ^(once^)...
+    python -m ml.build_semantic_index --model-only || echo       Skipped: semantic search will use keywords until the model is downloaded.
 )
 
 REM ---------- 5. Launch app ----------

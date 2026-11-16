@@ -1,0 +1,68 @@
+# Mean annual temperature (°C) of each country's main city (largest metro / main destination for movers).
+# Source: https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature ("Year" column; retrieved 2026-11-16).
+# Countries with no listed city fall back to climate_national.csv (QAT, MUS; both small and climatically uniform).
+country_code,city,avg_temp_c
+USA,New York City,12.9
+CAN,Toronto,9.7
+MEX,Mexico City,17.5
+CRI,San José,22.6
+PAN,Panama City,28.1
+BRA,São Paulo,19.2
+ARG,Buenos Aires,17.9
+CHL,Santiago,14.7
+URY,Montevideo,16.7
+COL,Bogotá,14.4
+PER,Lima,19.2
+GBR,London,11.3
+IRL,Dublin,9.8
+DEU,Berlin,10.3
+FRA,Paris,12.3
+NLD,Amsterdam,10.2
+BEL,Brussels,10.5
+SWE,Stockholm,6.6
+NOR,Oslo,5.7
+DNK,Copenhagen,9.1
+FIN,Helsinki,5.9
+ISL,Reykjavík,4.3
+CHE,Zürich,9.3
+AUT,Vienna,10.4
+ESP,Madrid,15.4
+PRT,Lisbon,17.5
+ITA,Rome,15.2
+GRC,Athens,19.2
+CZE,Prague,8.4
+POL,Warsaw,8.5
+HUN,Budapest,11.3
+EST,Tallinn,6.4
+ROU,Bucharest,10.8
+HRV,Zagreb,10.7
+SVN,Ljubljana,10.9
+AUS,Sydney,18.8
+NZL,Auckland,15.2
+JPN,Tokyo,15.4
+KOR,Seoul,12.5
+SGP,Singapore,27.8
+TWN,Taipei,23.3
+HKG,Hong Kong,23.3
+CHN,Shanghai,16.7
+VNM,Ho Chi Minh City,27.4
+IND,New Delhi,24.6
+IDN,Jakarta,26.7
+PHL,Manila,28.4
+MYS,Kuala Lumpur,27.3
+THA,Bangkok,28.6
+LKA,Colombo,27.4
+ARE,Dubai,26.9
+SAU,Riyadh,26.2
+ISR,Tel Aviv,20.3
+TUR,Istanbul,13.9
+BHR,Manama,26.5
+ZAF,Johannesburg,15.5
+EGY,Cairo,21.4
+MAR,Rabat,17.2
+KEN,Nairobi,17.8
+NGA,Lagos,26.8
+GHA,Accra,26.4
+RUS,Moscow,5.8
+GEO,Tbilisi,12.9
+CYP,Nicosia,19.7

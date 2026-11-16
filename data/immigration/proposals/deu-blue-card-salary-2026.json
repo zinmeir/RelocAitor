@@ -1,0 +1,8 @@
+{
+  "route": "DEU-eu-blue-card",
+  "changes": {"min_income": 4669},
+  "sources": ["https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card"],
+  "checked": "2026-11-16",
+  "evidence": "\"earn a gross annual salary of at least €50,700\" (2026). €50,700 / 12 = €4,225 a month = $4,669 at the ECB rate of 13 Nov 2026 (1.1052). Shortage occupations and recent graduates: at least €45,934.20.",
+  "proposed_by": "AI research run, 16 Nov 2026 (needs a person to check and approve)"
+}

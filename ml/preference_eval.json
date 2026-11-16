@@ -1,0 +1,39 @@
+{
+ "n_users": 200,
+ "metric_notes": {
+  "spearman": "rank correlation with the user's true ranking of all countries (1 = identical)",
+  "top5": "how many of the user's true top-5 countries appear in the predicted top 5 (0\u20135)"
+ },
+ "defaults": {
+  "spearman": 0.785,
+  "top5": 3.04
+ },
+ "random": {
+  "4": {
+   "spearman": 0.821,
+   "top5": 3.08
+  },
+  "8": {
+   "spearman": 0.866,
+   "top5": 3.21
+  },
+  "12": {
+   "spearman": 0.882,
+   "top5": 3.21
+  }
+ },
+ "active": {
+  "4": {
+   "spearman": 0.873,
+   "top5": 3.31
+  },
+  "8": {
+   "spearman": 0.896,
+   "top5": 3.62
+  },
+  "12": {
+   "spearman": 0.907,
+   "top5": 3.69
+  }
+ }
+}

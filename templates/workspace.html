@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>try { if (localStorage.getItem("relocaitor.theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My relocation · RelocAitor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body class="ws-body">
+  <header class="topbar glass">
+    <a class="brand" href="./" aria-label="Back to RelocAitor search"><span class="brand-title">RelocAitor</span></a>
+    <nav class="topbar-actions" aria-label="Account">
+      <a class="top-link" href="./">Search</a>
+      <span class="ws-who" id="ws-who"></span>
+      <button class="btn btn-quiet" id="ws-logout" type="button" hidden>Sign out</button>
+    </nav>
+  </header>
+
+  <main class="ws-main">
+    <h1 class="ws-title">My relocation</h1>
+    <p class="ws-lede">Your profile, shortlist, saved pathways, document checklist and applications, kept in your account.
+      RelocAitor gives information, not legal advice or a guaranteed outcome.</p>
+
+    <section class="ws-auth glass" id="ws-auth" aria-labelledby="auth-title">
+      <h2 id="auth-title">Sign in or create an account</h2>
+      <form id="auth-form" class="ws-form">
+        <label>Email<input class="select" type="email" name="email" autocomplete="email" required></label>
+        <label>Password (10+ characters)<input class="select" type="password" name="password" autocomplete="current-password" minlength="10" required></label>
+        <div class="ws-row">
+          <button class="btn" type="submit" data-mode="login">Sign in</button>
+          <button class="btn btn-quiet" type="submit" data-mode="register">Create account</button>
+        </div>
+        <p class="field-note" id="auth-msg" role="alert"></p>
+        <p class="field-note">Your profile is stored encrypted. Documents are never uploaded: the checklist only records what you've prepared.</p>
+      </form>
+    </section>
+
+    <div class="ws-grid" id="ws-app" hidden>
+      <section class="ws-card glass" aria-labelledby="ws-profile-h">
+        <h2 id="ws-profile-h">Profile</h2>
+        <p id="ws-profile" class="ws-text"></p>
+        <p class="field-note">Set it on the search page under <b>About you</b> and press <b>Save to my account</b>.</p>
+        <a class="btn" id="ws-open-search" href="./">Open the search with this profile</a>
+      </section>
+
+      <section class="ws-card glass" aria-labelledby="ws-alerts-h">
+        <h2 id="ws-alerts-h">Rule changes that affect you</h2>
+        <ul id="ws-alerts" class="ws-list"></ul>
+      </section>
+
+      <section class="ws-card glass" aria-labelledby="ws-short-h">
+        <h2 id="ws-short-h">Shortlist</h2>
+        <ul id="ws-shortlist" class="ws-list"></ul>
+      </section>
+
+      <section class="ws-card glass ws-wide" aria-labelledby="ws-path-h">
+        <h2 id="ws-path-h">Saved pathways and timeline</h2>
+        <label class="ws-inline">Start date <input class="select" type="date" id="ws-start"></label>
+        <div id="ws-timeline"></div>
+      </section>
+
+      <section class="ws-card glass ws-wide" aria-labelledby="ws-check-h">
+        <h2 id="ws-check-h">Document checklist</h2>
+        <p class="field-note" id="ws-check-note"></p>
+        <ul id="ws-checklist" class="ws-list"></ul>
+        <form id="ws-check-add" class="ws-row"><input class="select" name="item" placeholder="Add your own item" maxlength="200"><button class="btn" type="submit">Add</button></form>
+      </section>
+
+      <section class="ws-card glass ws-wide" aria-labelledby="ws-apps-h">
+        <h2 id="ws-apps-h">Applications</h2>
+        <ul id="ws-apps" class="ws-list"></ul>
+      </section>
+
+      <section class="ws-card glass" aria-labelledby="ws-data-h">
+        <h2 id="ws-data-h">Your data</h2>
+        <div class="ws-row">
+          <button class="btn" id="ws-export" type="button">Download my data (JSON)</button>
+          <button class="btn btn-quiet" id="ws-delete" type="button">Delete my account</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div class="toast hidden" id="toast" role="status"></div>
+  <script>window.APP_META = {{ meta_json|tojson }};</script>
+  <script src="{{ url_for('static', filename='js/workspace.js') }}"></script>
+</body>
+</html>

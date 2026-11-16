@@ -1,0 +1,200 @@
+# Every country RelocAitor knows about: ISO codes (ISO 3166 via Unicode CLDR), region, capital, demonym.
+# The data pipeline includes a country in the rankings once it has enough measured data (see pipeline/build.py).
+# marker_lon/lat: capital position, used to draw tiny countries the world map leaves out.
+country_code,country_name,region,m49,iso2,capital,demonym,aliases,marker_lon,marker_lat
+AFG,Afghanistan,Asia,004,AF,Kabul,Afghan,,,
+ALB,Albania,Europe,008,AL,Tirana,Albanian,,,
+DZA,Algeria,Africa,012,DZ,Algiers,Algerian,,,
+AND,Andorra,Europe,020,AD,Andorra la Vella,Andorran,,1.52,42.51
+AGO,Angola,Africa,024,AO,Luanda,Angolan,,,
+ATG,Antigua and Barbuda,North America,028,AG,St. John's,Antiguan,antigua,-61.85,17.12
+ARG,Argentina,South America,032,AR,Buenos Aires,Argentine,,,
+ARM,Armenia,Europe,051,AM,Yerevan,Armenian,,,
+AUS,Australia,Oceania,036,AU,Canberra,Australian,,,
+AUT,Austria,Europe,040,AT,Vienna,Austrian,,,
+AZE,Azerbaijan,Europe,031,AZ,Baku,Azerbaijani,,,
+BHS,Bahamas,North America,044,BS,Nassau,Bahamian,the bahamas,-77.35,25.06
+BHR,Bahrain,Middle East,048,BH,Manama,Bahraini,,50.56,26.07
+BGD,Bangladesh,Asia,050,BD,Dhaka,Bangladeshi,,,
+BRB,Barbados,North America,052,BB,Bridgetown,Barbadian,,-59.6,13.1
+BLR,Belarus,Europe,112,BY,Minsk,Belarusian,,,
+BEL,Belgium,Europe,056,BE,Brussels,Belgian,,,
+BLZ,Belize,North America,084,BZ,Belmopan,Belizean,,,
+BEN,Benin,Africa,204,BJ,Porto-Novo,Beninese,,,
+BTN,Bhutan,Asia,064,BT,Thimphu,Bhutanese,,,
+BOL,Bolivia,South America,068,BO,Sucre,Bolivian,,,
+BIH,Bosnia and Herzegovina,Europe,070,BA,Sarajevo,Bosnian,bosnia,,
+BWA,Botswana,Africa,072,BW,Gaborone,Motswana,batswana,,
+BRA,Brazil,South America,076,BR,Brasília,Brazilian,,,
+BRN,Brunei,Asia,096,BN,Bandar Seri Begawan,Bruneian,,114.94,4.94
+BGR,Bulgaria,Europe,100,BG,Sofia,Bulgarian,,,
+BFA,Burkina Faso,Africa,854,BF,Ouagadougou,Burkinabé,,,
+BDI,Burundi,Africa,108,BI,Gitega,Burundian,,,
+KHM,Cambodia,Asia,116,KH,Phnom Penh,Cambodian,,,
+CMR,Cameroon,Africa,120,CM,Yaoundé,Cameroonian,,,
+CAN,Canada,North America,124,CA,Ottawa,Canadian,,,
+CPV,Cape Verde,Africa,132,CV,Praia,Cape Verdean,cabo verde,-23.51,14.93
+CAF,Central African Republic,Africa,140,CF,Bangui,Central African,,,
+TCD,Chad,Africa,148,TD,N'Djamena,Chadian,,,
+CHL,Chile,South America,152,CL,Santiago,Chilean,,,
+CHN,China,Asia,156,CN,Beijing,Chinese,,,
+COL,Colombia,South America,170,CO,Bogotá,Colombian,,,
+COM,Comoros,Africa,174,KM,Moroni,Comorian,,43.26,-11.7
+CRI,Costa Rica,North America,188,CR,San José,Costa Rican,,,
+HRV,Croatia,Europe,191,HR,Zagreb,Croatian,,,
+CUB,Cuba,North America,192,CU,Havana,Cuban,,,
+CYP,Cyprus,Europe,196,CY,Nicosia,Cypriot,,33.2,35.0
+CZE,Czech Republic,Europe,203,CZ,Prague,Czech,czechia,,
+CIV,Côte d'Ivoire,Africa,384,CI,Yamoussoukro,Ivorian,ivory coast|cote divoire,,
+COD,DR Congo,Africa,180,CD,Kinshasa,Congolese,democratic republic of the congo|drc,,
+DNK,Denmark,Europe,208,DK,Copenhagen,Danish,,,
+DJI,Djibouti,Africa,262,DJ,Djibouti,Djiboutian,,,
+DMA,Dominica,North America,212,DM,Roseau,Dominican,,-61.39,15.3
+DOM,Dominican Republic,North America,214,DO,Santo Domingo,Dominican,,,
+ECU,Ecuador,South America,218,EC,Quito,Ecuadorian,,,
+EGY,Egypt,Africa,818,EG,Cairo,Egyptian,,,
+SLV,El Salvador,North America,222,SV,San Salvador,Salvadoran,,,
+GNQ,Equatorial Guinea,Africa,226,GQ,Malabo,Equatoguinean,,,
+ERI,Eritrea,Africa,232,ER,Asmara,Eritrean,,,
+EST,Estonia,Europe,233,EE,Tallinn,Estonian,,,
+SWZ,Eswatini,Africa,748,SZ,Mbabane,Swazi,swaziland,,
+ETH,Ethiopia,Africa,231,ET,Addis Ababa,Ethiopian,,,
+FJI,Fiji,Oceania,242,FJ,Suva,Fijian,,,
+FIN,Finland,Europe,246,FI,Helsinki,Finnish,,,
+FRA,France,Europe,250,FR,Paris,French,,,
+GAB,Gabon,Africa,266,GA,Libreville,Gabonese,,,
+GMB,Gambia,Africa,270,GM,Banjul,Gambian,the gambia,,
+GEO,Georgia,Europe,268,GE,Tbilisi,Georgian,,,
+DEU,Germany,Europe,276,DE,Berlin,German,,,
+GHA,Ghana,Africa,288,GH,Accra,Ghanaian,,,
+GRC,Greece,Europe,300,GR,Athens,Greek,,,
+GRD,Grenada,North America,308,GD,St. George's,Grenadian,,-61.75,12.06
+GTM,Guatemala,North America,320,GT,Guatemala City,Guatemalan,,,
+GIN,Guinea,Africa,324,GN,Conakry,Guinean,,,
+GNB,Guinea-Bissau,Africa,624,GW,Bissau,Bissau-Guinean,,,
+GUY,Guyana,South America,328,GY,Georgetown,Guyanese,,,
+HTI,Haiti,North America,332,HT,Port-au-Prince,Haitian,,,
+HND,Honduras,North America,340,HN,Tegucigalpa,Honduran,,,
+HKG,Hong Kong,Asia,344,HK,Hong Kong,Hongkonger,,114.17,22.32
+HUN,Hungary,Europe,348,HU,Budapest,Hungarian,,,
+ISL,Iceland,Europe,352,IS,Reykjavík,Icelandic,,,
+IND,India,Asia,356,IN,New Delhi,Indian,,,
+IDN,Indonesia,Asia,360,ID,Jakarta,Indonesian,,,
+IRN,Iran,Middle East,364,IR,Tehran,Iranian,,,
+IRQ,Iraq,Middle East,368,IQ,Baghdad,Iraqi,,,
+IRL,Ireland,Europe,372,IE,Dublin,Irish,,,
+ISR,Israel,Middle East,376,IL,Jerusalem,Israeli,,,
+ITA,Italy,Europe,380,IT,Rome,Italian,,,
+JAM,Jamaica,North America,388,JM,Kingston,Jamaican,,,
+JPN,Japan,Asia,392,JP,Tokyo,Japanese,,,
+JOR,Jordan,Middle East,400,JO,Amman,Jordanian,,,
+KAZ,Kazakhstan,Asia,398,KZ,Astana,Kazakh,,,
+KEN,Kenya,Africa,404,KE,Nairobi,Kenyan,,,
+KIR,Kiribati,Oceania,296,KI,Tarawa,I-Kiribati,,173.0,1.45
+KWT,Kuwait,Middle East,414,KW,Kuwait City,Kuwaiti,,,
+KGZ,Kyrgyzstan,Asia,417,KG,Bishkek,Kyrgyz,,,
+LAO,Laos,Asia,418,LA,Vientiane,Lao,,,
+LVA,Latvia,Europe,428,LV,Riga,Latvian,,,
+LBN,Lebanon,Middle East,422,LB,Beirut,Lebanese,,,
+LSO,Lesotho,Africa,426,LS,Maseru,Basotho,,,
+LBR,Liberia,Africa,430,LR,Monrovia,Liberian,,,
+LBY,Libya,Africa,434,LY,Tripoli,Libyan,,,
+LIE,Liechtenstein,Europe,438,LI,Vaduz,Liechtensteiner,,9.52,47.14
+LTU,Lithuania,Europe,440,LT,Vilnius,Lithuanian,,,
+LUX,Luxembourg,Europe,442,LU,Luxembourg,Luxembourgish,,6.13,49.61
+MDG,Madagascar,Africa,450,MG,Antananarivo,Malagasy,,,
+MWI,Malawi,Africa,454,MW,Lilongwe,Malawian,,,
+MYS,Malaysia,Asia,458,MY,Kuala Lumpur,Malaysian,,,
+MDV,Maldives,Asia,462,MV,Malé,Maldivian,,73.51,4.18
+MLI,Mali,Africa,466,ML,Bamako,Malian,,,
+MLT,Malta,Europe,470,MT,Valletta,Maltese,,14.51,35.9
+MHL,Marshall Islands,Oceania,584,MH,Majuro,Marshallese,,171.38,7.09
+MRT,Mauritania,Africa,478,MR,Nouakchott,Mauritanian,,,
+MUS,Mauritius,Africa,480,MU,Port Louis,Mauritian,,57.55,-20.35
+MEX,Mexico,North America,484,MX,Mexico City,Mexican,,,
+FSM,Micronesia,Oceania,583,FM,Palikir,Micronesian,,158.16,6.92
+MDA,Moldova,Europe,498,MD,Chișinău,Moldovan,,,
+MCO,Monaco,Europe,492,MC,Monaco,Monegasque,,7.42,43.74
+MNG,Mongolia,Asia,496,MN,Ulaanbaatar,Mongolian,,,
+MNE,Montenegro,Europe,499,ME,Podgorica,Montenegrin,,,
+MAR,Morocco,Africa,504,MA,Rabat,Moroccan,,,
+MOZ,Mozambique,Africa,508,MZ,Maputo,Mozambican,,,
+MMR,Myanmar,Asia,104,MM,Naypyidaw,Burmese,burma,,
+NAM,Namibia,Africa,516,NA,Windhoek,Namibian,,,
+NRU,Nauru,Oceania,520,NR,Yaren,Nauruan,,166.93,-0.53
+NPL,Nepal,Asia,524,NP,Kathmandu,Nepali,,,
+NLD,Netherlands,Europe,528,NL,Amsterdam,Dutch,,,
+NZL,New Zealand,Oceania,554,NZ,Wellington,New Zealander,kiwi,,
+NIC,Nicaragua,North America,558,NI,Managua,Nicaraguan,,,
+NER,Niger,Africa,562,NE,Niamey,Nigerien,,,
+NGA,Nigeria,Africa,566,NG,Abuja,Nigerian,,,
+PRK,North Korea,Asia,408,KP,Pyongyang,North Korean,,,
+MKD,North Macedonia,Europe,807,MK,Skopje,Macedonian,macedonia,,
+NOR,Norway,Europe,578,NO,Oslo,Norwegian,,,
+OMN,Oman,Middle East,512,OM,Muscat,Omani,,,
+PAK,Pakistan,Asia,586,PK,Islamabad,Pakistani,,,
+PLW,Palau,Oceania,585,PW,Ngerulmud,Palauan,,134.62,7.5
+PSE,Palestine,Middle East,275,PS,Ramallah,Palestinian,,35.2,31.9
+PAN,Panama,North America,591,PA,Panama City,Panamanian,,,
+PNG,Papua New Guinea,Oceania,598,PG,Port Moresby,Papua New Guinean,,,
+PRY,Paraguay,South America,600,PY,Asunción,Paraguayan,,,
+PER,Peru,South America,604,PE,Lima,Peruvian,,,
+PHL,Philippines,Asia,608,PH,Manila,Filipino,,,
+POL,Poland,Europe,616,PL,Warsaw,Polish,,,
+PRT,Portugal,Europe,620,PT,Lisbon,Portuguese,,,
+QAT,Qatar,Middle East,634,QA,Doha,Qatari,,51.18,25.35
+COG,Republic of the Congo,Africa,178,CG,Brazzaville,Congolese,congo brazzaville,,
+ROU,Romania,Europe,642,RO,Bucharest,Romanian,,,
+RUS,Russia,Europe,643,RU,Moscow,Russian,,,
+RWA,Rwanda,Africa,646,RW,Kigali,Rwandan,,,
+KNA,Saint Kitts and Nevis,North America,659,KN,Basseterre,Kittitian,st kitts|st kitts and nevis,-62.73,17.3
+LCA,Saint Lucia,North America,662,LC,Castries,Saint Lucian,st lucia,-60.98,14.01
+VCT,Saint Vincent and the Grenadines,North America,670,VC,Kingstown,Vincentian,st vincent,-61.23,13.16
+WSM,Samoa,Oceania,882,WS,Apia,Samoan,,-171.77,-13.83
+SMR,San Marino,Europe,674,SM,San Marino,Sammarinese,,12.45,43.94
+SAU,Saudi Arabia,Middle East,682,SA,Riyadh,Saudi,,,
+SEN,Senegal,Africa,686,SN,Dakar,Senegalese,,,
+SRB,Serbia,Europe,688,RS,Belgrade,Serbian,,,
+SYC,Seychelles,Africa,690,SC,Victoria,Seychellois,,55.45,-4.62
+SLE,Sierra Leone,Africa,694,SL,Freetown,Sierra Leonean,,,
+SGP,Singapore,Asia,702,SG,Singapore,Singaporean,,103.82,1.35
+SVK,Slovakia,Europe,703,SK,Bratislava,Slovak,,,
+SVN,Slovenia,Europe,705,SI,Ljubljana,Slovenian,,,
+SLB,Solomon Islands,Oceania,090,SB,Honiara,Solomon Islander,,,
+SOM,Somalia,Africa,706,SO,Mogadishu,Somali,,,
+ZAF,South Africa,Africa,710,ZA,Pretoria,South African,,,
+KOR,South Korea,Asia,410,KR,Seoul,South Korean,,,
+SSD,South Sudan,Africa,728,SS,Juba,South Sudanese,,,
+ESP,Spain,Europe,724,ES,Madrid,Spanish,,,
+LKA,Sri Lanka,Asia,144,LK,Colombo,Sri Lankan,,,
+SDN,Sudan,Africa,729,SD,Khartoum,Sudanese,,,
+SUR,Suriname,South America,740,SR,Paramaribo,Surinamese,,,
+SWE,Sweden,Europe,752,SE,Stockholm,Swedish,,,
+CHE,Switzerland,Europe,756,CH,Bern,Swiss,,,
+SYR,Syria,Middle East,760,SY,Damascus,Syrian,,,
+STP,São Tomé and Príncipe,Africa,678,ST,São Tomé,Santomean,sao tome and principe|sao tome,6.73,0.34
+TWN,Taiwan,Asia,158,TW,Taipei,Taiwanese,,,
+TJK,Tajikistan,Asia,762,TJ,Dushanbe,Tajik,,,
+TZA,Tanzania,Africa,834,TZ,Dodoma,Tanzanian,,,
+THA,Thailand,Asia,764,TH,Bangkok,Thai,,,
+TLS,Timor-Leste,Asia,626,TL,Dili,Timorese,east timor,,
+TGO,Togo,Africa,768,TG,Lomé,Togolese,,,
+TON,Tonga,Oceania,776,TO,Nukuʻalofa,Tongan,,-175.2,-21.14
+TTO,Trinidad and Tobago,North America,780,TT,Port of Spain,Trinidadian,trinidad,-61.52,10.65
+TUN,Tunisia,Africa,788,TN,Tunis,Tunisian,,,
+TUR,Turkey,Middle East,792,TR,Ankara,Turkish,turkiye,,
+TKM,Turkmenistan,Asia,795,TM,Ashgabat,Turkmen,,,
+TUV,Tuvalu,Oceania,798,TV,Funafuti,Tuvaluan,,179.2,-8.52
+UGA,Uganda,Africa,800,UG,Kampala,Ugandan,,,
+UKR,Ukraine,Europe,804,UA,Kyiv,Ukrainian,,,
+ARE,United Arab Emirates,Middle East,784,AE,Abu Dhabi,Emirati,,,
+GBR,United Kingdom,Europe,826,GB,London,British,,,
+USA,United States,North America,840,US,"Washington, D.C.",American,,,
+URY,Uruguay,South America,858,UY,Montevideo,Uruguayan,,,
+UZB,Uzbekistan,Asia,860,UZ,Tashkent,Uzbek,,,
+VUT,Vanuatu,Oceania,548,VU,Port Vila,Ni-Vanuatu,,,
+VEN,Venezuela,South America,862,VE,Caracas,Venezuelan,,,
+VNM,Vietnam,Asia,704,VN,Hanoi,Vietnamese,,,
+YEM,Yemen,Middle East,887,YE,Sanaa,Yemeni,,,
+ZMB,Zambia,Africa,894,ZM,Lusaka,Zambian,,,
+ZWE,Zimbabwe,Africa,716,ZW,Harare,Zimbabwean,,,

@@ -1,0 +1,793 @@
+country_code,column,value,method,detail
+ARE,average_salary,0.84,computed,"NY.GNP.PCAP.CD 2024=51,550"
+ARE,climate,0.71,computed,CITY_TEMP Dubai=26.9°C
+ARE,cost_of_living,0.54,computed,PRICE_LEVEL(consumption) 2025=0.688
+ARE,english,0.26,computed,EF_EPI 2025=487
+ARE,healthcare,0.85,computed,UHC_INDEX_REPORTED 2023=84; SP.DYN.LE00.IN 2024=83.1
+ARE,internet,1.0,computed,IT.NET.USER.ZS 2024=100
+ARE,job_market,0.97,computed,SL.EMP.VULN.ZS 2025=1.5; SL.UEM.TOTL.ZS 2025=2.17
+ARE,language_barrier,0.74,derived,1 − english
+ARE,pr_ease,0.3,editorial,Editorial judgement from the original dataset (no public index exists).
+ARE,rent_usd_month,1800.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+ARE,safety,0.72,computed,VC.IHR.PSRC.P5 2022=0.693; GPI 2026=1.93
+ARE,salary_usd_month,3600.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+ARG,average_salary,0.48,computed,"NY.GNP.PCAP.CD 2025=14,650"
+ARG,climate,0.78,computed,CITY_TEMP Buenos Aires=17.9°C
+ARG,cost_of_living,0.24,computed,PRICE_LEVEL(gdp) 2025=0.457
+ARG,english,0.7,computed,EF_EPI 2025=575
+ARG,healthcare,0.62,computed,UHC_INDEX_REPORTED 2023=80; SP.DYN.LE00.IN 2024=77.5
+ARG,internet,0.69,computed,IT.NET.USER.ZS 2024=89.7
+ARG,job_market,0.5,computed,SL.EMP.VULN.ZS 2025=22.3; SL.UEM.TOTL.ZS 2025=7.14
+ARG,language_barrier,0.3,derived,1 − english
+ARG,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+ARG,rent_usd_month,400.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+ARG,safety,0.5,computed,VC.IHR.PSRC.P5 2023=4.49; GPI 2026=1.92
+ARG,salary_usd_month,500.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+AUS,average_salary,0.91,computed,"NY.GNP.PCAP.CD 2025=64,120"
+AUS,climate,0.84,computed,CITY_TEMP Sydney=18.8°C
+AUS,cost_of_living,0.87,computed,PRICE_LEVEL(consumption) 2025=0.944
+AUS,english,1.0,rule,native English-speaking country
+AUS,healthcare,0.98,computed,UHC_INDEX_REPORTED 2023=89; SP.DYN.LE00.IN 2024=83.1
+AUS,internet,0.89,computed,IT.NET.USER.ZS 2024=96.1
+AUS,job_market,0.8,computed,SL.EMP.VULN.ZS 2025=9.12; SL.UEM.TOTL.ZS 2025=4.09
+AUS,language_barrier,0.0,derived,1 − english
+AUS,pr_ease,0.8,editorial,Editorial judgement from the original dataset (no public index exists).
+AUS,rent_usd_month,1500.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+AUS,safety,0.82,computed,VC.IHR.PSRC.P5 2023=0.854; GPI 2026=1.6
+AUS,salary_usd_month,3700.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+AUT,average_salary,0.89,computed,"NY.GNP.PCAP.CD 2025=60,360"
+AUT,climate,0.24,computed,CITY_TEMP Vienna=10.4°C
+AUT,cost_of_living,0.75,computed,PRICE_LEVEL(consumption) 2025=0.848
+AUT,english,0.9,computed,EF_EPI 2025=616
+AUT,healthcare,0.82,computed,UHC_INDEX_REPORTED 2023=84; SP.DYN.LE00.IN 2024=82
+AUT,internet,0.76,computed,IT.NET.USER.ZS 2025=91.9
+AUT,job_market,0.74,computed,SL.EMP.VULN.ZS 2025=7.85; SL.UEM.TOTL.ZS 2025=5.58
+AUT,language_barrier,0.1,derived,1 − english
+AUT,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+AUT,rent_usd_month,900.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+AUT,safety,0.89,computed,VC.IHR.PSRC.P5 2023=0.876; GPI 2026=1.42
+AUT,salary_usd_month,2800.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+BEL,average_salary,0.88,computed,"NY.GNP.PCAP.CD 2025=59,500"
+BEL,climate,0.25,computed,CITY_TEMP Brussels=10.5°C
+BEL,cost_of_living,0.78,computed,PRICE_LEVEL(consumption) 2025=0.872
+BEL,english,0.86,computed,EF_EPI 2025=608
+BEL,healthcare,0.88,computed,UHC_INDEX_REPORTED 2023=86; SP.DYN.LE00.IN 2024=82.3
+BEL,internet,0.88,computed,IT.NET.USER.ZS 2024=95.8
+BEL,job_market,0.68,computed,SL.EMP.VULN.ZS 2025=11; SL.UEM.TOTL.ZS 2025=5.91
+BEL,language_barrier,0.14,derived,1 − english
+BEL,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+BEL,rent_usd_month,1000.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+BEL,safety,0.8,computed,VC.IHR.PSRC.P5 2021=1.08; GPI 2026=1.61
+BEL,salary_usd_month,2900.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+BHR,average_salary,0.67,computed,"NY.GNP.PCAP.CD 2025=28,790"
+BHR,climate,0.72,computed,CITY_TEMP Manama=26.5°C
+BHR,cost_of_living,0.28,computed,PRICE_LEVEL(consumption) 2025=0.488
+BHR,english,0.65,editorial-fallback,not ranked by EF EPI
+BHR,healthcare,0.66,computed,UHC_INDEX_REPORTED 2023=78; SP.DYN.LE00.IN 2024=81.4
+BHR,internet,1.0,computed,IT.NET.USER.ZS 2024=100
+BHR,job_market,1.0,computed,SL.EMP.VULN.ZS 2025=0.749; SL.UEM.TOTL.ZS 2025=1.1
+BHR,language_barrier,0.35,derived,1 − english
+BHR,pr_ease,0.4,editorial,Editorial judgement from the original dataset (no public index exists).
+BHR,rent_usd_month,700.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+BHR,safety,0.72,computed,VC.IHR.PSRC.P5 2022=0.196; GPI 2026=2.13
+BHR,salary_usd_month,2000.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+BRA,average_salary,0.38,computed,"NY.GNP.PCAP.CD 2025=10,550"
+BRA,climate,0.87,computed,CITY_TEMP São Paulo=19.2°C
+BRA,cost_of_living,0.24,computed,PRICE_LEVEL(consumption) 2025=0.462
+BRA,english,0.24,computed,EF_EPI 2025=482
+BRA,healthcare,0.68,computed,UHC_INDEX_REPORTED 2023=84; SP.DYN.LE00.IN 2024=76
+BRA,internet,0.52,computed,IT.NET.USER.ZS 2024=84.5
+BRA,job_market,0.52,computed,SL.EMP.VULN.ZS 2025=26.1; SL.UEM.TOTL.ZS 2025=5.97
+BRA,language_barrier,0.76,derived,1 − english
+BRA,pr_ease,0.6,editorial,Editorial judgement from the original dataset (no public index exists).
+BRA,rent_usd_month,450.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+BRA,safety,0.14,computed,VC.IHR.PSRC.P5 2023=19.3; GPI 2026=2.33
+BRA,salary_usd_month,450.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+CAN,average_salary,0.87,computed,"NY.GNP.PCAP.CD 2025=56,420"
+CAN,climate,0.19,computed,CITY_TEMP Toronto=9.7°C
+CAN,cost_of_living,0.82,computed,PRICE_LEVEL(consumption) 2025=0.902
+CAN,english,1.0,rule,native English-speaking country
+CAN,healthcare,0.95,computed,UHC_INDEX_REPORTED 2023=92; SP.DYN.LE00.IN 2024=82.1
+CAN,internet,0.83,computed,IT.NET.USER.ZS 2024=94.4
+CAN,job_market,0.65,computed,SL.EMP.VULN.ZS 2025=9.56; SL.UEM.TOTL.ZS 2025=6.91
+CAN,language_barrier,0.0,derived,1 − english
+CAN,pr_ease,0.85,editorial,Editorial judgement from the original dataset (no public index exists).
+CAN,rent_usd_month,1500.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+CAN,safety,0.76,computed,VC.IHR.PSRC.P5 2023=1.98; GPI 2026=1.52
+CAN,salary_usd_month,3100.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+CHE,average_salary,1.0,computed,"NY.GNP.PCAP.CD 2025=110,330"
+CHE,climate,0.16,computed,CITY_TEMP Zürich=9.3°C
+CHE,cost_of_living,1.0,computed,PRICE_LEVEL(consumption) 2025=1.28
+CHE,english,0.65,computed,EF_EPI 2025=564
+CHE,healthcare,0.95,computed,UHC_INDEX_REPORTED 2023=87; SP.DYN.LE00.IN 2024=84.4
+CHE,internet,0.93,computed,IT.NET.USER.ZS 2025=97.3
+CHE,job_market,0.75,computed,SL.EMP.VULN.ZS 2025=9.6; SL.UEM.TOTL.ZS 2025=4.87
+CHE,language_barrier,0.35,derived,1 − english
+CHE,pr_ease,0.4,editorial,Editorial judgement from the original dataset (no public index exists).
+CHE,rent_usd_month,2000.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+CHE,safety,0.94,computed,VC.IHR.PSRC.P5 2023=0.597; GPI 2026=1.36
+CHE,salary_usd_month,6500.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+CHL,average_salary,0.52,computed,"NY.GNP.PCAP.CD 2025=16,960"
+CHL,climate,0.55,computed,CITY_TEMP Santiago=14.7°C
+CHL,cost_of_living,0.31,computed,PRICE_LEVEL(consumption) 2025=0.512
+CHL,english,0.41,computed,EF_EPI 2025=517
+CHL,healthcare,0.81,computed,UHC_INDEX_REPORTED 2023=84; SP.DYN.LE00.IN 2024=81.4
+CHL,internet,0.87,computed,IT.NET.USER.ZS 2024=95.6
+CHL,job_market,0.42,computed,SL.EMP.VULN.ZS 2025=20.9; SL.UEM.TOTL.ZS 2025=8.97
+CHL,language_barrier,0.59,derived,1 − english
+CHL,pr_ease,0.7,editorial,Editorial judgement from the original dataset (no public index exists).
+CHL,rent_usd_month,550.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+CHL,safety,0.49,computed,VC.IHR.PSRC.P5 2023=6.35; GPI 2026=1.83
+CHL,salary_usd_month,750.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+CHN,average_salary,0.47,computed,"NY.GNP.PCAP.CD 2025=14,230"
+CHN,climate,0.69,computed,CITY_TEMP Shanghai=16.7°C
+CHN,cost_of_living,0.27,computed,PRICE_LEVEL(consumption) 2025=0.481
+CHN,english,0.15,computed,EF_EPI 2025=464
+CHN,healthcare,0.76,computed,UHC_INDEX_REPORTED 2023=85; SP.DYN.LE00.IN 2024=78
+CHN,internet,0.75,computed,IT.NET.USER.ZS 2025=91.6
+CHN,job_market,0.51,computed,SL.EMP.VULN.ZS 2025=33.4; SL.UEM.TOTL.ZS 2025=4.62
+CHN,language_barrier,0.85,derived,1 − english
+CHN,pr_ease,0.25,editorial,Editorial judgement from the original dataset (no public index exists).
+CHN,rent_usd_month,600.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+CHN,safety,0.64,computed,VC.IHR.PSRC.P5 2020=0.502; GPI 2026=2.23
+CHN,salary_usd_month,1100.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+COL,average_salary,0.29,computed,"NY.GNP.PCAP.CD 2025=7,900"
+COL,climate,0.53,computed,CITY_TEMP Bogotá=14.4°C
+COL,cost_of_living,0.18,computed,PRICE_LEVEL(consumption) 2025=0.411
+COL,english,0.23,computed,EF_EPI 2025=480
+COL,healthcare,0.68,computed,UHC_INDEX_REPORTED 2023=82; SP.DYN.LE00.IN 2024=77.9
+COL,internet,0.36,computed,IT.NET.USER.ZS 2024=79.3
+COL,job_market,0.22,computed,SL.EMP.VULN.ZS 2025=43; SL.UEM.TOTL.ZS 2025=8.29
+COL,language_barrier,0.77,derived,1 − english
+COL,pr_ease,0.6,editorial,Editorial judgement from the original dataset (no public index exists).
+COL,rent_usd_month,450.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+COL,safety,0.0,computed,VC.IHR.PSRC.P5 2023=24.9; GPI 2026=2.73
+COL,salary_usd_month,350.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+CRI,average_salary,0.53,computed,"NY.GNP.PCAP.CD 2025=17,930"
+CRI,climate,0.92,computed,CITY_TEMP San José=22.6°C
+CRI,cost_of_living,0.46,computed,PRICE_LEVEL(consumption) 2025=0.625
+CRI,english,0.41,computed,EF_EPI 2025=516
+CRI,healthcare,0.8,computed,UHC_INDEX_REPORTED 2023=84; SP.DYN.LE00.IN 2024=81
+CRI,internet,0.61,computed,IT.NET.USER.ZS 2024=87.2
+CRI,job_market,0.5,computed,SL.EMP.VULN.ZS 2025=23.4; SL.UEM.TOTL.ZS 2025=6.84
+CRI,language_barrier,0.59,derived,1 − english
+CRI,pr_ease,0.7,editorial,Editorial judgement from the original dataset (no public index exists).
+CRI,rent_usd_month,700.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+CRI,safety,0.33,computed,VC.IHR.PSRC.P5 2023=17.7; GPI 2026=1.86
+CRI,salary_usd_month,900.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+CYP,average_salary,0.74,computed,"NY.GNP.PCAP.CD 2025=36,110"
+CYP,climate,0.91,computed,CITY_TEMP Nicosia=19.7°C
+CYP,cost_of_living,0.51,computed,PRICE_LEVEL(consumption) 2025=0.669
+CYP,english,0.51,computed,EF_EPI 2025=537
+CYP,healthcare,0.62,computed,UHC_INDEX_REPORTED 2023=76; SP.DYN.LE00.IN 2024=81.8
+CYP,internet,0.68,computed,IT.NET.USER.ZS 2024=89.6
+CYP,job_market,0.76,computed,SL.EMP.VULN.ZS 2025=8.38; SL.UEM.TOTL.ZS 2025=4.92
+CYP,language_barrier,0.49,derived,1 − english
+CYP,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+CYP,rent_usd_month,900.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+CYP,safety,0.69,computed,VC.IHR.PSRC.P5 2023=0.818; GPI 2026=1.97
+CYP,salary_usd_month,1700.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+CZE,average_salary,0.71,computed,"NY.GNP.PCAP.CD 2025=32,960"
+CZE,climate,0.1,computed,CITY_TEMP Prague=8.4°C
+CZE,cost_of_living,0.52,computed,PRICE_LEVEL(consumption) 2025=0.67
+CZE,english,0.73,computed,EF_EPI 2025=582
+CZE,healthcare,0.75,computed,UHC_INDEX_REPORTED 2023=83; SP.DYN.LE00.IN 2024=80
+CZE,internet,0.62,computed,IT.NET.USER.ZS 2024=87.7
+CZE,job_market,0.82,computed,SL.EMP.VULN.ZS 2025=13.5; SL.UEM.TOTL.ZS 2025=2.83
+CZE,language_barrier,0.27,derived,1 − english
+CZE,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+CZE,rent_usd_month,750.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+CZE,safety,0.86,computed,VC.IHR.PSRC.P5 2023=0.768; GPI 2026=1.52
+CZE,salary_usd_month,1600.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+DEU,average_salary,0.89,computed,"NY.GNP.PCAP.CD 2025=60,200"
+DEU,climate,0.24,computed,CITY_TEMP Berlin=10.3°C
+DEU,cost_of_living,0.7,computed,PRICE_LEVEL(consumption) 2025=0.812
+DEU,english,0.9,computed,EF_EPI 2025=615
+DEU,healthcare,0.87,computed,UHC_INDEX_REPORTED 2023=87; SP.DYN.LE00.IN 2024=80.8
+DEU,internet,0.81,computed,IT.NET.USER.ZS 2024=93.5
+DEU,job_market,0.87,computed,SL.EMP.VULN.ZS 2025=4.34; SL.UEM.TOTL.ZS 2025=3.71
+DEU,language_barrier,0.1,derived,1 − english
+DEU,pr_ease,0.7,editorial,Editorial judgement from the original dataset (no public index exists).
+DEU,rent_usd_month,1100.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+DEU,safety,0.8,computed,VC.IHR.PSRC.P5 2023=0.911; GPI 2026=1.66
+DEU,salary_usd_month,3100.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+DNK,average_salary,0.96,computed,"NY.GNP.PCAP.CD 2025=77,190"
+DNK,climate,0.15,computed,CITY_TEMP Copenhagen=9.1°C
+DNK,cost_of_living,1.0,computed,PRICE_LEVEL(consumption) 2025=1.05
+DNK,english,0.88,computed,EF_EPI 2025=611
+DNK,healthcare,0.86,computed,UHC_INDEX_REPORTED 2023=85; SP.DYN.LE00.IN 2024=82.3
+DNK,internet,1.0,computed,IT.NET.USER.ZS 2024=99.8
+DNK,job_market,0.76,computed,SL.EMP.VULN.ZS 2025=5.4; SL.UEM.TOTL.ZS 2025=5.53
+DNK,language_barrier,0.12,derived,1 − english
+DNK,pr_ease,0.7,editorial,Editorial judgement from the original dataset (no public index exists).
+DNK,rent_usd_month,1300.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+DNK,safety,0.86,computed,VC.IHR.PSRC.P5 2023=0.841; GPI 2026=1.5
+DNK,salary_usd_month,4000.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+EGY,average_salary,0.04,computed,"NY.GNP.PCAP.CD 2025=3,260"
+EGY,climate,0.98,computed,CITY_TEMP Cairo=21.4°C
+EGY,cost_of_living,0.0,computed,PRICE_LEVEL(consumption) 2025=0.157
+EGY,english,0.12,computed,EF_EPI 2025=459
+EGY,healthcare,0.25,computed,UHC_INDEX_REPORTED 2023=71; SP.DYN.LE00.IN 2024=71.8
+EGY,internet,0.21,computed,IT.NET.USER.ZS 2024=74.6
+EGY,job_market,0.5,computed,SL.EMP.VULN.ZS 2025=23.9; SL.UEM.TOTL.ZS 2025=6.78
+EGY,language_barrier,0.88,derived,1 − english
+EGY,pr_ease,0.35,editorial,Editorial judgement from the original dataset (no public index exists).
+EGY,rent_usd_month,250.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+EGY,safety,0.56,computed,VC.IHR.PSRC.P5 2017=1.31; GPI 2026=2.19
+EGY,salary_usd_month,180.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+ESP,average_salary,0.75,computed,"NY.GNP.PCAP.CD 2025=37,120"
+ESP,climate,0.6,computed,CITY_TEMP Madrid=15.4°C
+ESP,cost_of_living,0.54,computed,PRICE_LEVEL(consumption) 2025=0.687
+ESP,english,0.53,computed,EF_EPI 2025=540
+ESP,healthcare,0.87,computed,UHC_INDEX_REPORTED 2023=84; SP.DYN.LE00.IN 2024=83.9
+ESP,internet,0.88,computed,IT.NET.USER.ZS 2024=95.8
+ESP,job_market,0.52,computed,SL.EMP.VULN.ZS 2025=10.1; SL.UEM.TOTL.ZS 2025=10.4
+ESP,language_barrier,0.47,derived,1 − english
+ESP,pr_ease,0.6,editorial,Editorial judgement from the original dataset (no public index exists).
+ESP,rent_usd_month,900.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+ESP,safety,0.82,computed,VC.IHR.PSRC.P5 2023=0.691; GPI 2026=1.65
+ESP,salary_usd_month,1900.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+EST,average_salary,0.71,computed,"NY.GNP.PCAP.CD 2025=32,310"
+EST,climate,0.0,computed,CITY_TEMP Tallinn=6.4°C
+EST,cost_of_living,0.63,computed,PRICE_LEVEL(consumption) 2025=0.759
+EST,english,0.63,computed,EF_EPI 2025=561
+EST,healthcare,0.63,computed,UHC_INDEX_REPORTED 2023=79; SP.DYN.LE00.IN 2024=79.3
+EST,internet,0.77,computed,IT.NET.USER.ZS 2024=92.2
+EST,job_market,0.6,computed,SL.EMP.VULN.ZS 2025=7.09; SL.UEM.TOTL.ZS 2025=8.31
+EST,language_barrier,0.37,derived,1 − english
+EST,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+EST,rent_usd_month,650.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+EST,safety,0.75,computed,VC.IHR.PSRC.P5 2023=1.54; GPI 2026=1.62
+EST,salary_usd_month,1700.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+FIN,average_salary,0.86,computed,"NY.GNP.PCAP.CD 2025=55,250"
+FIN,climate,0.0,computed,CITY_TEMP Helsinki=5.9°C
+FIN,cost_of_living,0.83,computed,PRICE_LEVEL(consumption) 2025=0.906
+FIN,english,0.84,computed,EF_EPI 2025=603
+FIN,healthcare,0.88,computed,UHC_INDEX_REPORTED 2023=86; SP.DYN.LE00.IN 2024=82.3
+FIN,internet,0.81,computed,IT.NET.USER.ZS 2024=93.7
+FIN,job_market,0.52,computed,SL.EMP.VULN.ZS 2025=9.46; SL.UEM.TOTL.ZS 2025=9.46
+FIN,language_barrier,0.16,derived,1 − english
+FIN,pr_ease,0.7,editorial,Editorial judgement from the original dataset (no public index exists).
+FIN,rent_usd_month,850.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+FIN,safety,0.85,computed,VC.IHR.PSRC.P5 2023=0.982; GPI 2026=1.48
+FIN,salary_usd_month,2800.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+FRA,average_salary,0.83,computed,"NY.GNP.PCAP.CD 2025=48,630"
+FRA,climate,0.38,computed,CITY_TEMP Paris=12.3°C
+FRA,cost_of_living,0.72,computed,PRICE_LEVEL(consumption) 2025=0.828
+FRA,english,0.52,computed,EF_EPI 2025=539
+FRA,healthcare,0.8,computed,UHC_INDEX_REPORTED 2023=82; SP.DYN.LE00.IN 2024=83
+FRA,internet,0.65,computed,IT.NET.USER.ZS 2024=88.7
+FRA,job_market,0.63,computed,SL.EMP.VULN.ZS 2025=8.5; SL.UEM.TOTL.ZS 2025=7.54
+FRA,language_barrier,0.48,derived,1 − english
+FRA,pr_ease,0.6,editorial,Editorial judgement from the original dataset (no public index exists).
+FRA,rent_usd_month,1000.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+FRA,safety,0.6,computed,VC.IHR.PSRC.P5 2023=1.34; GPI 2026=2.08
+FRA,salary_usd_month,2700.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+GBR,average_salary,0.86,computed,"NY.GNP.PCAP.CD 2025=54,550"
+GBR,climate,0.31,computed,CITY_TEMP London=11.3°C
+GBR,cost_of_living,0.85,computed,PRICE_LEVEL(consumption) 2025=0.924
+GBR,english,1.0,rule,native English-speaking country
+GBR,healthcare,0.91,computed,UHC_INDEX_REPORTED 2023=88; SP.DYN.LE00.IN 2024=81.4
+GBR,internet,0.87,computed,IT.NET.USER.ZS 2024=95.5
+GBR,job_market,0.74,computed,SL.EMP.VULN.ZS 2025=11.5; SL.UEM.TOTL.ZS 2025=4.75
+GBR,language_barrier,0.0,derived,1 − english
+GBR,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+GBR,rent_usd_month,1500.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+GBR,safety,0.75,computed,VC.IHR.PSRC.P5 2021=1.12; GPI 2026=1.73
+GBR,salary_usd_month,2900.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+GEO,average_salary,0.33,computed,"NY.GNP.PCAP.CD 2025=8,990"
+GEO,climate,0.42,computed,CITY_TEMP Tbilisi=12.9°C
+GEO,cost_of_living,0.16,computed,PRICE_LEVEL(consumption) 2025=0.397
+GEO,english,0.53,computed,EF_EPI 2025=541
+GEO,healthcare,0.32,computed,UHC_INDEX_REPORTED 2023=71; SP.DYN.LE00.IN 2024=74.7
+GEO,internet,0.5,computed,IT.NET.USER.ZS 2024=83.8
+GEO,job_market,0.17,computed,SL.EMP.VULN.ZS 2025=42.4; SL.UEM.TOTL.ZS 2025=12.1
+GEO,language_barrier,0.47,derived,1 − english
+GEO,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+GEO,rent_usd_month,550.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+GEO,safety,0.55,computed,VC.IHR.PSRC.P5 2019=2.03; GPI 2026=2.07
+GEO,salary_usd_month,550.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+GHA,average_salary,0.0,computed,"NY.GNP.PCAP.CD 2025=2,630"
+GHA,climate,0.73,computed,CITY_TEMP Accra=26.4°C
+GHA,cost_of_living,0.19,computed,PRICE_LEVEL(consumption) 2025=0.418
+GHA,english,0.53,computed,EF_EPI 2025=540
+GHA,healthcare,0.0,computed,UHC_INDEX_REPORTED 2023=56; SP.DYN.LE00.IN 2024=65.7
+GHA,internet,0.13,computed,IT.NET.USER.ZS 2024=72.2
+GHA,job_market,0.33,computed,SL.EMP.VULN.ZS 2025=60; SL.UEM.TOTL.ZS 2025=2.98
+GHA,language_barrier,0.47,derived,1 − english
+GHA,pr_ease,0.4,editorial,Editorial judgement from the original dataset (no public index exists).
+GHA,rent_usd_month,450.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+GHA,safety,0.61,computed,VC.IHR.PSRC.P5 2022=1.83; GPI 2026=1.94
+GHA,salary_usd_month,250.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+GRC,average_salary,0.64,computed,"NY.GNP.PCAP.CD 2025=25,360"
+GRC,climate,0.87,computed,CITY_TEMP Athens=19.2°C
+GRC,cost_of_living,0.5,computed,PRICE_LEVEL(consumption) 2025=0.655
+GRC,english,0.78,computed,EF_EPI 2025=592
+GRC,healthcare,0.64,computed,UHC_INDEX_REPORTED 2023=77; SP.DYN.LE00.IN 2024=81.8
+GRC,internet,0.58,computed,IT.NET.USER.ZS 2024=86.3
+GRC,job_market,0.42,computed,SL.EMP.VULN.ZS 2025=23.1; SL.UEM.TOTL.ZS 2025=8.54
+GRC,language_barrier,0.22,derived,1 − english
+GRC,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+GRC,rent_usd_month,450.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+GRC,safety,0.74,computed,VC.IHR.PSRC.P5 2023=0.84; GPI 2026=1.83
+GRC,salary_usd_month,1000.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+HKG,average_salary,0.9,computed,"NY.GNP.PCAP.CD 2025=62,500"
+HKG,climate,0.89,computed,CITY_TEMP Hong Kong=23.3°C
+HKG,cost_of_living,0.57,computed,PRICE_LEVEL(gdp) 2025=0.709
+HKG,english,0.52,computed,EF_EPI 2025=538
+HKG,healthcare,0.94,ml-imputed,UHC_INDEX_REPORTED ML=86.7; SP.DYN.LE00.IN 2024=85.4 [ML: UHC_INDEX_REPORTED CV R²=0.81]
+HKG,internet,0.88,computed,IT.NET.USER.ZS 2024=95.8
+HKG,job_market,0.9,computed,SL.EMP.VULN.ZS 2025=5.76; SL.UEM.TOTL.ZS 2025=2.8
+HKG,language_barrier,0.48,derived,1 − english
+HKG,pr_ease,0.5,editorial,Editorial judgement from the original dataset (no public index exists).
+HKG,rent_usd_month,2000.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+HKG,safety,0.95,computed-partial,VC.IHR.PSRC.P5 2023=0.376 (missing: GPI)
+HKG,salary_usd_month,2600.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+HRV,average_salary,0.64,computed,"NY.GNP.PCAP.CD 2025=25,360"
+HRV,climate,0.26,computed,CITY_TEMP Zagreb=10.7°C
+HRV,cost_of_living,0.41,computed,PRICE_LEVEL(consumption) 2025=0.588
+HRV,english,0.9,computed,EF_EPI 2025=617
+HRV,healthcare,0.55,computed,UHC_INDEX_REPORTED 2023=76; SP.DYN.LE00.IN 2024=78.9
+HRV,internet,0.5,computed,IT.NET.USER.ZS 2024=83.6
+HRV,job_market,0.78,computed,SL.EMP.VULN.ZS 2025=6.35; SL.UEM.TOTL.ZS 2025=5
+HRV,language_barrier,0.1,derived,1 − english
+HRV,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+HRV,rent_usd_month,600.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+HRV,safety,0.84,computed,VC.IHR.PSRC.P5 2023=0.667; GPI 2026=1.62
+HRV,salary_usd_month,1300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+HUN,average_salary,0.62,computed,"NY.GNP.PCAP.CD 2025=23,850"
+HUN,climate,0.31,computed,CITY_TEMP Budapest=11.3°C
+HUN,cost_of_living,0.4,computed,PRICE_LEVEL(consumption) 2025=0.579
+HUN,english,0.77,computed,EF_EPI 2025=590
+HUN,healthcare,0.6,computed,UHC_INDEX_REPORTED 2023=80; SP.DYN.LE00.IN 2024=76.7
+HUN,internet,0.82,computed,IT.NET.USER.ZS 2024=93.8
+HUN,job_market,0.79,computed,SL.EMP.VULN.ZS 2025=7.83; SL.UEM.TOTL.ZS 2025=4.52
+HUN,language_barrier,0.23,derived,1 − english
+HUN,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+HUN,rent_usd_month,550.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+HUN,safety,0.86,computed,VC.IHR.PSRC.P5 2023=0.723; GPI 2026=1.54
+HUN,salary_usd_month,1050.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+IDN,average_salary,0.17,computed,"NY.GNP.PCAP.CD 2025=5,120"
+IDN,climate,0.72,computed,CITY_TEMP Jakarta=26.7°C
+IDN,cost_of_living,0.04,computed,PRICE_LEVEL(consumption) 2025=0.307
+IDN,english,0.18,computed,EF_EPI 2025=471
+IDN,healthcare,0.14,computed,UHC_INDEX_REPORTED 2023=67; SP.DYN.LE00.IN 2024=71.3
+IDN,internet,0.15,computed,IT.NET.USER.ZS 2024=72.8
+IDN,job_market,0.4,computed,SL.EMP.VULN.ZS 2025=50; SL.UEM.TOTL.ZS 2025=3.24
+IDN,language_barrier,0.82,derived,1 − english
+IDN,pr_ease,0.4,editorial,Editorial judgement from the original dataset (no public index exists).
+IDN,rent_usd_month,300.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+IDN,safety,0.79,computed,VC.IHR.PSRC.P5 2022=0.304; GPI 2026=1.92
+IDN,salary_usd_month,300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+IND,average_salary,0.0,computed,"NY.GNP.PCAP.CD 2025=2,760"
+IND,climate,0.82,computed,CITY_TEMP New Delhi=24.6°C
+IND,cost_of_living,0.0,computed,PRICE_LEVEL(consumption) 2025=0.228
+IND,english,0.25,computed,EF_EPI 2025=484
+IND,healthcare,0.21,computed,UHC_INDEX_REPORTED 2023=69; SP.DYN.LE00.IN 2024=72.2
+IND,internet,0.06,computed,IT.NET.USER.ZS 2025=70
+IND,job_market,0.27,computed,SL.EMP.VULN.ZS 2025=71.6; SL.UEM.TOTL.ZS 2025=4.22
+IND,language_barrier,0.75,derived,1 − english
+IND,pr_ease,0.4,editorial,Editorial judgement from the original dataset (no public index exists).
+IND,rent_usd_month,250.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+IND,safety,0.39,computed,VC.IHR.PSRC.P5 2022=2.82; GPI 2026=2.41
+IND,salary_usd_month,400.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+IRL,average_salary,1.0,computed,"NY.GNP.PCAP.CD 2025=87,360"
+IRL,climate,0.2,computed,CITY_TEMP Dublin=9.8°C
+IRL,cost_of_living,0.98,computed,PRICE_LEVEL(consumption) 2025=1.02
+IRL,english,1.0,rule,native English-speaking country
+IRL,healthcare,0.8,computed,UHC_INDEX_REPORTED 2023=82; SP.DYN.LE00.IN 2024=83
+IRL,internet,0.92,computed,IT.NET.USER.ZS 2024=97.2
+IRL,job_market,0.77,computed,SL.EMP.VULN.ZS 2025=9.64; SL.UEM.TOTL.ZS 2025=4.63
+IRL,language_barrier,0.0,derived,1 − english
+IRL,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+IRL,rent_usd_month,2000.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+IRL,safety,0.93,computed,VC.IHR.PSRC.P5 2023=0.654; GPI 2026=1.37
+IRL,salary_usd_month,3300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+ISL,average_salary,1.0,computed,"NY.GNP.PCAP.CD 2025=89,220"
+ISL,climate,0.0,computed,CITY_TEMP Reykjavík=4.3°C
+ISL,cost_of_living,1.0,computed,PRICE_LEVEL(consumption) 2025=1.3
+ISL,english,0.85,editorial-fallback,not ranked by EF EPI
+ISL,healthcare,0.97,computed,UHC_INDEX_REPORTED 2023=90; SP.DYN.LE00.IN 2024=82.8
+ISL,internet,0.96,computed,IT.NET.USER.ZS 2024=98.2
+ISL,job_market,0.83,computed,SL.EMP.VULN.ZS 2025=8.4; SL.UEM.TOTL.ZS 2025=3.62
+ISL,language_barrier,0.15,derived,1 − english
+ISL,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+ISL,rent_usd_month,1500.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+ISL,safety,0.87,computed,VC.IHR.PSRC.P5 2023=1.29; GPI 2026=1.16
+ISL,salary_usd_month,4200.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+ISR,average_salary,0.87,computed,"NY.GNP.PCAP.CD 2025=56,180"
+ISR,climate,0.95,computed,CITY_TEMP Tel Aviv=20.3°C
+ISR,cost_of_living,1.0,computed,PRICE_LEVEL(consumption) 2025=1.06
+ISR,english,0.45,computed,EF_EPI 2025=524
+ISR,healthcare,0.88,computed,UHC_INDEX_REPORTED 2023=85; SP.DYN.LE00.IN 2024=83.2
+ISR,internet,0.64,computed,IT.NET.USER.ZS 2024=88.2
+ISR,job_market,0.85,computed,SL.EMP.VULN.ZS 2025=7.7; SL.UEM.TOTL.ZS 2025=3.49
+ISR,language_barrier,0.55,derived,1 − english
+ISR,pr_ease,0.45,editorial,Editorial judgement from the original dataset (no public index exists).
+ISR,rent_usd_month,1300.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+ISR,safety,0.34,computed,VC.IHR.PSRC.P5 2022=1.63; GPI 2026=3.12
+ISR,salary_usd_month,3300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+ITA,average_salary,0.78,computed,"NY.GNP.PCAP.CD 2025=42,080"
+ITA,climate,0.59,computed,CITY_TEMP Rome=15.2°C
+ITA,cost_of_living,0.59,computed,PRICE_LEVEL(consumption) 2025=0.729
+ITA,english,0.39,computed,EF_EPI 2025=513
+ITA,healthcare,0.82,computed,UHC_INDEX_REPORTED 2023=82; SP.DYN.LE00.IN 2024=84
+ITA,internet,0.67,computed,IT.NET.USER.ZS 2024=89.2
+ITA,job_market,0.62,computed,SL.EMP.VULN.ZS 2025=14.3; SL.UEM.TOTL.ZS 2025=6.39
+ITA,language_barrier,0.61,derived,1 − english
+ITA,pr_ease,0.5,editorial,Editorial judgement from the original dataset (no public index exists).
+ITA,rent_usd_month,800.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+ITA,safety,0.82,computed,VC.IHR.PSRC.P5 2023=0.568; GPI 2026=1.71
+ITA,salary_usd_month,1900.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+JPN,average_salary,0.76,computed,"NY.GNP.PCAP.CD 2025=38,340"
+JPN,climate,0.6,computed,CITY_TEMP Tokyo=15.4°C
+JPN,cost_of_living,0.54,computed,PRICE_LEVEL(consumption) 2025=0.69
+JPN,english,0.06,computed,EF_EPI 2025=446
+JPN,healthcare,0.92,computed,UHC_INDEX_REPORTED 2023=86; SP.DYN.LE00.IN 2024=84
+JPN,internet,0.56,computed,IT.NET.USER.ZS 2024=85.5
+JPN,job_market,0.9,computed,SL.EMP.VULN.ZS 2025=7.49; SL.UEM.TOTL.ZS 2025=2.45
+JPN,language_barrier,0.94,derived,1 − english
+JPN,pr_ease,0.5,editorial,Editorial judgement from the original dataset (no public index exists).
+JPN,rent_usd_month,800.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+JPN,safety,0.96,computed,VC.IHR.PSRC.P5 2023=0.229; GPI 2026=1.49
+JPN,salary_usd_month,2300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+KEN,average_salary,0.0,computed,"NY.GNP.PCAP.CD 2025=2,200"
+KEN,climate,0.77,computed,CITY_TEMP Nairobi=17.8°C
+KEN,cost_of_living,0.09,computed,PRICE_LEVEL(consumption) 2025=0.348
+KEN,english,0.79,computed,EF_EPI 2025=593
+KEN,healthcare,0.0,computed,UHC_INDEX_REPORTED 2023=57; SP.DYN.LE00.IN 2024=63.8
+KEN,internet,0.0,computed,IT.NET.USER.ZS 2024=35
+KEN,job_market,0.2,computed,SL.EMP.VULN.ZS 2025=63.8; SL.UEM.TOTL.ZS 2025=5.45
+KEN,language_barrier,0.21,derived,1 − english
+KEN,pr_ease,0.4,editorial,Editorial judgement from the original dataset (no public index exists).
+KEN,rent_usd_month,400.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+KEN,safety,0.3,computed,VC.IHR.PSRC.P5 2022=4.87; GPI 2026=2.45
+KEN,salary_usd_month,350.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+KOR,average_salary,0.75,computed,"NY.GNP.PCAP.CD 2025=37,880"
+KOR,climate,0.39,computed,CITY_TEMP Seoul=12.5°C
+KOR,cost_of_living,0.45,computed,PRICE_LEVEL(consumption) 2025=0.619
+KOR,english,0.44,computed,EF_EPI 2025=522
+KOR,healthcare,0.97,computed,UHC_INDEX_REPORTED 2023=88; SP.DYN.LE00.IN 2024=83.6
+KOR,internet,0.95,computed,IT.NET.USER.ZS 2024=97.9
+KOR,job_market,0.78,computed,SL.EMP.VULN.ZS 2025=17.7; SL.UEM.TOTL.ZS 2025=2.68
+KOR,language_barrier,0.56,derived,1 − english
+KOR,pr_ease,0.45,editorial,Editorial judgement from the original dataset (no public index exists).
+KOR,rent_usd_month,700.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+KOR,safety,0.78,computed,VC.IHR.PSRC.P5 2023=0.477; GPI 2026=1.84
+KOR,salary_usd_month,2500.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+LKA,average_salary,0.14,computed,"NY.GNP.PCAP.CD 2025=4,670"
+LKA,climate,0.68,computed,CITY_TEMP Colombo=27.4°C
+LKA,cost_of_living,0.0,computed,PRICE_LEVEL(consumption) 2025=0.27
+LKA,english,0.26,computed,EF_EPI 2025=486
+LKA,healthcare,0.41,computed,UHC_INDEX_REPORTED 2023=72; SP.DYN.LE00.IN 2024=77.7
+LKA,internet,0.0,computed,IT.NET.USER.ZS 2024=54.6
+LKA,job_market,0.48,computed,SL.EMP.VULN.ZS 2025=39.2; SL.UEM.TOTL.ZS 2025=4
+LKA,language_barrier,0.74,derived,1 − english
+LKA,pr_ease,0.4,editorial,Editorial judgement from the original dataset (no public index exists).
+LKA,rent_usd_month,300.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+LKA,safety,0.55,computed,VC.IHR.PSRC.P5 2019=3.31; GPI 2026=1.91
+LKA,salary_usd_month,200.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+MAR,average_salary,0.12,computed,"NY.GNP.PCAP.CD 2025=4,360"
+MAR,climate,0.73,computed,CITY_TEMP Rabat=17.2°C
+MAR,cost_of_living,0.19,computed,PRICE_LEVEL(consumption) 2025=0.423
+MAR,english,0.29,computed,EF_EPI 2025=492
+MAR,healthcare,0.2,computed,UHC_INDEX_REPORTED 2023=65; SP.DYN.LE00.IN 2024=75.5
+MAR,internet,0.74,computed,IT.NET.USER.ZS 2024=91.2
+MAR,job_market,0.26,computed,SL.EMP.VULN.ZS 2025=35.5; SL.UEM.TOTL.ZS 2025=9
+MAR,language_barrier,0.71,derived,1 − english
+MAR,pr_ease,0.45,editorial,Editorial judgement from the original dataset (no public index exists).
+MAR,rent_usd_month,350.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+MAR,safety,0.64,computed,VC.IHR.PSRC.P5 2023=1.71; GPI 2026=1.89
+MAR,salary_usd_month,450.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+MEX,average_salary,0.46,computed,"NY.GNP.PCAP.CD 2025=13,730"
+MEX,climate,0.75,computed,CITY_TEMP Mexico City=17.5°C
+MEX,cost_of_living,0.41,computed,PRICE_LEVEL(consumption) 2025=0.588
+MEX,english,0.05,computed,EF_EPI 2025=440
+MEX,healthcare,0.54,computed,UHC_INDEX_REPORTED 2023=79; SP.DYN.LE00.IN 2024=75.3
+MEX,internet,0.48,computed,IT.NET.USER.ZS 2024=83.1
+MEX,job_market,0.7,computed,SL.EMP.VULN.ZS 2025=25.3; SL.UEM.TOTL.ZS 2025=2.67
+MEX,language_barrier,0.95,derived,1 − english
+MEX,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+MEX,rent_usd_month,650.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+MEX,safety,0.03,computed,VC.IHR.PSRC.P5 2023=24.9; GPI 2026=2.65
+MEX,salary_usd_month,600.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+MUS,average_salary,0.46,computed,"NY.GNP.PCAP.CD 2025=14,040"
+MUS,climate,0.88,computed,NATIONAL_TEMP national average=23.3°C
+MUS,cost_of_living,0.21,computed,PRICE_LEVEL(consumption) 2025=0.437
+MUS,english,0.85,editorial-fallback,not ranked by EF EPI
+MUS,healthcare,0.4,computed,UHC_INDEX_REPORTED 2023=75; SP.DYN.LE00.IN 2024=73.8
+MUS,internet,0.17,computed,IT.NET.USER.ZS 2024=73.3
+MUS,job_market,0.66,computed,SL.EMP.VULN.ZS 2025=14.9; SL.UEM.TOTL.ZS 2025=5.63
+MUS,language_barrier,0.15,derived,1 − english
+MUS,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+MUS,rent_usd_month,500.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+MUS,safety,0.72,computed,VC.IHR.PSRC.P5 2022=2.27; GPI 2026=1.59
+MUS,salary_usd_month,600.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+MYS,average_salary,0.43,computed,"NY.GNP.PCAP.CD 2025=12,380"
+MYS,climate,0.68,computed,CITY_TEMP Kuala Lumpur=27.3°C
+MYS,cost_of_living,0.07,computed,PRICE_LEVEL(consumption) 2025=0.334
+MYS,english,0.73,computed,EF_EPI 2025=581
+MYS,healthcare,0.6,computed,UHC_INDEX_REPORTED 2023=80; SP.DYN.LE00.IN 2024=76.8
+MYS,internet,0.95,computed,IT.NET.USER.ZS 2024=98
+MYS,job_market,0.68,computed,SL.EMP.VULN.ZS 2025=21.9; SL.UEM.TOTL.ZS 2025=3.76
+MYS,language_barrier,0.27,derived,1 − english
+MYS,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+MYS,rent_usd_month,400.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+MYS,safety,0.87,computed,VC.IHR.PSRC.P5 2023=0.734; GPI 2026=1.51
+MYS,salary_usd_month,800.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+NGA,average_salary,0.0,computed,"NY.GNP.PCAP.CD 2025=1,360"
+NGA,climate,0.71,computed,CITY_TEMP Lagos=26.8°C
+NGA,cost_of_living,0.0,computed,PRICE_LEVEL(consumption) 2025=0.209
+NGA,english,0.67,computed,EF_EPI 2025=569
+NGA,healthcare,0.0,computed,UHC_INDEX_REPORTED 2023=47; SP.DYN.LE00.IN 2024=54.6
+NGA,internet,0.0,computed,IT.NET.USER.ZS 2024=41.2
+NGA,job_market,0.33,computed,SL.EMP.VULN.ZS 2025=66.5; SL.UEM.TOTL.ZS 2025=3.06
+NGA,language_barrier,0.33,derived,1 − english
+NGA,pr_ease,0.3,editorial,Editorial judgement from the original dataset (no public index exists).
+NGA,rent_usd_month,400.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+NGA,safety,0.03,computed,VC.IHR.PSRC.P5 2023=15.7; GPI 2026=2.75
+NGA,salary_usd_month,150.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+NLD,average_salary,0.93,computed,"NY.GNP.PCAP.CD 2025=68,530"
+NLD,climate,0.23,computed,CITY_TEMP Amsterdam=10.2°C
+NLD,cost_of_living,0.77,computed,PRICE_LEVEL(consumption) 2025=0.867
+NLD,english,0.9,computed,EF_EPI 2025=624
+NLD,healthcare,0.85,computed,UHC_INDEX_REPORTED 2023=85; SP.DYN.LE00.IN 2024=82
+NLD,internet,0.92,computed,IT.NET.USER.ZS 2024=97
+NLD,job_market,0.76,computed,SL.EMP.VULN.ZS 2025=13.4; SL.UEM.TOTL.ZS 2025=3.87
+NLD,language_barrier,0.1,derived,1 − english
+NLD,pr_ease,0.72,editorial,Editorial judgement from the original dataset (no public index exists).
+NLD,rent_usd_month,1500.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+NLD,safety,0.86,computed,VC.IHR.PSRC.P5 2023=0.691; GPI 2026=1.57
+NLD,salary_usd_month,3300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+NOR,average_salary,1.0,computed,"NY.GNP.PCAP.CD 2025=97,310"
+NOR,climate,0.0,computed,CITY_TEMP Oslo=5.7°C
+NOR,cost_of_living,0.9,computed,PRICE_LEVEL(consumption) 2025=0.962
+NOR,english,0.89,computed,EF_EPI 2025=613
+NOR,healthcare,0.98,computed,UHC_INDEX_REPORTED 2023=89; SP.DYN.LE00.IN 2024=83.2
+NOR,internet,0.98,computed,IT.NET.USER.ZS 2024=99
+NOR,job_market,0.82,computed,SL.EMP.VULN.ZS 2025=4.17; SL.UEM.TOTL.ZS 2025=4.64
+NOR,language_barrier,0.11,derived,1 − english
+NOR,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+NOR,rent_usd_month,1200.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+NOR,safety,0.81,computed,VC.IHR.PSRC.P5 2023=0.725; GPI 2026=1.69
+NOR,salary_usd_month,3700.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+NZL,average_salary,0.81,computed,"NY.GNP.PCAP.CD 2025=46,630"
+NZL,climate,0.59,computed,CITY_TEMP Auckland=15.2°C
+NZL,cost_of_living,0.8,computed,PRICE_LEVEL(consumption) 2025=0.889
+NZL,english,1.0,rule,native English-speaking country
+NZL,healthcare,0.95,computed,UHC_INDEX_REPORTED 2023=89; SP.DYN.LE00.IN 2024=82
+NZL,internet,0.81,computed,IT.NET.USER.ZS 2024=93.5
+NZL,job_market,0.71,computed,SL.EMP.VULN.ZS 2025=12.6; SL.UEM.TOTL.ZS 2025=5.08
+NZL,language_barrier,0.0,derived,1 − english
+NZL,pr_ease,0.82,editorial,Editorial judgement from the original dataset (no public index exists).
+NZL,rent_usd_month,1200.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+NZL,safety,0.85,computed,VC.IHR.PSRC.P5 2022=1.46; GPI 2026=1.34
+NZL,salary_usd_month,2900.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+PAN,average_salary,0.55,computed,"NY.GNP.PCAP.CD 2025=19,140"
+PAN,climate,0.64,computed,CITY_TEMP Panama City=28.1°C
+PAN,cost_of_living,0.29,computed,PRICE_LEVEL(consumption) 2025=0.497
+PAN,english,0.28,computed,EF_EPI 2025=491
+PAN,healthcare,0.72,computed,UHC_INDEX_REPORTED 2023=82; SP.DYN.LE00.IN 2024=79.8
+PAN,internet,0.15,computed,IT.NET.USER.ZS 2024=72.8
+PAN,job_market,0.27,computed,SL.EMP.VULN.ZS 2025=37.9; SL.UEM.TOTL.ZS 2025=8.36
+PAN,language_barrier,0.72,derived,1 − english
+PAN,pr_ease,0.65,editorial,Editorial judgement from the original dataset (no public index exists).
+PAN,rent_usd_month,1000.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+PAN,safety,0.35,computed,VC.IHR.PSRC.P5 2023=11.7; GPI 2026=1.98
+PAN,salary_usd_month,1000.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+PER,average_salary,0.31,computed,"NY.GNP.PCAP.CD 2025=8,430"
+PER,climate,0.87,computed,CITY_TEMP Lima=19.2°C
+PER,cost_of_living,0.35,computed,PRICE_LEVEL(consumption) 2025=0.54
+PER,english,0.42,computed,EF_EPI 2025=519
+PER,healthcare,0.32,computed,UHC_INDEX_REPORTED 2023=68; SP.DYN.LE00.IN 2024=77.9
+PER,internet,0.44,computed,IT.NET.USER.ZS 2024=82
+PER,job_market,0.33,computed,SL.EMP.VULN.ZS 2025=47.5; SL.UEM.TOTL.ZS 2025=5.12
+PER,language_barrier,0.58,derived,1 − english
+PER,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+PER,rent_usd_month,450.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+PER,safety,0.34,computed,VC.IHR.PSRC.P5 2021=8.6; GPI 2026=2.12
+PER,salary_usd_month,500.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+PHL,average_salary,0.15,computed,"NY.GNP.PCAP.CD 2025=4,850"
+PHL,climate,0.63,computed,CITY_TEMP Manila=28.4°C
+PHL,cost_of_living,0.11,computed,PRICE_LEVEL(consumption) 2025=0.357
+PHL,english,0.67,computed,EF_EPI 2025=569
+PHL,healthcare,0.15,computed,UHC_INDEX_REPORTED 2023=69; SP.DYN.LE00.IN 2024=69.9
+PHL,internet,0.0,computed,IT.NET.USER.ZS 2024=67.3
+PHL,job_market,0.63,computed,SL.EMP.VULN.ZS 2025=33.6; SL.UEM.TOTL.ZS 2025=2.23
+PHL,language_barrier,0.33,derived,1 − english
+PHL,pr_ease,0.45,editorial,Editorial judgement from the original dataset (no public index exists).
+PHL,rent_usd_month,350.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+PHL,safety,0.44,computed,VC.IHR.PSRC.P5 2023=4.35; GPI 2026=2.09
+PHL,salary_usd_month,350.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+POL,average_salary,0.64,computed,"NY.GNP.PCAP.CD 2025=25,520"
+POL,climate,0.11,computed,CITY_TEMP Warsaw=8.5°C
+POL,cost_of_living,0.36,computed,PRICE_LEVEL(consumption) 2025=0.549
+POL,english,0.82,computed,EF_EPI 2025=600
+POL,healthcare,0.69,computed,UHC_INDEX_REPORTED 2023=82; SP.DYN.LE00.IN 2024=78.4
+POL,internet,0.65,computed,IT.NET.USER.ZS 2024=88.6
+POL,job_market,0.79,computed,SL.EMP.VULN.ZS 2025=15; SL.UEM.TOTL.ZS 2025=2.98
+POL,language_barrier,0.18,derived,1 − english
+POL,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+POL,rent_usd_month,700.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+POL,safety,0.82,computed,VC.IHR.PSRC.P5 2023=0.802; GPI 2026=1.61
+POL,salary_usd_month,1400.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+PRT,average_salary,0.68,computed,"NY.GNP.PCAP.CD 2025=29,930"
+PRT,climate,0.75,computed,CITY_TEMP Lisbon=17.5°C
+PRT,cost_of_living,0.49,computed,PRICE_LEVEL(consumption) 2025=0.649
+PRT,english,0.88,computed,EF_EPI 2025=612
+PRT,healthcare,0.81,computed,UHC_INDEX_REPORTED 2023=83; SP.DYN.LE00.IN 2024=82.4
+PRT,internet,0.65,computed,IT.NET.USER.ZS 2024=88.5
+PRT,job_market,0.69,computed,SL.EMP.VULN.ZS 2025=9.66; SL.UEM.TOTL.ZS 2025=6.16
+PRT,language_barrier,0.12,derived,1 − english
+PRT,pr_ease,0.8,editorial,Editorial judgement from the original dataset (no public index exists).
+PRT,rent_usd_month,950.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+PRT,safety,0.9,computed,VC.IHR.PSRC.P5 2022=0.72; GPI 2026=1.43
+PRT,salary_usd_month,1300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+QAT,average_salary,0.95,computed,"NY.GNP.PCAP.CD 2025=74,330"
+QAT,climate,0.65,computed,NATIONAL_TEMP national average=28.0°C
+QAT,cost_of_living,0.63,computed,PRICE_LEVEL(consumption) 2024=0.757
+QAT,english,0.17,computed,EF_EPI 2025=469
+QAT,healthcare,0.84,computed,UHC_INDEX_REPORTED 2023=84; SP.DYN.LE00.IN 2024=82.5
+QAT,internet,0.95,computed,IT.NET.USER.ZS 2024=98.1
+QAT,job_market,1.0,computed,SL.EMP.VULN.ZS 2025=0.456; SL.UEM.TOTL.ZS 2025=0.13
+QAT,language_barrier,0.83,derived,1 − english
+QAT,pr_ease,0.25,editorial,Editorial judgement from the original dataset (no public index exists).
+QAT,rent_usd_month,1700.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+QAT,safety,0.89,computed,VC.IHR.PSRC.P5 2022=0.0691; GPI 2026=1.68
+QAT,salary_usd_month,4100.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+ROU,average_salary,0.57,computed,"NY.GNP.PCAP.CD 2025=20,190"
+ROU,climate,0.27,computed,CITY_TEMP Bucharest=10.8°C
+ROU,cost_of_living,0.28,computed,PRICE_LEVEL(consumption) 2025=0.488
+ROU,english,0.85,computed,EF_EPI 2025=605
+ROU,healthcare,0.51,computed,UHC_INDEX_REPORTED 2023=77; SP.DYN.LE00.IN 2024=76.5
+ROU,internet,0.74,computed,IT.NET.USER.ZS 2024=91.3
+ROU,job_market,0.66,computed,SL.EMP.VULN.ZS 2025=13; SL.UEM.TOTL.ZS 2025=5.99
+ROU,language_barrier,0.15,derived,1 − english
+ROU,pr_ease,0.5,editorial,Editorial judgement from the original dataset (no public index exists).
+ROU,rent_usd_month,450.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+ROU,safety,0.73,computed,VC.IHR.PSRC.P5 2023=1.11; GPI 2026=1.79
+ROU,salary_usd_month,900.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+RUS,average_salary,0.5,computed,"NY.GNP.PCAP.CD 2025=15,960"
+RUS,climate,0.0,computed,CITY_TEMP Moscow=5.8°C
+RUS,cost_of_living,0.12,computed,PRICE_LEVEL(consumption) 2025=0.368
+RUS,english,0.43,computed,EF_EPI 2025=521
+RUS,healthcare,0.54,computed,UHC_INDEX_REPORTED 2023=81; SP.DYN.LE00.IN 2024=73.4
+RUS,internet,0.84,computed,IT.NET.USER.ZS 2024=94.4
+RUS,job_market,0.95,computed,SL.EMP.VULN.ZS 2025=4.93; SL.UEM.TOTL.ZS 2025=2.13
+RUS,language_barrier,0.57,derived,1 − english
+RUS,pr_ease,0.4,editorial,Editorial judgement from the original dataset (no public index exists).
+RUS,rent_usd_month,550.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+RUS,safety,0.15,computed,VC.IHR.PSRC.P5 2021=6.77; GPI 2026=3.37
+RUS,salary_usd_month,800.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+SAU,average_salary,0.74,computed,"NY.GNP.PCAP.CD 2025=36,070"
+SAU,climate,0.74,computed,CITY_TEMP Riyadh=26.2°C
+SAU,cost_of_living,0.29,computed,PRICE_LEVEL(consumption) 2025=0.499
+SAU,english,0.05,computed,EF_EPI 2025=404
+SAU,healthcare,0.73,computed,UHC_INDEX_REPORTED 2023=83; SP.DYN.LE00.IN 2024=79
+SAU,internet,1.0,computed,IT.NET.USER.ZS 2024=100
+SAU,job_market,0.93,computed,SL.EMP.VULN.ZS 2025=1.66; SL.UEM.TOTL.ZS 2025=3.04
+SAU,language_barrier,0.95,derived,1 − english
+SAU,pr_ease,0.25,editorial,Editorial judgement from the original dataset (no public index exists).
+SAU,rent_usd_month,700.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+SAU,safety,0.64,computed,VC.IHR.PSRC.P5 2019=0.935; GPI 2026=2.07
+SAU,salary_usd_month,2400.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+SGP,average_salary,0.98,computed,"NY.GNP.PCAP.CD 2025=81,760"
+SGP,climate,0.66,computed,CITY_TEMP Singapore=27.8°C
+SGP,cost_of_living,0.66,computed,PRICE_LEVEL(consumption) 2025=0.783
+SGP,english,1.0,rule,native English-speaking country
+SGP,healthcare,0.96,computed,UHC_INDEX_REPORTED 2023=88; SP.DYN.LE00.IN 2024=83.3
+SGP,internet,0.84,computed,IT.NET.USER.ZS 2024=94.4
+SGP,job_market,0.86,computed,SL.EMP.VULN.ZS 2025=9.3; SL.UEM.TOTL.ZS 2025=2.82
+SGP,language_barrier,0.0,derived,1 − english
+SGP,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+SGP,rent_usd_month,2800.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+SGP,safety,0.98,computed,VC.IHR.PSRC.P5 2023=0.0691; GPI 2026=1.44
+SGP,salary_usd_month,4700.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+SVN,average_salary,0.73,computed,"NY.GNP.PCAP.CD 2025=35,520"
+SVN,climate,0.28,computed,CITY_TEMP Ljubljana=10.9°C
+SVN,cost_of_living,0.52,computed,PRICE_LEVEL(consumption) 2025=0.67
+SVN,english,0.65,editorial-fallback,not ranked by EF EPI
+SVN,healthcare,0.83,computed,UHC_INDEX_REPORTED 2023=84; SP.DYN.LE00.IN 2024=82.3
+SVN,internet,0.72,computed,IT.NET.USER.ZS 2024=90.8
+SVN,job_market,0.83,computed,SL.EMP.VULN.ZS 2025=10.6; SL.UEM.TOTL.ZS 2025=3.17
+SVN,language_barrier,0.35,derived,1 − english
+SVN,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+SVN,rent_usd_month,650.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+SVN,safety,0.95,computed,VC.IHR.PSRC.P5 2023=0.566; GPI 2026=1.37
+SVN,salary_usd_month,1600.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+SWE,average_salary,0.9,computed,"NY.GNP.PCAP.CD 2025=63,010"
+SWE,climate,0.0,computed,CITY_TEMP Stockholm=6.6°C
+SWE,cost_of_living,0.82,computed,PRICE_LEVEL(consumption) 2025=0.905
+SWE,english,0.87,computed,EF_EPI 2025=609
+SWE,healthcare,0.9,computed,UHC_INDEX_REPORTED 2023=85; SP.DYN.LE00.IN 2024=84.1
+SWE,internet,0.88,computed,IT.NET.USER.ZS 2025=95.8
+SWE,job_market,0.58,computed,SL.EMP.VULN.ZS 2025=6.87; SL.UEM.TOTL.ZS 2025=8.69
+SWE,language_barrier,0.13,derived,1 − english
+SWE,pr_ease,0.78,editorial,Editorial judgement from the original dataset (no public index exists).
+SWE,rent_usd_month,1000.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+SWE,safety,0.74,computed,VC.IHR.PSRC.P5 2023=1.15; GPI 2026=1.73
+SWE,salary_usd_month,2700.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+THA,average_salary,0.29,computed,"NY.GNP.PCAP.CD 2025=7,690"
+THA,climate,0.62,computed,CITY_TEMP Bangkok=28.6°C
+THA,cost_of_living,0.06,computed,PRICE_LEVEL(consumption) 2025=0.323
+THA,english,0.05,computed,EF_EPI 2025=402
+THA,healthcare,0.64,computed,UHC_INDEX_REPORTED 2023=82; SP.DYN.LE00.IN 2024=76.6
+THA,internet,0.72,computed,IT.NET.USER.ZS 2024=90.9
+THA,job_market,0.51,computed,SL.EMP.VULN.ZS 2025=48; SL.UEM.TOTL.ZS 2025=0.781
+THA,language_barrier,0.95,derived,1 − english
+THA,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+THA,rent_usd_month,450.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+THA,safety,0.43,computed,VC.IHR.PSRC.P5 2011=4.79; GPI 2026=2.09
+THA,salary_usd_month,600.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+TUR,average_salary,0.51,computed,"NY.GNP.PCAP.CD 2025=16,300"
+TUR,climate,0.49,computed,CITY_TEMP Istanbul=13.9°C
+TUR,cost_of_living,0.23,computed,PRICE_LEVEL(consumption) 2025=0.45
+TUR,english,0.27,computed,EF_EPI 2025=488
+TUR,healthcare,0.54,computed,UHC_INDEX_REPORTED 2023=77; SP.DYN.LE00.IN 2024=77.4
+TUR,internet,0.69,computed,IT.NET.USER.ZS 2025=89.8
+TUR,job_market,0.41,computed,SL.EMP.VULN.ZS 2025=23.9; SL.UEM.TOTL.ZS 2025=8.52
+TUR,language_barrier,0.73,derived,1 − english
+TUR,pr_ease,0.45,editorial,Editorial judgement from the original dataset (no public index exists).
+TUR,rent_usd_month,400.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+TUR,safety,0.3,computed,VC.IHR.PSRC.P5 2023=3.23; GPI 2026=2.6
+TUR,salary_usd_month,550.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+TWN,average_salary,0.56,ml-imputed,"NY.GNP.PCAP.CD ML=19,531 [ML: NY.GNP.PCAP.CD CV R²=0.96]"
+TWN,climate,0.89,computed,CITY_TEMP Taipei=23.3°C
+TWN,cost_of_living,0.34,ml-imputed,PRICE_LEVEL ML=0.536 [ML: PRICE_LEVEL CV R²=0.81]
+TWN,english,0.55,editorial-fallback,not ranked by EF EPI
+TWN,healthcare,0.64,ml-imputed,"UHC_INDEX_REPORTED ML=79.3; SP.DYN.LE00.IN ML=79.3 [ML: UHC_INDEX_REPORTED CV R²=0.81, SP.DYN.LE00.IN CV R²=0.70]"
+TWN,internet,0.66,ml-imputed,IT.NET.USER.ZS ML=88.7 [ML: IT.NET.USER.ZS CV R²=0.61]
+TWN,job_market,0.67,ml-imputed,SL.EMP.VULN.ZS ML=20.6 (missing: SL.UEM.TOTL.ZS) [ML: SL.EMP.VULN.ZS CV R²=0.61]
+TWN,language_barrier,0.45,derived,1 − english
+TWN,pr_ease,0.45,editorial,Editorial judgement from the original dataset (no public index exists).
+TWN,rent_usd_month,550.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+TWN,safety,0.78,ml-imputed,VC.IHR.PSRC.P5 ML=0.78; GPI 2026=1.75 [ML: VC.IHR.PSRC.P5 CV R²=0.60]
+TWN,salary_usd_month,1500.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+URY,average_salary,0.62,computed,"NY.GNP.PCAP.CD 2025=24,020"
+URY,climate,0.69,computed,CITY_TEMP Montevideo=16.7°C
+URY,cost_of_living,0.59,computed,PRICE_LEVEL(consumption) 2025=0.725
+URY,english,0.54,computed,EF_EPI 2025=542
+URY,healthcare,0.76,computed,UHC_INDEX_REPORTED 2023=85; SP.DYN.LE00.IN 2024=78.3
+URY,internet,0.76,computed,IT.NET.USER.ZS 2024=92
+URY,job_market,0.46,computed,SL.EMP.VULN.ZS 2025=24.4; SL.UEM.TOTL.ZS 2025=7.52
+URY,language_barrier,0.46,derived,1 − english
+URY,pr_ease,0.75,editorial,Editorial judgement from the original dataset (no public index exists).
+URY,rent_usd_month,600.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+URY,safety,0.43,computed,VC.IHR.PSRC.P5 2023=11.2; GPI 2026=1.75
+URY,salary_usd_month,900.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+USA,average_salary,1.0,computed,"NY.GNP.PCAP.CD 2025=88,810"
+USA,climate,0.42,computed,CITY_TEMP New York City=12.9°C
+USA,cost_of_living,0.95,computed,PRICE_LEVEL(consumption) 2025=1
+USA,english,1.0,rule,native English-speaking country
+USA,healthcare,0.85,computed,UHC_INDEX_REPORTED 2023=88; SP.DYN.LE00.IN 2024=78.9
+USA,internet,0.85,computed,IT.NET.USER.ZS 2024=94.7
+USA,job_market,0.85,computed,SL.EMP.VULN.ZS 2025=3.81; SL.UEM.TOTL.ZS 2025=4.2
+USA,language_barrier,0.0,derived,1 − english
+USA,pr_ease,0.35,editorial,Editorial judgement from the original dataset (no public index exists).
+USA,rent_usd_month,1900.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+USA,safety,0.24,computed,VC.IHR.PSRC.P5 2023=5.76; GPI 2026=2.54
+USA,salary_usd_month,4300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+VNM,average_salary,0.16,computed,"NY.GNP.PCAP.CD 2025=4,970"
+VNM,climate,0.68,computed,CITY_TEMP Ho Chi Minh City=27.4°C
+VNM,cost_of_living,0.03,computed,PRICE_LEVEL(consumption) 2024=0.298
+VNM,english,0.33,computed,EF_EPI 2025=500
+VNM,healthcare,0.32,computed,UHC_INDEX_REPORTED 2023=71; SP.DYN.LE00.IN 2024=74.7
+VNM,internet,0.51,computed,IT.NET.USER.ZS 2024=84.2
+VNM,job_market,0.47,computed,SL.EMP.VULN.ZS 2025=51.4; SL.UEM.TOTL.ZS 2025=1.52
+VNM,language_barrier,0.67,derived,1 − english
+VNM,pr_ease,0.35,editorial,Editorial judgement from the original dataset (no public index exists).
+VNM,rent_usd_month,450.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+VNM,safety,0.71,computed,VC.IHR.PSRC.P5 2011=1.54; GPI 2026=1.74
+VNM,salary_usd_month,550.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).
+ZAF,average_salary,0.23,computed,"NY.GNP.PCAP.CD 2025=6,270"
+ZAF,climate,0.61,computed,CITY_TEMP Johannesburg=15.5°C
+ZAF,cost_of_living,0.2,computed,PRICE_LEVEL(consumption) 2025=0.433
+ZAF,english,0.83,computed,EF_EPI 2025=602
+ZAF,healthcare,0.22,computed,UHC_INDEX_REPORTED 2023=74; SP.DYN.LE00.IN 2024=66.3
+ZAF,internet,0.33,computed,IT.NET.USER.ZS 2024=78.4
+ZAF,job_market,0.5,computed,SL.EMP.VULN.ZS 2025=11.7; SL.UEM.TOTL.ZS 2025=32.4
+ZAF,language_barrier,0.17,derived,1 − english
+ZAF,pr_ease,0.55,editorial,Editorial judgement from the original dataset (no public index exists).
+ZAF,rent_usd_month,500.0,editorial,Editorial estimate of 1-bed city-centre rent (no open source with global coverage).
+ZAF,safety,0.15,computed,VC.IHR.PSRC.P5 2022=43.7; GPI 2026=2.31
+ZAF,salary_usd_month,1300.0,editorial,Editorial estimate of average monthly net salary (no open source with global coverage).

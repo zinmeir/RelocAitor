@@ -1,0 +1,373 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Visa routes by country (data/visas.json)",
+  "type": "object",
+  "propertyNames": {
+    "pattern": "^[A-Z]{3}$"
+  },
+  "additionalProperties": {
+    "$ref": "#/$defs/country"
+  },
+  "$defs": {
+    "visa": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "skilled",
+            "nomad",
+            "investor",
+            "study",
+            "startup",
+            "family",
+            "passive"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "difficulty": {
+          "enum": [
+            "Easy",
+            "Moderate",
+            "Hard"
+          ]
+        },
+        "duration": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pr_route": {
+          "enum": [
+            "Yes",
+            "Eventually",
+            "No"
+          ]
+        },
+        "min_income": {
+          "type": "number",
+          "minimum": 0
+        },
+        "min_investment": {
+          "type": "number",
+          "minimum": 0
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 5
+        },
+        "last_verified": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            }
+          ]
+        },
+        "requires_sponsor": {
+          "type": "boolean"
+        },
+        "note": {
+          "type": "string"
+        },
+        "restricted_to": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]{3}$"
+          },
+          "minItems": 1
+        },
+        "fee": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "currency"
+          ],
+          "additionalProperties": false
+        },
+        "processing": {
+          "type": "string",
+          "minLength": 3
+        },
+        "processing_weeks": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "maximum": 260
+        },
+        "years_to_pr": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "pr_note": {
+          "type": "string"
+        },
+        "family": {
+          "type": "object",
+          "properties": {
+            "partner": {
+              "type": "boolean"
+            },
+            "children": {
+              "type": "boolean"
+            }
+          },
+          "required": [],
+          "additionalProperties": false
+        },
+        "age_min": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "age_max": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "minItems": 1
+        },
+        "checked": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "education_min": {
+          "enum": [
+            "secondary",
+            "diploma",
+            "bachelor",
+            "master",
+            "doctorate"
+          ]
+        },
+        "experience_years": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "language": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "lang"
+          ],
+          "properties": {
+            "lang": {
+              "enum": [
+                "english",
+                "german",
+                "french"
+              ]
+            },
+            "cefr": {
+              "enum": [
+                "A1",
+                "A2",
+                "B1",
+                "B2",
+                "C1",
+                "C2"
+              ]
+            },
+            "test": {
+              "type": "string",
+              "minLength": 3
+            }
+          },
+          "oneOf": [
+            {
+              "required": [
+                "cefr"
+              ]
+            },
+            {
+              "required": [
+                "test"
+              ]
+            }
+          ]
+        },
+        "requirements_note": {
+          "type": "string",
+          "minLength": 5
+        }
+      },
+      "required": [
+        "type",
+        "name",
+        "difficulty",
+        "duration",
+        "pr_route",
+        "min_income",
+        "min_investment",
+        "summary",
+        "last_verified"
+      ],
+      "additionalProperties": false,
+      "dependentRequired": {
+        "fee": [
+          "sources",
+          "checked"
+        ],
+        "processing": [
+          "sources",
+          "checked"
+        ],
+        "years_to_pr": [
+          "sources",
+          "checked"
+        ],
+        "family": [
+          "sources",
+          "checked"
+        ],
+        "age_max": [
+          "sources",
+          "checked"
+        ],
+        "age_min": [
+          "sources",
+          "checked"
+        ],
+        "fields": [
+          "sources",
+          "checked"
+        ],
+        "processing_weeks": [
+          "processing"
+        ],
+        "sources": [
+          "checked"
+        ]
+      }
+    },
+    "country": {
+      "type": "object",
+      "properties": {
+        "official_url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "visas": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/visa"
+          }
+        },
+        "citizenship": {
+          "type": "object",
+          "properties": {
+            "years": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 40
+            },
+            "after_pr": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 40
+            },
+            "note": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "source": {
+              "type": "string",
+              "pattern": "^https://"
+            },
+            "source_kind": {
+              "enum": [
+                "official",
+                "secondary"
+              ]
+            },
+            "checked": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            }
+          },
+          "required": [
+            "years",
+            "after_pr",
+            "source",
+            "source_kind",
+            "checked"
+          ],
+          "additionalProperties": false
+        },
+        "in_demand": {
+          "type": "object",
+          "properties": {
+            "fields": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z]+$"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "list": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string",
+              "pattern": "^https://"
+            },
+            "checked": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            }
+          },
+          "required": [
+            "fields",
+            "list",
+            "source",
+            "checked"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "official_url",
+        "visas"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

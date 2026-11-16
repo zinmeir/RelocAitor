@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Display currencies (data/currencies.json, built by python -m pipeline currencies)",
+  "type": "object",
+  "required": ["countries", "rates", "annual_source"],
+  "properties": {
+    "about": {"type": "string"},
+    "daily_date": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "daily_source": {"type": ["string", "null"], "pattern": "^https://"},
+    "annual_source": {"type": "string", "pattern": "^https://"},
+    "countries": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[A-Z]{3}$"},
+      "additionalProperties": {"type": "string", "pattern": "^[A-Z]{3}$"}
+    },
+    "rates": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[A-Z]{3}$"},
+      "required": ["USD"],
+      "additionalProperties": {
+        "type": "object",
+        "required": ["usd_per_unit", "basis"],
+        "additionalProperties": false,
+        "properties": {
+          "usd_per_unit": {"type": "number", "exclusiveMinimum": 0},
+          "basis": {"enum": ["dollar", "daily", "annual"]},
+          "year": {"type": "integer", "minimum": 2000}
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>try { if (localStorage.getItem("relocaitor.theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}</script>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Global Relocation Intelligence</title>
+  <title>RelocAitor · Global Relocation Intelligence</title>
+  <meta name="description" content="Find the best country to relocate to, personalised to your priorities, passport and budget, with curated visa pathways." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -11,184 +13,414 @@
 </head>
 <body>
 
-  <div class="bg-stars"></div>
-  <div class="bg-gradient"></div>
-  <div class="bg-grid"></div>
-
-  <header class="topbar">
-    <div class="brand">
-      <div class="brand-logo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
+  <header class="topbar glass" data-refract>
+    <a class="brand" href="./" aria-label="RelocAitor home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M3 16h26M16 3c4 4 5.5 8.5 5.5 13S20 25 16 29M16 3c-4 4-5.5 8.5-5.5 13S12 25 16 29" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+        <circle cx="21.5" cy="11" r="3" class="brand-pin"/>
+      </svg>
+      <span class="brand-title">RelocAitor</span>
+    </a>
+    <nav class="section-nav" id="section-nav" aria-label="Sections">
+      <span class="seg-thumb" aria-hidden="true"></span>
+      <a href="#search" data-section="search">Search</a>
+      <a href="#views" data-section="results" data-view="matches">Matches</a>
+      <a href="#views" data-section="map" data-view="map">Map</a>
+      <a href="#views" data-section="explore" data-view="explore">Explore</a>
+    </nav>
+    <nav class="topbar-actions" aria-label="Page actions">
+      <a class="top-link" href="#data-sources" id="methods-link">How it works</a>
+      <a class="top-link server-only" href="workspace" id="workspace-link">My relocation</a>
+      <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 1 0 8.5 8.5A6.5 6.5 0 0 1 12 3.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="saved-menu">
+        <button class="btn btn-quiet saved-btn" id="saved-btn" type="button" aria-expanded="false" aria-controls="saved-pop">
+          {{ icon('bookmark') }}<span class="saved-btn-label">Saved</span><span class="saved-count" id="saved-count" hidden></span>
+        </button>
+        <div class="saved-pop glass glass-strong" id="saved-pop" role="dialog" aria-label="Saved searches" hidden>
+          <div class="saved-pop-head">
+            <h2>Saved searches</h2>
+            <p>Kept on this device. Open one to see what changed since you saved it.</p>
+          </div>
+          <button type="button" class="quiz-btn save-search-btn" id="save-search">{{ icon('bookmark') }} Save this search</button>
+          <ul class="saved-list" id="saved-list"></ul>
+        </div>
       </div>
-      <div>
-        <h1 class="brand-title">Relocation<span>Intelligence</span></h1>
-        <p class="brand-sub">AI-powered country & visa matching · 65 countries · 9 factors</p>
-      </div>
-    </div>
-    <div class="topbar-right">
-      <span class="pill"><span class="pulse-dot"></span>Live scoring engine</span>
-    </div>
+      <button class="btn btn-quiet" id="share-btn" type="button">Copy share link</button>
+    </nav>
   </header>
 
   <main class="layout">
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
+    <!-- Controls -->
+    <aside class="sidebar glass" id="sidebar" aria-label="Your preferences">
+      <div class="sheet-head">
+        <div class="sheet-grabber" id="prefs-grabber" aria-hidden="true"></div>
+        <h2>Your preferences</h2>
+        <button type="button" class="btn sheet-done" id="prefs-done">Done</button>
+      </div>
 
-      <!-- Core priorities -->
-      <section class="panel">
-        <div class="panel-header">
-          <h2>Core Priorities</h2>
-          <p>The four classic relocation factors.</p>
+      <details class="side-group" id="group-priorities" open>
+        <summary><span class="sg-text"><span class="sg-title">Priorities</span><span class="sg-sub" id="priorities-summary">Every factor counts the same</span></span>{{ icon('chevron', 'sg-chev') }}</summary>
+        <div class="sg-body">
+          <h3 class="side-title">Start from a profile</h3>
+          <div class="preset-grid" id="preset-grid">
+          {% for key, p in presets.items() %}
+            <button type="button" class="preset-chip" data-preset="{{ key }}" title="{{ p.description }}">
+              <span class="preset-icon">{{ icon(key) }}</span>{{ p.label }}
+            </button>
+          {% endfor %}
         </div>
-
-        <div class="slider-group">
-          {% set core = [
-            ('salary', '💰', 'Salary importance', 0.7),
-            ('cost',   '🛒', 'Cost of living sensitivity', 0.5),
-            ('pr',     '🛂', 'PR / residency importance', 0.6),
-            ('job',    '💼', 'Job market importance', 0.7)
+        <button type="button" class="quiz-btn" id="quiz-start">Not sure what matters? Answer 8 quick questions</button>
+          <h3 class="side-title">What matters to you</h3>
+          <p class="side-note">0 means ignore it, 1 means it matters most.</p>
+          <div class="slider-group">
+          {% set all_factors = [
+            ('salary', 'Salary'), ('cost', 'Low cost of living'), ('pr', 'Path to residency'),
+            ('job', 'Job market'), ('climate', 'Warm, pleasant climate'), ('safety', 'Safety'),
+            ('healthcare', 'Healthcare'), ('english', 'English spoken'), ('internet', 'Fast internet')
           ] %}
-          {% for key, icon, label, dflt in core %}
+          {% for key, label in all_factors %}
+            {% if key == 'climate' %}<div class="slider-divider" aria-hidden="true"></div>{% endif %}
             <div class="slider-row">
-              <label>
-                <span class="slider-label"><span class="icon">{{ icon }}</span> {{ label }}</span>
-                <span class="slider-value" data-value-for="{{ key }}">{{ "%.2f"|format(dflt) }}</span>
+              <label for="{{ key }}">
+                <span class="slider-label"><span class="icon f-{{ key }}">{{ icon(key) }}</span>{{ label }}</span>
+                <span class="slider-value" data-value-for="{{ key }}">{{ "%.2f"|format(default_weights[key]) }}</span>
               </label>
-              <input type="range" id="{{ key }}" min="0" max="1" step="0.05" value="{{ dflt }}" class="slider" />
+              <input type="range" id="{{ key }}" min="0" max="1" step="0.05" value="{{ default_weights[key] }}" class="slider" />
             </div>
           {% endfor %}
         </div>
-      </section>
-
-      <!-- Lifestyle -->
-      <section class="panel">
-        <div class="panel-header">
-          <h2>Lifestyle Factors</h2>
-          <p>Refine the match with quality-of-life metrics.</p>
         </div>
+      </details>
 
-        <div class="slider-group">
-          {% set extra = [
-            ('climate',    '☀️', 'Climate & weather', 0.3),
-            ('safety',     '🛡️', 'Safety & security', 0.5),
-            ('healthcare', '🏥', 'Healthcare quality', 0.4),
-            ('english',    '🗣️', 'English-friendly', 0.5),
-            ('internet',   '🌐', 'Internet infrastructure', 0.3)
-          ] %}
-          {% for key, icon, label, dflt in extra %}
-            <div class="slider-row">
-              <label>
-                <span class="slider-label"><span class="icon">{{ icon }}</span> {{ label }}</span>
-                <span class="slider-value" data-value-for="{{ key }}">{{ "%.2f"|format(dflt) }}</span>
-              </label>
-              <input type="range" id="{{ key }}" min="0" max="1" step="0.05" value="{{ dflt }}" class="slider" />
+      <details class="side-group" id="group-about">
+        <summary><span class="sg-text"><span class="sg-title">About you</span><span class="sg-sub" id="profile-summary">Add your passport to check visas</span></span>{{ icon('chevron', 'sg-chev') }}</summary>
+        <div class="sg-body">
+          <p class="side-note">Used to check which visas you can actually get.</p>
+          <div class="field">
+          <label for="nationality">Your passport</label>
+          <select id="nationality" class="select">
+            <option value="">Not specified</option>
+            {% for n in nationalities %}<option value="{{ n.code }}">{{ n.name }}</option>{% endfor %}
+          </select>
+        </div>
+        <div class="input-pair">
+          <div class="field">
+            <label for="monthly_income">Monthly income, USD</label>
+            <input id="monthly_income" class="select" type="number" min="0" step="100" inputmode="numeric" placeholder="3000" aria-describedby="monthly_income-local" />
+            <span class="field-note local-amount" id="monthly_income-local"></span>
+          </div>
+          <div class="field">
+            <label for="investment_budget">Savings to invest, USD</label>
+            <input id="investment_budget" class="select" type="number" min="0" step="1000" inputmode="numeric" placeholder="50000" aria-describedby="investment_budget-local" />
+            <span class="field-note local-amount" id="investment_budget-local"></span>
+          </div>
+        </div>
+        <div class="input-pair">
+          <div class="field">
+            <label for="occupation">Your field</label>
+            <select id="occupation" class="select">
+              <option value="">Not specified</option>
+              {% for o in occupations %}<option value="{{ o.key }}">{{ o.label }}</option>{% endfor %}
+            </select>
+          </div>
+          <div class="field">
+            <label for="age">Age</label>
+            <input id="age" class="select" type="number" min="16" max="100" step="1" inputmode="numeric" placeholder="32" />
+          </div>
+        </div>
+        <div class="family-row">
+          <label class="toggle-row">
+            <input type="checkbox" id="partner" />
+            <span class="toggle"></span>
+            <span>Bringing a partner</span>
+          </label>
+          <div class="field kids-field">
+            <label for="children">Children</label>
+            <input id="children" class="select" type="number" min="0" max="12" step="1" inputmode="numeric" placeholder="0" />
+          </div>
+        </div>
+        <label class="toggle-row">
+          <input type="checkbox" id="exclude_home" checked />
+          <span class="toggle"></span>
+          <span>Hide my own country</span>
+        </label>
+          <div class="input-pair">
+            <div class="field">
+              <label for="education">Education</label>
+              <select id="education" class="select">
+                <option value="">Not specified</option>
+                {% for k in scales.education %}<option value="{{ k }}">{{ labels.education[k]|capitalize }}</option>{% endfor %}
+              </select>
             </div>
-          {% endfor %}
+            <div class="field">
+              <label for="experience_years">Work experience, years</label>
+              <input id="experience_years" class="select" type="number" min="0" max="60" step="0.5" inputmode="decimal" placeholder="3" />
+            </div>
+          </div>
+          <div class="input-pair">
+            {% for lang, label in [('english_level', 'English level'), ('german_level', 'German level')] %}
+            <div class="field">
+              <label for="{{ lang }}">{{ label }}</label>
+              <select id="{{ lang }}" class="select">
+                <option value="">Not specified</option>
+                {% for lv in scales.cefr %}<option value="{{ lv }}">{{ lv }}</option>{% endfor %}
+              </select>
+            </div>
+            {% endfor %}
+          </div>
+          <p class="field-note">Levels use the CEFR scale (A1 beginner to C2 mastery), as on IELTS, TOEFL and Goethe certificates.</p>
+          <button type="button" class="quiz-btn server-only" id="save-profile">Save to my account</button>
+          <div class="field currency-field">
+            <label for="currency">Show money in</label>
+            <select id="currency" class="select"><option value="">Your passport's currency</option></select>
+            <p class="field-note" id="currency-note"></p>
+          </div>
         </div>
-      </section>
+      </details>
 
-      <!-- Filters -->
-      <section class="panel">
-        <div class="panel-header">
-          <h2>Filters</h2>
-        </div>
-
-        <div class="select-row">
-          <label for="region">Preferred region</label>
+      <details class="side-group" id="group-filters">
+        <summary><span class="sg-text"><span class="sg-title">Filters</span><span class="sg-sub" id="filters-summary">None on: every country is shown</span></span>{{ icon('chevron', 'sg-chev') }}</summary>
+        <div class="sg-body">
+          <p class="side-note">Countries that fail these are hidden.</p>
+          <div class="field">
+          <label for="region">Region</label>
           <select id="region" class="select">
             <option value="All regions">All regions</option>
             {% for r in regions %}<option value="{{ r }}">{{ r }}</option>{% endfor %}
           </select>
         </div>
-
-        <div class="select-row">
-          <label for="visa_type">Preferred visa type</label>
+        <div class="field">
+          <label for="visa_type">Visa type</label>
           <select id="visa_type" class="select">
             <option value="any">Any visa type</option>
-            <option value="skilled">Skilled worker</option>
-            <option value="nomad">Digital nomad</option>
-            <option value="investor">Investor / golden visa</option>
-            <option value="study">Study route</option>
-            <option value="startup">Startup founder</option>
+            {% for v in visa_types %}<option value="{{ v.key }}">{{ v.label }}</option>{% endfor %}
           </select>
         </div>
-
-        <div class="slider-row">
-          <label>
-            <span class="slider-label">Top countries to show</span>
+        <div class="field">
+          <label for="max_difficulty">Hardest visa I'd consider</label>
+          <select id="max_difficulty" class="select" data-segmented aria-label="Hardest visa I'd consider">
+            <option value="">Any difficulty</option>
+            <option value="Easy">Easy only</option>
+            <option value="Moderate">Up to moderate</option>
+          </select>
+        </div>
+        <label class="toggle-row">
+          <input type="checkbox" id="require_pr" />
+          <span class="toggle"></span>
+          <span>Must lead to permanent residency</span>
+        </label>
+        <label class="toggle-row">
+          <input type="checkbox" id="only_qualifying" />
+          <span class="toggle"></span>
+          <span>Only countries with a visa I likely qualify for</span>
+        </label>
+        <div class="slider-row top-n-row">
+          <label for="top_n">
+            <span class="slider-label">Countries in the list</span>
             <span class="slider-value" data-value-for="top_n">5</span>
           </label>
           <input type="range" id="top_n" min="3" max="10" step="1" value="5" class="slider" />
         </div>
-      </section>
+        </div>
+      </details>
 
-      <!-- Reset -->
-      <button class="reset-btn" id="reset-btn">↻ Reset to defaults</button>
-
-      <!-- User profile -->
-      <section class="panel insight-panel" id="insight-panel">
-        <div class="panel-header"><h2>🧠 Your Profile</h2></div>
-        <p class="insight-text" id="user-insight">Loading your profile…</p>
-      </section>
+      <button class="btn btn-quiet reset-btn" id="reset-btn" type="button">Reset everything</button>
     </aside>
 
-    <!-- Content -->
+    <!-- Results -->
     <section class="content">
 
-      <!-- Map -->
-      <div class="map-container">
+      <section class="prompt-panel" id="search" aria-label="Describe your move">
+        <label class="prompt-label" for="prompt-input">Describe your move</label>
+        <p class="prompt-lede">{{ country_count }} countries, ranked for your passport, budget and priorities. Say it in your own words, then keep talking to refine it.</p>
+
+        <div class="chat glass" id="chat">
+          <div class="chat-head">
+            <span class="chat-title">Your search</span>
+            <span class="chat-status" id="chat-status" aria-live="polite"></span>
+            <button type="button" class="btn btn-quiet new-search" id="new-search">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              New search
+            </button>
+          </div>
+
+          <div class="thread" id="thread" role="log" aria-label="Conversation">
+            <div class="turn first-turn hidden" id="first-turn">
+              <div class="bubble from-you" id="first-ask"></div>
+              <div class="bubble from-app prompt-result hidden" id="prompt-result" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="followups hidden" id="followups" aria-label="Suggested follow-ups">
+            {% for f in ["Cheaper", "Safer", "Warmer", "Easier visas", "What about Europe?", "Show more", "Compare the top 3", "Undo"] %}
+              <button type="button" class="pill followup" data-followup="{{ f }}">{{ f }}</button>
+            {% endfor %}
+          </div>
+
+          <form class="prompt-form composer" id="prompt-form">
+            <div class="prompt-box" data-refract>
+              <button type="button" class="mic-btn" id="mic-btn" aria-label="Dictate" aria-pressed="false" hidden>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><rect x="7" y="2.5" width="6" height="10" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4.5 9.5a5.5 5.5 0 0 0 11 0M10 15v2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </button>
+              <textarea id="prompt-input" class="prompt-input" rows="1" maxlength="1000" enterkeyhint="send"
+                placeholder="Describe yourself and what you want from a new country"></textarea>
+              <kbd class="kbd-hint" aria-hidden="true" title="Press / to search">/</kbd>
+              <button class="prompt-btn" id="prompt-btn" type="submit" aria-label="Find countries">
+                <span class="btn-label">Find countries</span>
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V4M5 9l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </form>
+          <p class="composer-hint" id="composer-hint">
+            {{ 'Read by Claude, with the built-in reader as a fallback.' if llm_enabled else 'Understands plain English, including “not Spain”, “$3k a month” and “20 lakh”.' }}
+            <span class="hint-keys">Enter to send, Shift + Enter for a new line.</span>
+          </p>
+
+          <div class="starters" id="prompt-examples" aria-label="Example searches">
+            {% for ic, ex in [
+              ("nomad", "Cheap, sunny place for a digital nomad with fast internet"),
+              ("retiree", "Retire somewhere warm with great healthcare, €300k to invest"),
+              ("similar", "Somewhere like Portugal but cheaper, not Spain"),
+              ("student", "I'm Indian, want to study, budget is tight"),
+              ("savings", "Golden visa in Europe"),
+              ("compare", "Compare Canada vs Australia")
+            ] %}
+              <button type="button" class="starter prompt-example" data-prompt="{{ ex }}">
+                <span class="starter-icon">{{ icon(ic) }}</span><span>{{ ex }}</span>
+              </button>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="pref-panel glass hidden" id="pref-panel" aria-live="polite">
+        <div class="pref-head">
+          <h2>Which would you rather live in?</h2>
+          <span class="pref-progress" id="pref-progress"></span>
+          <button type="button" class="icon-btn pref-close" id="pref-close" aria-label="Close the questions">{{ icon('close') }}</button>
+        </div>
+        <p class="pref-sub">Pick the country you'd prefer. A pairwise preference model works out what you care about
+          from your choices, and picks each next pair to learn as much as possible.</p>
+        <div id="pref-body"></div>
+        <div class="pref-learned">
+          <h3>What it has learned so far</h3>
+          <div id="pref-weights"></div>
+        </div>
+      </section>
+
+      <div class="views" id="views">
+        <div class="view-tabs glass" role="tablist" aria-label="Ways to see your results" id="view-tabs">
+          <span class="seg-thumb" aria-hidden="true"></span>
+          <button type="button" role="tab" id="tab-matches" aria-controls="view-matches" aria-selected="true" data-view="matches">{{ icon('top') }}<span>Matches</span></button>
+          <button type="button" role="tab" id="tab-map" aria-controls="view-map" aria-selected="false" tabindex="-1" data-view="map">{{ icon('region') }}<span>Map</span></button>
+          <button type="button" role="tab" id="tab-compare" aria-controls="view-compare" aria-selected="false" tabindex="-1" data-view="compare">{{ icon('compare') }}<span>Compare</span><span class="tab-count" id="compare-count" hidden></span></button>
+          <button type="button" role="tab" id="tab-explore" aria-controls="view-explore" aria-selected="false" tabindex="-1" data-view="explore">{{ icon('explore') }}<span>Explore</span></button>
+        </div>
+
+        <div class="view" id="view-matches" role="tabpanel" aria-labelledby="tab-matches" tabindex="-1">
+      <section class="results glass" id="results" aria-labelledby="results-title">
+        <div class="results-head">
+          <div>
+            <h2 id="results-title">Your top matches</h2>
+            <p class="results-insight" id="user-insight">Loading…</p>
+          </div>
+          <p class="result-count" id="result-count"></p>
+        </div>
+        <div class="confidence-strip hidden" id="confidence-strip" aria-live="polite"></div>
+        <ol class="top-grid" id="top-grid" aria-label="Ranked countries" aria-busy="true">
+          {% for i in range(5) %}<li class="skeleton-row" aria-hidden="true"><span></span><span></span><span></span><span></span></li>{% endfor %}
+        </ol>
+        <p class="flip-text" id="flip-insight"></p>
+        <p class="results-help">Select a country for its full breakdown and visas. Tick Compare on up to three to see them side by side.
+          Values marked ≈ are estimates, not measurements.</p>
+      </section>
+
+      <section class="pathways-panel glass hidden" id="pathways-panel" aria-live="polite"></section>
+        </div>
+
+        <div class="view" id="view-map" role="tabpanel" aria-labelledby="tab-map" tabindex="-1" hidden>
+      <div class="map-container glass">
         <div class="map-header">
           <div>
-            <h2>Global Match Map</h2>
-            <p>Hover any country — it lifts off the map with full metrics.</p>
+            <h2>Global match map</h2>
+            <p class="map-help">Hover or tap a country to see its scores. Countries outside your filters are dimmed.</p>
           </div>
-          <div class="map-legend">
+          <div class="map-legend" aria-label="Colour shows match strength, from low to high">
             <span class="legend-label">Match</span>
+            <span>Low</span>
             <div class="legend-scale"></div>
-            <span class="legend-range">Low → High</span>
+            <span>High</span>
           </div>
         </div>
 
-        <div class="map-stage" id="map-stage">
-          <svg id="world-map" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="map-stage" id="map-stage" tabindex="0" role="group"
+             aria-label="World map coloured by match. Use the arrow keys to move through your ranked countries, Enter to open one, Escape to close the card."
+             aria-describedby="map-keys">
+          <svg id="world-map" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
           <div id="map-tooltip" class="tooltip hidden"></div>
+          <p class="sr-only" id="map-live" aria-live="polite"></p>
           <div id="map-loader" class="map-loader">
             <div class="spinner"></div>
             <span>Loading world data…</span>
           </div>
         </div>
+        <p class="map-keys" id="map-keys">{{ icon('keyboard') }} Focus the map, then use the arrow keys to step through your ranked countries. Enter opens one.</p>
       </div>
+        </div>
 
-      <!-- Top countries -->
-      <div class="section-header">
-        <h2>🏆 Your Top Matches</h2>
-        <p>Click any card for AI-generated insights and visa pathways.</p>
+        <div class="view" id="view-compare" role="tabpanel" aria-labelledby="tab-compare" tabindex="-1" hidden>
+      <div id="compare-section" class="compare-section hidden">
+        <div class="section-header">
+          <h2>Side by side</h2>
+          <p>The better value in each row is highlighted.</p>
+        </div>
+        <div class="compare-panel glass" id="compare-panel"></div>
       </div>
-      <div class="top-grid" id="top-grid"></div>
+      <div class="empty-state glass" id="compare-empty">
+        <h3>Nothing to compare yet</h3>
+        <p>Tick <b>Compare</b> on two or three countries in Matches, or start with your top three.</p>
+        <div class="empty-actions">
+          <button type="button" class="btn" id="compare-top3">Compare my top 3</button>
+          <button type="button" class="btn btn-quiet" data-goto-view="matches">Back to Matches</button>
+        </div>
+      </div>
+        </div>
 
-      <!-- Insights -->
-      <div class="section-header">
-        <h2>🧠 AI Insights & Visa Pathways</h2>
-        <p>Select a country to see its explanation, trade-offs, similar alternatives, and available visa routes.</p>
-      </div>
-      <div class="insights-panel" id="insights-panel">
-        <p class="muted">Click a top country (or a country on the map) to see its breakdown and visa pathways.</p>
-      </div>
+        <div class="view" id="view-explore" role="tabpanel" aria-labelledby="tab-explore" tabindex="-1" hidden>
+      {% if country_map %}
+      <section class="landscape-section" id="landscape-section" aria-labelledby="landscape-title">
+        <div class="section-header">
+          <h2 id="landscape-title">Which countries are alike</h2>
+          <p>Each dot is a country, placed by how similar its nine scores are. Colours are groups found by clustering;
+            bigger dots match you better.</p>
+        </div>
+        <div class="landscape-panel glass">
+          <svg id="landscape" viewBox="0 0 760 430" role="img" aria-label="Scatter map of countries by similarity"></svg>
+          <div class="landscape-legend" id="landscape-legend"></div>
+          <p class="landscape-metrics">
+            The two axes capture {{ (country_map.explained_variance|sum * 100)|round|int }}% of the differences between countries (PCA).
+            {{ country_map.k }} groups were chosen by silhouette score ({{ "%.2f"|format(country_map.silhouette_by_k[country_map.k|string]) }}),
+            and they hold up under resampling (adjusted Rand index {{ "%.2f"|format(country_map.stability_ari.mean) }}).
+            Countries form a continuum, so treat the groups as broad, not strict.
+          </p>
+        </div>
+      </section>
+      {% endif %}
 
-      <!-- Full ranking -->
-      <details class="full-ranking">
-        <summary>📊 See full ranking of all countries</summary>
+      <details class="full-ranking glass">
+        <summary>Full ranking of every matching country</summary>
         <div class="table-wrap">
           <table id="full-ranking-table">
             <thead>
               <tr>
                 <th>#</th><th>Country</th><th>Region</th><th>Score</th><th>Rating</th>
-                <th>💰</th><th>🛒</th><th>🛂</th><th>💼</th>
-                <th>☀️</th><th>🛡️</th><th>🏥</th><th>🗣️</th><th>🌐</th>
+                <th title="Average net salary">Salary</th><th title="1-bed city-centre rent">Rent</th>
+                <th title="Salary">{{ icon('salary') }}</th><th title="Cost of living">{{ icon('cost') }}</th><th title="Path to residency">{{ icon('pr') }}</th><th title="Job market">{{ icon('job') }}</th>
+                <th title="Climate">{{ icon('climate') }}</th><th title="Safety">{{ icon('safety') }}</th><th title="Healthcare">{{ icon('healthcare') }}</th><th title="English">{{ icon('english') }}</th><th title="Internet">{{ icon('internet') }}</th><th title="Visas you likely qualify for">Visas</th>
               </tr>
             </thead>
             <tbody></tbody>
@@ -196,15 +428,83 @@
         </div>
       </details>
 
+      <details class="full-ranking glass data-sources" id="data-sources">
+        <summary>How it works: data sources and methods</summary>
+        <div class="sources-body">
+          <p>Scores are built by a reproducible pipeline (<code>python -m pipeline build</code>) from
+            World Bank, WHO, EF English Proficiency Index 2025, Global Peace Index 2026 and city climate data.
+            Each indicator is clipped to its 5th–95th percentile and scaled to 0–1 across the {{ country_count }} countries.
+            Hover a row in any score breakdown to see the exact source and year behind that number.</p>
+          <table class="sources-table">
+            <thead><tr><th>Factor</th><th>How it's measured</th></tr></thead>
+            <tbody>
+              {% for d in data_sources %}<tr><td><span class="f-{{ d.key }}">{{ icon(d.key) }}</span> {{ d.label }}</td><td>{{ d.method }}</td></tr>{% endfor %}
+            </tbody>
+          </table>
+          <p><b>Machine learning, and where it is not used.</b> Rankings are always the weighted sum above.
+            ML fills a few missing data points (only where cross-validation shows it is reliable; marked “ML-imputed”),
+            groups countries on the similarity map (PCA + k-means), learns slider weights from the 8-question quiz
+            (pairwise preference model), and suggests a visa route from your prompt when the built-in vocabulary
+            doesn't recognise one (chips marked with the chip icon). Sentence embeddings (all-MiniLM-L6-v2) match prompts and visas by meaning
+            when they share no keywords (chips marked with the sparkle icon, and “meaning match” results). Each model's measured accuracy is in the project README.</p>
+          <p><b>Confidence and “how to qualify”.</b> The confidence line re-ranks countries in 400 what-if scenarios,
+            nudging your weights and each data point by how reliable its source is. The “How to open more doors” section
+            re-runs the visa rules with one thing changed (income, savings or a filter) to show exactly what would open more countries.</p>
+          <p><b>Costs, timelines and rules.</b> Visa fees, processing times, years to permanent residence, age limits and
+            family rules come from official government pages, each linked on its visa card with the date it was checked.
+            The eligibility rules themselves are data (<code>data/rules.json</code>), read by both the server and this page.</p>
+          <p><b>Estimates and currencies.</b> A value marked ≈ had no measurement for that country, so it was filled by a
+            model, a regional median or an editorial estimate. Amounts are stored in US dollars; to show them in your currency
+            we use ECB daily reference rates where there is one, otherwise the World Bank's yearly average official rate.</p>
+          <p class="muted-note">Data version {{ data_version }}. Visa rules are curated by hand from official immigration portals and change often. Always confirm on the official site.</p>
+        </div>
+      </details>
+        </div>
+      </div>
+
+
       <footer class="footer">
-        Built with Flask · Vanilla JS · SVG · Pandas · NumPy — 65 countries, 9 factors, curated visa data.<br>
-        Visa info is illustrative; verify with official immigration authorities before acting.
+        <p>Rankings come from a transparent weighted score over public data{{ '; Claude answers questions and reads prompts' if llm_enabled else '' }}.
+          Figures are approximate and visa rules change: always confirm with the official immigration authority before acting.</p>
+        <p>Flask, vanilla JavaScript and SVG. {{ country_count }} countries, 9 factors, curated visa data. Data version {{ data_version }}.</p>
       </footer>
     </section>
   </main>
 
+  <!-- Country details drawer -->
+  <aside class="drawer glass glass-strong" id="drawer" aria-label="Country details" aria-hidden="true" tabindex="-1">
+    <div class="sheet-grabber" id="sheet-grabber" aria-hidden="true"></div>
+    <button type="button" class="icon-btn drawer-close" id="drawer-close" aria-label="Close country details">{{ icon('close') }}</button>
+    <div class="insights-panel" id="insights-panel"></div>
+  </aside>
+
+  <div class="sheet-scrim" id="sheet-scrim" hidden></div>
+  <button type="button" class="prefs-fab glass" id="prefs-fab" data-refract aria-controls="sidebar" aria-expanded="false">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h9M15 5h2M3 10h3M9 10h8M3 15h7M13 15h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="13.5" cy="5" r="1.6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="7.5" cy="10" r="1.6" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="11.5" cy="15" r="1.6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+    Adjust priorities
+  </button>
+  <div class="compare-tray glass hidden" id="compare-tray" data-refract>
+    <span class="tray-label">Compare</span>
+    <span id="compare-chips"></span>
+    <button class="tray-btn" id="compare-go" type="button">Compare</button>
+    <button class="icon-btn tray-clear" id="compare-clear" type="button" aria-label="Clear comparison">{{ icon('close') }}</button>
+  </div>
+
+  <div class="toast hidden" id="toast" role="status"></div>
+  <div class="coach glass glass-strong" id="coach" role="dialog" aria-live="polite" aria-labelledby="coach-title" hidden>
+    <span class="coach-step" id="coach-step"></span>
+    <h2 id="coach-title"></h2>
+    <p id="coach-text"></p>
+    <div class="coach-actions">
+      <button type="button" class="btn btn-quiet" id="coach-skip">Skip tips</button>
+      <button type="button" class="btn" id="coach-next">Next</button>
+    </div>
+  </div>
+
+  <script>window.APP_META = {{ meta_json|tojson }}; window.ICONS = {{ icons_json|tojson }}; window.RELOC_MARKERS = {{ map_markers|tojson }};</script>
   <script src="{{ url_for('static', filename='js/countries.js') }}"></script>
   <script src="{{ url_for('static', filename='js/map.js') }}"></script>
   <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/glass.js') }}"></script>
 </body>
 </html>

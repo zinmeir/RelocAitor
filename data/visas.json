@@ -1,0 +1,2588 @@
+{
+  "USA": {
+    "official_url": "https://www.uscis.gov",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "H-1B Specialty Worker",
+        "difficulty": "Hard",
+        "duration": "3 years (renewable)",
+        "pr_route": "Eventually",
+        "min_income": 5000,
+        "summary": "Sponsored by US employer; lottery-based with capped annual quota.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "EB-5 Investor Green Card",
+        "difficulty": "Moderate",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Invest $800K-$1.05M in qualified US enterprise creating ≥10 jobs.",
+        "min_investment": 800000,
+        "last_verified": null
+      },
+      {
+        "type": "study",
+        "name": "F-1 Student Visa",
+        "difficulty": "Moderate",
+        "duration": "Length of program",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Full-time enrollment at SEVP-approved school; can lead to OPT work.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 535,
+          "currency": "USD",
+          "note": "$185 visa application fee + $350 SEVIS fee"
+        },
+        "sources": [
+          "https://ustraveldocs.com/qa/qa-niv-visafeeinfo.asp"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "family",
+        "name": "IR-1/CR-1 Spouse Visa",
+        "difficulty": "Moderate",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "For spouses of US citizens; sponsor must meet an income requirement.",
+        "min_investment": 0,
+        "requires_sponsor": true,
+        "last_verified": null,
+        "fee": {
+          "amount": 325,
+          "currency": "USD",
+          "note": "Immigrant visa fee per person; the I-130 petition and affidavit review ($120) are extra"
+        },
+        "years_to_pr": 0,
+        "sources": [
+          "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 5,
+      "note": "5 years as a permanent resident (3 if married to a citizen)",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "CAN": {
+    "official_url": "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Express Entry (FSW)",
+        "difficulty": "Moderate",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Points-based PR for skilled workers; ~6-month average processing.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 1590,
+          "currency": "CAD",
+          "note": "CAD 990 processing + CAD 600 right of permanent residence fee"
+        },
+        "years_to_pr": 0,
+        "sources": [
+          "https://ircc.canada.ca/english/information/fees/fees.asp",
+          "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html"
+        ],
+        "checked": "2026-11-16",
+        "experience_years": 1,
+        "language": {
+          "lang": "english",
+          "test": "CLB 7 in all four abilities (or the French equivalent)"
+        },
+        "requirements_note": "At least 1 year of continuous skilled work (TEER 0-3) in the last 10 years. Foreign education needs an Educational Credential Assessment."
+      },
+      {
+        "type": "startup",
+        "name": "Start-up Visa Program",
+        "difficulty": "Moderate",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Get backing from designated VC/incubator for innovative business.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 2495,
+          "currency": "CAD",
+          "note": "CAD 1,895 processing + CAD 600 right of permanent residence fee"
+        },
+        "years_to_pr": 0,
+        "sources": [
+          "https://ircc.canada.ca/english/information/fees/fees.asp"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "study",
+        "name": "Study Permit + PGWP",
+        "difficulty": "Easy",
+        "duration": "Up to 3 years post-graduation",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Study + work afterwards; strong stepping-stone to PR via CEC.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 150,
+          "currency": "CAD",
+          "note": "Study permit fee per person"
+        },
+        "sources": [
+          "https://ircc.canada.ca/english/information/fees/fees.asp"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "family",
+        "name": "Spousal / Partner Sponsorship",
+        "difficulty": "Moderate",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Canadian citizen or PR sponsors a spouse or common-law partner.",
+        "min_investment": 0,
+        "requires_sponsor": true,
+        "last_verified": null,
+        "fee": {
+          "amount": 1260,
+          "currency": "CAD",
+          "note": "Sponsorship, processing and right of permanent residence fees together"
+        },
+        "years_to_pr": 0,
+        "sources": [
+          "https://ircc.canada.ca/english/information/fees/fees.asp"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 3,
+      "after_pr": 2,
+      "note": "1,095 days in Canada in the last 5 years, mostly as a permanent resident",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    },
+    "in_demand": {
+      "fields": [
+        "healthcare",
+        "tech",
+        "engineering",
+        "science",
+        "trades",
+        "education"
+      ],
+      "list": "Express Entry category-based selection",
+      "source": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html",
+      "checked": "2026-11-16"
+    }
+  },
+  "MEX": {
+    "official_url": "https://www.gob.mx/inm",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Temporary Resident Visa",
+        "difficulty": "Easy",
+        "duration": "1-4 years",
+        "pr_route": "Eventually",
+        "min_income": 2600,
+        "summary": "Show monthly income or savings; renewable up to 4 years then PR.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "Investor Resident Visa",
+        "difficulty": "Moderate",
+        "duration": "1-4 years",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Invest ~$220K in Mexican business or property.",
+        "min_investment": 220000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": "2 years for spouses of citizens",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "CRI": {
+    "official_url": "https://www.migracion.go.cr",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Rentista / Digital Nomad",
+        "difficulty": "Easy",
+        "duration": "1-2 years (renewable)",
+        "pr_route": "Eventually",
+        "min_income": 3000,
+        "summary": "Show stable foreign income; renewable, leads to PR after 3 years.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "Inversionista",
+        "difficulty": "Easy",
+        "duration": "2 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Invest $150K+ in business, real estate, or government bonds.",
+        "min_investment": 150000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 7,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "PAN": {
+    "official_url": "https://www.migracion.gob.pa",
+    "visas": [
+      {
+        "type": "investor",
+        "name": "Friendly Nations Visa",
+        "difficulty": "Easy",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Citizens of 50+ countries can get PR via business or property.",
+        "min_investment": 200000,
+        "restricted_to": [
+          "ARG",
+          "AUS",
+          "AUT",
+          "BEL",
+          "BRA",
+          "CAN",
+          "CHE",
+          "CHL",
+          "CRI",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DNK",
+          "ESP",
+          "EST",
+          "FIN",
+          "FRA",
+          "GBR",
+          "GRC",
+          "HKG",
+          "HRV",
+          "HUN",
+          "IRL",
+          "ISL",
+          "ISR",
+          "ITA",
+          "JPN",
+          "KOR",
+          "LIE",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MEX",
+          "MLT",
+          "NLD",
+          "NOR",
+          "NZL",
+          "POL",
+          "PRT",
+          "PRY",
+          "SGP",
+          "SRB",
+          "SVK",
+          "SVN",
+          "SWE",
+          "TWN",
+          "URY",
+          "USA",
+          "ZAF"
+        ],
+        "note": "Eligible-country list changes; confirm yours is still included.",
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Short-Stay Remote Worker",
+        "difficulty": "Easy",
+        "duration": "9 months",
+        "pr_route": "No",
+        "min_income": 3000,
+        "summary": "Quick remote-worker visa; no path to PR but easy entry.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "BRA": {
+    "official_url": "https://www.gov.br/mre/en",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year (renewable +1)",
+        "pr_route": "No",
+        "min_income": 1500,
+        "summary": "Remote work for foreign employer; quick approval.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "Investor Visa (VIPER)",
+        "difficulty": "Moderate",
+        "duration": "2 years to PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Invest BRL 500K+ in business or BRL 1M+ in real estate.",
+        "min_investment": 100000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 4,
+      "after_pr": 0,
+      "note": "1 year for Portuguese speakers and some family ties",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "ARG": {
+    "official_url": "https://www.argentina.gob.ar/interior/migraciones",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "6 months (renewable)",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Open to remote workers; very low income threshold.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "passive",
+        "name": "Rentista Visa",
+        "difficulty": "Easy",
+        "duration": "1 year renewable",
+        "pr_route": "Eventually",
+        "min_income": 2500,
+        "summary": "Show stable monthly income; PR after 2-3 years.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 2,
+      "after_pr": 0,
+      "note": "Continuous residence",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "CHL": {
+    "official_url": "https://serviciomigraciones.cl",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Temporary Resident Visa",
+        "difficulty": "Moderate",
+        "duration": "1 year (renewable)",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Multiple pathways: work contract, professional services, retiree.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "URY": {
+    "official_url": "https://www.gub.uy/ministerio-relaciones-exteriores",
+    "visas": [
+      {
+        "type": "passive",
+        "name": "Permanent Residency",
+        "difficulty": "Easy",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 1500,
+        "summary": "Show stable income; one of South America's easiest PR routes.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": "3 years with a family in Uruguay",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "COL": {
+    "official_url": "https://www.cancilleria.gov.co",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa (V Type)",
+        "difficulty": "Easy",
+        "duration": "Up to 2 years",
+        "pr_route": "No",
+        "min_income": 900,
+        "summary": "Very low income threshold; remote workers welcome.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "M Visa - Investment",
+        "difficulty": "Moderate",
+        "duration": "3 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Invest ~$30K in property or $115K in a business.",
+        "min_investment": 30000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 7,
+      "after_pr": 5,
+      "note": "Needs 5 years as a permanent resident",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "PER": {
+    "official_url": "https://www.gob.pe/migraciones",
+    "visas": [
+      {
+        "type": "passive",
+        "name": "Rentista Visa",
+        "difficulty": "Easy",
+        "duration": "1 year renewable",
+        "pr_route": "Eventually",
+        "min_income": 1000,
+        "summary": "Show stable income; renewable indefinitely.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "GBR": {
+    "official_url": "https://www.gov.uk/browse/visas-immigration",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Skilled Worker Visa",
+        "difficulty": "Moderate",
+        "duration": "Up to 5 years",
+        "pr_route": "Eventually",
+        "min_income": 3500,
+        "summary": "Job offer from licensed sponsor; salary thresholds apply.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 819,
+          "currency": "GBP",
+          "note": "For up to 3 years (£1,618 for longer), plus the £1,035 a year health surcharge"
+        },
+        "years_to_pr": 5,
+        "sources": [
+          "https://www.gov.uk/indefinite-leave-to-remain",
+          "https://www.gov.uk/skilled-worker-visa/how-much-it-costs",
+          "https://www.gov.uk/skilled-worker-visa/knowledge-of-english"
+        ],
+        "checked": "2026-11-16",
+        "language": {
+          "lang": "english",
+          "cefr": "B2"
+        },
+        "requirements_note": "B2 applies to new applications; extensions of visas held before 8 January 2026 need B1."
+      },
+      {
+        "type": "investor",
+        "name": "Innovator Founder Visa",
+        "difficulty": "Hard",
+        "duration": "3 years initial",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Endorsed innovative business idea; replaces old Tier 1.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 1357,
+          "currency": "GBP",
+          "note": "Applying from outside the UK"
+        },
+        "processing": "Usually within 3 weeks from outside the UK",
+        "processing_weeks": 3,
+        "years_to_pr": 3,
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "sources": [
+          "https://www.gov.uk/innovator-founder-visa"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "study",
+        "name": "Student Visa + Graduate Route",
+        "difficulty": "Easy",
+        "duration": "Study + 2-3 years post-grad work",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Strong post-study work rights; PSW visa for grads.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 558,
+          "currency": "GBP",
+          "note": "Plus the health surcharge. The Graduate visa lasts 2 years (18 months if you apply from 1 January 2027; 3 years after a PhD)"
+        },
+        "processing": "Usually within 3 weeks from outside the UK",
+        "processing_weeks": 3,
+        "sources": [
+          "https://www.gov.uk/student-visa"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "family",
+        "name": "Family Visa (Partner)",
+        "difficulty": "Moderate",
+        "duration": "2.5 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Partner of a UK citizen/settled person; sponsor income threshold applies.",
+        "min_investment": 0,
+        "requires_sponsor": true,
+        "last_verified": null,
+        "fee": {
+          "amount": 2064,
+          "currency": "GBP",
+          "note": "Plus the health surcharge, £2,587.50 per adult for 2½ years"
+        },
+        "processing": "Usually about 12 weeks from outside the UK",
+        "processing_weeks": 12,
+        "years_to_pr": 5,
+        "sources": [
+          "https://www.gov.uk/uk-family-visa/how-much-it-costs",
+          "https://www.gov.uk/uk-family-visa/partner-spouse"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 1,
+      "note": "Settled status (ILR) for 12 months first",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "IRL": {
+    "official_url": "https://www.irishimmigration.ie",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Critical Skills Employment Permit",
+        "difficulty": "Moderate",
+        "duration": "2 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 3500,
+        "summary": "Fast-track for tech, engineering, healthcare professionals.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 1000,
+          "currency": "EUR",
+          "note": "90% refunded if the permit is refused"
+        },
+        "years_to_pr": 5,
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "sources": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "study",
+        "name": "Stamp 2 + Third-Level Graduate Scheme",
+        "difficulty": "Easy",
+        "duration": "Study + up to 2 years post-grad",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Generous post-study work rights for graduates.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": "5 of the last 9 years; 3 if married to a citizen",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    },
+    "in_demand": {
+      "fields": [
+        "healthcare",
+        "tech",
+        "science",
+        "finance"
+      ],
+      "list": "Critical Skills Occupations List",
+      "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/employment-permit-eligibility/highly-skilled-eligible-occupations-list/",
+      "checked": "2026-11-16"
+    }
+  },
+  "DEU": {
+    "official_url": "https://www.make-it-in-germany.com/en",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "EU Blue Card",
+        "difficulty": "Moderate",
+        "duration": "4 years",
+        "pr_route": "Eventually",
+        "min_income": 4500,
+        "summary": "Tech/engineering jobs paying ~€45K+; PR after 21-33 months.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 75,
+          "currency": "EUR",
+          "note": "National (D) visa fee. Salary from €50,700 a year (€45,934 in shortage jobs) in 2026"
+        },
+        "years_to_pr": 1.75,
+        "pr_note": "Settlement permit after 21 months with B1 German, or 27 months with A1",
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "sources": [
+          "https://www.make-it-in-germany.com/en/visa-residence/procedure/entry-process",
+          "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card"
+        ],
+        "checked": "2026-11-16",
+        "education_min": "bachelor",
+        "requirements_note": "A German or comparable foreign degree (or a 3-year ISCED/EQF level 6 qualification). German is not required for the card; A1 or B1 shortens the wait for a settlement permit."
+      },
+      {
+        "type": "skilled",
+        "name": "Opportunity Card (Job Search)",
+        "difficulty": "Easy",
+        "duration": "Up to 1 year",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Points-based card (6+ points) to look for skilled work for up to a year; needs €1,091 a month in a blocked account.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 75,
+          "currency": "EUR",
+          "note": "National (D) visa fee. Needs €1,091 a month in a blocked account (2026)"
+        },
+        "sources": [
+          "https://www.make-it-in-germany.com/en/visa-residence/types/job-search-opportunity-card",
+          "https://www.make-it-in-germany.com/en/visa-residence/procedure/entry-process"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "study",
+        "name": "Student Visa + 18-Month Job Search",
+        "difficulty": "Easy",
+        "duration": "Study + 18 months",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Free or low-cost universities; strong post-grad pathway.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 75,
+          "currency": "EUR",
+          "note": "National (D) visa fee. Blocked account of €11,904 for 2026"
+        },
+        "sources": [
+          "https://www.make-it-in-germany.com/en/visa-residence/types/studying",
+          "https://www.make-it-in-germany.com/en/visa-residence/procedure/entry-process"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "family",
+        "name": "Family Reunification Visa",
+        "difficulty": "Moderate",
+        "duration": "Tied to sponsor's permit",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Join a spouse living in Germany; basic German often required.",
+        "min_investment": 0,
+        "requires_sponsor": true,
+        "last_verified": null,
+        "fee": {
+          "amount": 75,
+          "currency": "EUR",
+          "note": "National (D) visa fee"
+        },
+        "sources": [
+          "https://www.make-it-in-germany.com/en/visa-residence/procedure/entry-process"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    },
+    "in_demand": {
+      "fields": [
+        "tech",
+        "engineering",
+        "science",
+        "healthcare",
+        "education"
+      ],
+      "list": "EU Blue Card shortage occupations",
+      "source": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+      "checked": "2026-11-16"
+    }
+  },
+  "FRA": {
+    "official_url": "https://france-visas.gouv.fr",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Talent Passport",
+        "difficulty": "Moderate",
+        "duration": "4 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 3000,
+        "summary": "Multiple categories: skilled, researcher, founder, artist.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 99,
+          "currency": "EUR",
+          "note": "Long-stay visa fee; residence permit fees in France are extra"
+        },
+        "sources": [
+          "https://france-visas.gouv.fr/documents/d/france-visas/frais-de-visa-francais"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "study",
+        "name": "Long-Stay Student Visa",
+        "difficulty": "Easy",
+        "duration": "1 year renewable",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Affordable tuition; APS card gives 1 year to find work after.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 99,
+          "currency": "EUR",
+          "note": "Standard long-stay visa fee; some nationalities pay less"
+        },
+        "sources": [
+          "https://france-visas.gouv.fr/documents/d/france-visas/frais-de-visa-francais"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": "2 years after a French master's degree",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "NLD": {
+    "official_url": "https://ind.nl/en",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Highly Skilled Migrant Visa",
+        "difficulty": "Moderate",
+        "duration": "5 years",
+        "pr_route": "Eventually",
+        "min_income": 4500,
+        "summary": "Recognized sponsor required; 30% tax ruling for newcomers.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 423,
+          "currency": "EUR",
+          "note": "2026 fee. Salary from €5,942 a month at 30+, €4,357 under 30"
+        },
+        "years_to_pr": 5,
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "sources": [
+          "https://ind.nl/en/fees-costs-of-an-application",
+          "https://ind.nl/en/required-amounts-income-requirements",
+          "https://ind.nl/en/residence-permits/work/highly-skilled-migrant"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "startup",
+        "name": "DAFT (US treaty)",
+        "difficulty": "Easy",
+        "duration": "2 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "US citizens: deposit €4,500 in a Dutch business.",
+        "min_investment": 5000,
+        "restricted_to": [
+          "USA"
+        ],
+        "last_verified": null,
+        "fee": {
+          "amount": 423,
+          "currency": "EUR",
+          "note": "2026 self-employed permit fee"
+        },
+        "sources": [
+          "https://ind.nl/en/fees-costs-of-an-application"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "startup",
+        "name": "Startup Visa",
+        "difficulty": "Moderate",
+        "duration": "1 year (then self-employed)",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Work with a recognized facilitator on innovative venture.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 423,
+          "currency": "EUR",
+          "note": "2026 fee. Needs a facilitator on the RVO list"
+        },
+        "processing": "Decided within 90 days (can be extended)",
+        "processing_weeks": 13,
+        "sources": [
+          "https://ind.nl/en/residence-permits/work/start-up",
+          "https://ind.nl/en/fees-costs-of-an-application"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "BEL": {
+    "official_url": "https://dofi.ibz.be",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Single Permit (Work + Residence)",
+        "difficulty": "Moderate",
+        "duration": "Up to 3 years",
+        "pr_route": "Eventually",
+        "min_income": 3500,
+        "summary": "Combined work and residence permit via employer sponsor.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "SWE": {
+    "official_url": "https://www.migrationsverket.se",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Work Permit",
+        "difficulty": "Easy",
+        "duration": "Up to 2 years",
+        "pr_route": "Eventually",
+        "min_income": 2800,
+        "summary": "Job offer required; PR possible after 4 years.",
+        "min_investment": 0,
+        "last_verified": null,
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "sources": [
+          "https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed.html"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 8,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "NOR": {
+    "official_url": "https://www.udi.no/en",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Skilled Worker Permit",
+        "difficulty": "Moderate",
+        "duration": "Up to 3 years",
+        "pr_route": "Eventually",
+        "min_income": 4500,
+        "summary": "Requires education + job offer; PR after 3 years.",
+        "min_investment": 0,
+        "last_verified": null,
+        "years_to_pr": 3,
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "sources": [
+          "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 8,
+      "after_pr": 0,
+      "note": "8 of the last 11 years",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "DNK": {
+    "official_url": "https://www.nyidanmark.dk/en-GB",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Pay Limit Scheme",
+        "difficulty": "Moderate",
+        "duration": "Up to 4 years",
+        "pr_route": "Eventually",
+        "min_income": 6500,
+        "summary": "High salary threshold; fast-track for top earners.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 6810,
+          "currency": "DKK",
+          "note": "Pay of at least DKK 552,000 a year (2026)"
+        },
+        "processing": "Normally 1 month, up to 3 if more information is needed",
+        "processing_weeks": 4,
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "sources": [
+          "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Pay-limit-scheme"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "skilled",
+        "name": "Positive List Scheme",
+        "difficulty": "Moderate",
+        "duration": "Up to 4 years",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "For occupations facing labor shortage in Denmark.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ]
+  },
+  "FIN": {
+    "official_url": "https://migri.fi/en",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Specialist Residence Permit",
+        "difficulty": "Moderate",
+        "duration": "Up to 2 years",
+        "pr_route": "Eventually",
+        "min_income": 3000,
+        "summary": "Express-track for IT specialists, ~14-day processing.",
+        "min_investment": 0,
+        "last_verified": null,
+        "processing": "About 2 weeks with the fast-track service",
+        "processing_weeks": 2,
+        "sources": [
+          "https://migri.fi/en/specialist"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "startup",
+        "name": "Startup Permit",
+        "difficulty": "Moderate",
+        "duration": "2 years",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Business Finland evaluation required; innovation focus.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 450,
+          "currency": "EUR",
+          "note": "Online application (€580 on paper). Needs a Business Finland eligibility statement"
+        },
+        "processing": "About 2 weeks with the fast-track service",
+        "processing_weeks": 2,
+        "sources": [
+          "https://migri.fi/en/start-up-entrepreneur"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 8,
+      "after_pr": 0,
+      "note": "5 in some cases",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "ISL": {
+    "official_url": "https://island.is/en/o/directorate-of-immigration",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Long-Term Remote Work Visa",
+        "difficulty": "Easy",
+        "duration": "180 days",
+        "pr_route": "No",
+        "min_income": 7000,
+        "summary": "High income required; short-term only.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 7,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "CHE": {
+    "official_url": "https://www.sem.admin.ch",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "B Permit (Work)",
+        "difficulty": "Hard",
+        "duration": "5 years",
+        "pr_route": "Eventually",
+        "min_income": 6500,
+        "summary": "Strict quotas; easier for EU/EFTA citizens. PR after 10 years.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": "Needs a C permit",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "AUT": {
+    "official_url": "https://www.migration.gv.at/en",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Red-White-Red Card",
+        "difficulty": "Moderate",
+        "duration": "2 years",
+        "pr_route": "Eventually",
+        "min_income": 3200,
+        "summary": "Points-based for highly qualified workers and shortage occupations.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 218,
+          "currency": "EUR",
+          "note": "Application fee. Points test: 70 of 100"
+        },
+        "sources": [
+          "https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/very-highly-qualified-workers/"
+        ],
+        "checked": "2026-11-16"
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": "6 years for some groups",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "ESP": {
+    "official_url": "https://www.exteriores.gob.es",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year (renewable to 5)",
+        "pr_route": "Eventually",
+        "min_income": 2700,
+        "summary": "Remote work for foreign employers; flat 24% tax option.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "passive",
+        "name": "Non-Lucrative Visa",
+        "difficulty": "Easy",
+        "duration": "1 year renewable",
+        "pr_route": "Eventually",
+        "min_income": 2900,
+        "summary": "Show passive income or savings; can't work locally but PR-eligible.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": "2 years for Latin American, Portuguese and some other nationals",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "PRT": {
+    "official_url": "https://vistos.mne.gov.pt",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "D8 Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year (renewable to 5)",
+        "pr_route": "Eventually",
+        "min_income": 3500,
+        "summary": "Best-in-class for remote workers; PR after 5 years.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "passive",
+        "name": "D7 Passive Income Visa",
+        "difficulty": "Easy",
+        "duration": "2 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 900,
+        "summary": "Show stable passive income (rental, pension, dividends).",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "ITA": {
+    "official_url": "https://vistoperitalia.esteri.it",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Moderate",
+        "duration": "1 year renewable",
+        "pr_route": "Eventually",
+        "min_income": 2700,
+        "summary": "Launched 2024; for highly skilled remote workers.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "Investor Visa",
+        "difficulty": "Moderate",
+        "duration": "2 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "€250K-2M into Italian companies, bonds, or philanthropy.",
+        "min_investment": 270000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "GRC": {
+    "official_url": "https://migration.gov.gr/en",
+    "visas": [
+      {
+        "type": "investor",
+        "name": "Golden Visa",
+        "difficulty": "Easy",
+        "duration": "5 years renewable",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Real estate investment of roughly €250K-€800K depending on area and property type.",
+        "min_investment": 270000,
+        "note": "Thresholds were raised in 2024 and vary by region; €250K applies only to specific property types.",
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year renewable",
+        "pr_route": "Eventually",
+        "min_income": 3500,
+        "summary": "50% tax break for first 7 years for remote workers.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 7,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "CZE": {
+    "official_url": "https://www.mvcr.cz/mvcren",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Employee Card",
+        "difficulty": "Moderate",
+        "duration": "2 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 1500,
+        "summary": "Job offer + qualifications; PR after 5 years.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Zivno (Trade License)",
+        "difficulty": "Easy",
+        "duration": "2 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Self-employment route for freelancers/digital nomads.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "POL": {
+    "official_url": "https://www.gov.pl/web/udsc-en",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Type A Work Permit",
+        "difficulty": "Easy",
+        "duration": "Up to 3 years",
+        "pr_route": "Eventually",
+        "min_income": 1200,
+        "summary": "Employer-sponsored; relatively quick process.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 3,
+      "note": "Or 3 years as a permanent resident",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "HUN": {
+    "official_url": "https://oif.gov.hu",
+    "visas": [
+      {
+        "type": "investor",
+        "name": "Guest Investor Program",
+        "difficulty": "Moderate",
+        "duration": "10 years",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "€250K real estate fund or €1M property; long-term residence.",
+        "min_investment": 270000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 8,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "EST": {
+    "official_url": "https://www.politsei.ee/en",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year",
+        "pr_route": "No",
+        "min_income": 4500,
+        "summary": "Pioneered the digital nomad visa concept; 100% online process.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "startup",
+        "name": "e-Residency + Startup Visa",
+        "difficulty": "Easy",
+        "duration": "Up to 5 years",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Run an EU company remotely or relocate via startup visa.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 8,
+      "after_pr": 0,
+      "note": "Multiple citizenship not allowed for naturalised citizens",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "ROU": {
+    "official_url": "https://igi.mai.gov.ro/en",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year renewable",
+        "pr_route": "No",
+        "min_income": 3700,
+        "summary": "Tax-friendly for remote workers; low cost of living.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 8,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "HRV": {
+    "official_url": "https://mup.gov.hr",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year (no renewal)",
+        "pr_route": "No",
+        "min_income": 2500,
+        "summary": "One-year stay; tax-exempt on foreign income.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 8,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "SVN": {
+    "official_url": "https://www.gov.si/en",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Single Permit",
+        "difficulty": "Moderate",
+        "duration": "Up to 2 years",
+        "pr_route": "Eventually",
+        "min_income": 1700,
+        "summary": "Combined work and residence permit; EU labor market test applies.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "AUS": {
+    "official_url": "https://immi.homeaffairs.gov.au",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Skilled Independent Visa (189)",
+        "difficulty": "Moderate",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Points-based PR; no sponsor needed if you score high enough.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "skilled",
+        "name": "Employer-Sponsored (482/186)",
+        "difficulty": "Moderate",
+        "duration": "2-4 years (then PR)",
+        "pr_route": "Eventually",
+        "min_income": 4500,
+        "summary": "Sponsored by Australian employer; PR via 186 transition.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "study",
+        "name": "Subclass 500 + Post-Study Work",
+        "difficulty": "Easy",
+        "duration": "Study + 2-6 years post-grad",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Post-study work visa lengths vary by location and qualification.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "family",
+        "name": "Partner Visa (820/801)",
+        "difficulty": "Moderate",
+        "duration": "Temporary then PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Partner of an Australian citizen or PR; long processing times.",
+        "min_investment": 0,
+        "requires_sponsor": true,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 4,
+      "after_pr": 1,
+      "note": "Including 12 months as a permanent resident",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "NZL": {
+    "official_url": "https://www.immigration.govt.nz",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Skilled Migrant Category",
+        "difficulty": "Moderate",
+        "duration": "Direct PR",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Points-based PR; favors job offer + in-demand skills.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 6450,
+          "currency": "NZD",
+          "note": "From NZD 6,450"
+        },
+        "years_to_pr": 0,
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "age_max": 55,
+        "sources": [
+          "https://www.immigration.govt.nz/visas/skilled-migrant-category-resident-visa/"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "skilled",
+        "name": "Accredited Employer Work Visa",
+        "difficulty": "Moderate",
+        "duration": "Up to 3 years",
+        "pr_route": "Eventually",
+        "min_income": 3500,
+        "summary": "Employer accreditation simplifies the process.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "family",
+        "name": "Partner of a New Zealander",
+        "difficulty": "Moderate",
+        "duration": "Work visa then residence",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Genuine and stable relationship with an NZ citizen or resident.",
+        "min_investment": 0,
+        "requires_sponsor": true,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 5,
+      "note": "As a resident visa holder",
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    },
+    "in_demand": {
+      "fields": [
+        "tech",
+        "engineering",
+        "healthcare",
+        "education",
+        "trades"
+      ],
+      "list": "Green List (March 2026)",
+      "source": "https://www.immigration.govt.nz/opsmanual/89117.htm",
+      "checked": "2026-11-16"
+    }
+  },
+  "JPN": {
+    "official_url": "https://www.moj.go.jp/isa/",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Highly Skilled Professional",
+        "difficulty": "Moderate",
+        "duration": "5 years",
+        "pr_route": "Eventually",
+        "min_income": 3500,
+        "summary": "Points-based; PR possible in 1-3 years for high scorers.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "6 months (no renewal)",
+        "pr_route": "No",
+        "min_income": 8400,
+        "summary": "Launched 2024; high income bar, short stay.",
+        "min_investment": 0,
+        "note": "Limited to nationals of visa-exempt countries that have a tax treaty with Japan.",
+        "last_verified": null
+      },
+      {
+        "type": "study",
+        "name": "Student Visa + Job Hunting",
+        "difficulty": "Easy",
+        "duration": "Study + up to 1 year",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Strong pipeline into Japanese employment after graduation.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "KOR": {
+    "official_url": "https://www.hikorea.go.kr",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "E-7 Specialty Occupation",
+        "difficulty": "Moderate",
+        "duration": "1-3 years",
+        "pr_route": "Eventually",
+        "min_income": 2500,
+        "summary": "Job offer required; for skilled professionals.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Workation Visa (F-1-D)",
+        "difficulty": "Easy",
+        "duration": "1 year (+1 renewal)",
+        "pr_route": "No",
+        "min_income": 6700,
+        "summary": "Launched 2024 for remote workers; high income bar.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "SGP": {
+    "official_url": "https://www.mom.gov.sg",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Employment Pass",
+        "difficulty": "Hard",
+        "duration": "Up to 2 years",
+        "pr_route": "Eventually",
+        "min_income": 4000,
+        "summary": "Min S$5,000/mo (S$10,500 for finance); points-based COMPASS scoring.",
+        "min_investment": 0,
+        "last_verified": null,
+        "fee": {
+          "amount": 105,
+          "currency": "SGD",
+          "note": "Application fee; a further fee is charged when the pass is issued"
+        },
+        "family": {
+          "partner": true,
+          "children": true
+        },
+        "sources": [
+          "https://www.mom.gov.sg/passes-and-permits/employment-pass/apply-for-a-pass",
+          "https://www.mom.gov.sg/passes-and-permits/employment-pass"
+        ],
+        "checked": "2026-11-16"
+      },
+      {
+        "type": "skilled",
+        "name": "Tech.Pass",
+        "difficulty": "Hard",
+        "duration": "2 years",
+        "pr_route": "Eventually",
+        "min_income": 17000,
+        "summary": "For top-tier tech founders/leaders; min S$22,500/mo income.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "skilled",
+        "name": "ONE Pass (Top Talent)",
+        "difficulty": "Hard",
+        "duration": "5 years",
+        "pr_route": "Eventually",
+        "min_income": 23000,
+        "summary": "For exceptional individuals: min S$30K/mo or top-tier achievement.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ]
+  },
+  "TWN": {
+    "official_url": "https://www.immigration.gov.tw",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Employment Gold Card",
+        "difficulty": "Moderate",
+        "duration": "1-3 years",
+        "pr_route": "Eventually",
+        "min_income": 5400,
+        "summary": "All-in-one work + residence + reentry permit for talents.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "HKG": {
+    "official_url": "https://www.immd.gov.hk",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "General Employment Policy",
+        "difficulty": "Moderate",
+        "duration": "2-3 years",
+        "pr_route": "Eventually",
+        "min_income": 3000,
+        "summary": "Employer sponsorship; PR after 7 years of continuous residence.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "skilled",
+        "name": "Top Talent Pass Scheme",
+        "difficulty": "Easy",
+        "duration": "2 years",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "For grads of top universities; income or alma mater-based.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ]
+  },
+  "CHN": {
+    "official_url": "https://www.nia.gov.cn",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Z Visa (Work Permit)",
+        "difficulty": "Hard",
+        "duration": "1-5 years",
+        "pr_route": "Eventually",
+        "min_income": 3000,
+        "summary": "Job offer + qualifications; tier system A/B/C.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ]
+  },
+  "VNM": {
+    "official_url": "https://xuatnhapcanh.gov.vn",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Work Permit",
+        "difficulty": "Moderate",
+        "duration": "Up to 2 years",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Employer-sponsored; renewable; common for English teachers/tech.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "IND": {
+    "official_url": "https://indianvisaonline.gov.in",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Employment Visa",
+        "difficulty": "Moderate",
+        "duration": "Up to 5 years",
+        "pr_route": "No",
+        "min_income": 2100,
+        "summary": "Min $25K/year salary; for skilled foreign professionals.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 12,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "IDN": {
+    "official_url": "https://www.imigrasi.go.id",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Second Home Visa (E33G)",
+        "difficulty": "Moderate",
+        "duration": "5-10 years",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Deposit ~$130K in Indonesian bank; long-stay option.",
+        "min_investment": 130000,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "B211A Remote Worker",
+        "difficulty": "Easy",
+        "duration": "60 days (extendable to 180)",
+        "pr_route": "No",
+        "min_income": 2000,
+        "summary": "Common for Bali nomads; short-term but easy.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "PHL": {
+    "official_url": "https://immigration.gov.ph",
+    "visas": [
+      {
+        "type": "passive",
+        "name": "SRRV (Special Resident Retiree)",
+        "difficulty": "Easy",
+        "duration": "Indefinite",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Deposit $10K-50K (varies by age); permanent residence.",
+        "min_investment": 10000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "MYS": {
+    "official_url": "https://www.imi.gov.my",
+    "visas": [
+      {
+        "type": "passive",
+        "name": "MM2H (Malaysia My 2nd Home)",
+        "difficulty": "Moderate",
+        "duration": "5-20 years",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Deposit + monthly income proof; long-term renewable visa.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "DE Rantau Nomad Pass",
+        "difficulty": "Easy",
+        "duration": "1 year (renewable +1)",
+        "pr_route": "No",
+        "min_income": 2000,
+        "summary": "Designed for tech remote workers; quick processing.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 12,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "THA": {
+    "official_url": "https://www.thaievisa.go.th",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Long-Term Resident Visa (LTR)",
+        "difficulty": "Moderate",
+        "duration": "10 years",
+        "pr_route": "No",
+        "min_income": 6700,
+        "summary": "For wealthy globals, retirees, professionals; tax incentives.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Destination Thailand Visa (DTV)",
+        "difficulty": "Easy",
+        "duration": "5 years (180 days/visit)",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Launched 2024; for nomads, soft-power activities; no income req.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "LKA": {
+    "official_url": "https://www.immigration.gov.lk",
+    "visas": [
+      {
+        "type": "investor",
+        "name": "My Dream Home Visa",
+        "difficulty": "Easy",
+        "duration": "5-10 years",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "$75K deposit grants long-term residence.",
+        "min_investment": 75000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "ARE": {
+    "official_url": "https://icp.gov.ae",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Standard Work Visa",
+        "difficulty": "Easy",
+        "duration": "2 years",
+        "pr_route": "No",
+        "min_income": 1100,
+        "summary": "Employer-sponsored; very common, fast process.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "Golden Visa (10-year)",
+        "difficulty": "Moderate",
+        "duration": "10 years renewable",
+        "pr_route": "No",
+        "min_income": 8200,
+        "summary": "AED 2M property, business, or talent track; family included.",
+        "min_investment": 545000,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Virtual Work Residence",
+        "difficulty": "Easy",
+        "duration": "1 year renewable",
+        "pr_route": "No",
+        "min_income": 3500,
+        "summary": "Dubai's remote worker visa; tax-free local income.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 30,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "QAT": {
+    "official_url": "https://portal.moi.gov.qa",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Work Visa",
+        "difficulty": "Easy",
+        "duration": "Up to 5 years",
+        "pr_route": "No",
+        "min_income": 1500,
+        "summary": "Sponsored by Qatari employer; tax-free salaries.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 25,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "SAU": {
+    "official_url": "https://visa.mofa.gov.sa",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Work Visa (Iqama)",
+        "difficulty": "Easy",
+        "duration": "1-2 years renewable",
+        "pr_route": "No",
+        "min_income": 1300,
+        "summary": "Employer sponsorship required; major reform of system in progress.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "Premium Residency",
+        "difficulty": "Moderate",
+        "duration": "1 year or permanent",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "Pay flat fee or invest; family included, no sponsor needed.",
+        "min_investment": 27000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "ISR": {
+    "official_url": "https://www.gov.il/en/departments/population_and_immigration_authority",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "B/1 Work Visa",
+        "difficulty": "Hard",
+        "duration": "1 year renewable",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Strict process; mostly for tech and academic specialists.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 3,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "TUR": {
+    "official_url": "https://en.goc.gov.tr",
+    "visas": [
+      {
+        "type": "investor",
+        "name": "Citizenship by Investment",
+        "difficulty": "Easy",
+        "duration": "Direct citizenship",
+        "pr_route": "Yes",
+        "min_income": 0,
+        "summary": "$400K real estate or $500K investment → Turkish passport.",
+        "min_investment": 400000,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year",
+        "pr_route": "No",
+        "min_income": 3000,
+        "summary": "Launched 2024; for remote workers under age 55.",
+        "min_investment": 0,
+        "restricted_to": [
+          "AUT",
+          "BEL",
+          "BGR",
+          "CAN",
+          "CHE",
+          "CYP",
+          "CZE",
+          "DEU",
+          "DNK",
+          "ESP",
+          "EST",
+          "FIN",
+          "FRA",
+          "GBR",
+          "GRC",
+          "HRV",
+          "HUN",
+          "IRL",
+          "ISL",
+          "ITA",
+          "LIE",
+          "LTU",
+          "LUX",
+          "LVA",
+          "MLT",
+          "NLD",
+          "NOR",
+          "POL",
+          "PRT",
+          "ROU",
+          "SVK",
+          "SVN",
+          "SWE",
+          "USA"
+        ],
+        "note": "Open to a limited set of nationalities (mainly EU, UK, US, Canada).",
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "BHR": {
+    "official_url": "https://www.npra.gov.bh",
+    "visas": [
+      {
+        "type": "investor",
+        "name": "Golden Residency",
+        "difficulty": "Moderate",
+        "duration": "10 years renewable",
+        "pr_route": "No",
+        "min_income": 5300,
+        "summary": "Property, talent, or pension-based; family included.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "ZAF": {
+    "official_url": "https://www.dha.gov.za",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Critical Skills Visa",
+        "difficulty": "Moderate",
+        "duration": "Up to 5 years",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "For occupations on the critical skills list; PR after 5 years.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Remote Work Visa",
+        "difficulty": "Easy",
+        "duration": "1 year (extendable)",
+        "pr_route": "No",
+        "min_income": 2900,
+        "summary": "Launched 2024; for remote workers earning min ZAR 1M/year.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "EGY": {
+    "official_url": "https://www.visa2egypt.gov.eg",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Work Permit",
+        "difficulty": "Moderate",
+        "duration": "1 year renewable",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Employer-sponsored; foreign worker quotas apply.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "MAR": {
+    "official_url": "https://www.consulat.ma",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Carte de Séjour",
+        "difficulty": "Moderate",
+        "duration": "1-10 years",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Multiple sub-categories: work, family, retirement.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "KEN": {
+    "official_url": "https://immigration.go.ke",
+    "visas": [
+      {
+        "type": "investor",
+        "name": "Class G Investor Permit",
+        "difficulty": "Moderate",
+        "duration": "2 years renewable",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Min $100K investment in Kenyan business.",
+        "min_investment": 100000,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 7,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "NGA": {
+    "official_url": "https://immigration.gov.ng",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Subject to Regularization (STR)",
+        "difficulty": "Moderate",
+        "duration": "2 years renewable",
+        "pr_route": "No",
+        "min_income": 0,
+        "summary": "Employer-sponsored work permit.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 15,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "GHA": {
+    "official_url": "https://www.gis.gov.gh",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Work + Residence Permit",
+        "difficulty": "Easy",
+        "duration": "1-4 years",
+        "pr_route": "Eventually",
+        "min_income": 0,
+        "summary": "Job offer required; relatively straightforward process.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "MUS": {
+    "official_url": "https://edbmauritius.org",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Premium Travel Visa",
+        "difficulty": "Easy",
+        "duration": "1 year renewable",
+        "pr_route": "No",
+        "min_income": 1500,
+        "summary": "Tropical island living for remote workers.",
+        "min_investment": 0,
+        "last_verified": null
+      },
+      {
+        "type": "investor",
+        "name": "Occupation Permit",
+        "difficulty": "Easy",
+        "duration": "10 years",
+        "pr_route": "Eventually",
+        "min_income": 3000,
+        "summary": "Investor / professional / self-employed routes.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "RUS": {
+    "official_url": "https://www.mid.ru/en",
+    "visas": [
+      {
+        "type": "skilled",
+        "name": "Highly Qualified Specialist (HQS)",
+        "difficulty": "Moderate",
+        "duration": "3 years",
+        "pr_route": "Eventually",
+        "min_income": 2500,
+        "summary": "For specialists earning min RUB 167K/month.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 5,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "GEO": {
+    "official_url": "https://www.geoconsul.gov.ge",
+    "visas": [
+      {
+        "type": "nomad",
+        "name": "Remotely from Georgia",
+        "difficulty": "Easy",
+        "duration": "1 year (visa-free 365 days)",
+        "pr_route": "No",
+        "min_income": 2000,
+        "summary": "Most passports get 365 visa-free days; very nomad-friendly.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 10,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  },
+  "CYP": {
+    "official_url": "https://www.moi.gov.cy",
+    "visas": [
+      {
+        "type": "investor",
+        "name": "Permanent Residency by Investment",
+        "difficulty": "Easy",
+        "duration": "Permanent",
+        "pr_route": "Yes",
+        "min_income": 2900,
+        "summary": "€300K property + income; one of EU's faster routes.",
+        "min_investment": 320000,
+        "last_verified": null
+      },
+      {
+        "type": "nomad",
+        "name": "Digital Nomad Visa",
+        "difficulty": "Easy",
+        "duration": "1 year (renewable +2)",
+        "pr_route": "No",
+        "min_income": 3500,
+        "summary": "Quick process; capped at 500/year applicants.",
+        "min_investment": 0,
+        "last_verified": null
+      }
+    ],
+    "citizenship": {
+      "years": 7,
+      "after_pr": 0,
+      "note": null,
+      "source": "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country",
+      "source_kind": "secondary",
+      "checked": "2026-11-16"
+    }
+  }
+}

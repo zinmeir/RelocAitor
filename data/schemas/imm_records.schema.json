@@ -1,0 +1,148 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Immigration route records (data/immigration/records.json, built)",
+ "type": "object",
+ "required": [
+  "routes"
+ ],
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "routes": {
+   "type": "object",
+   "propertyNames": {
+    "pattern": "^[A-Z]{3}-[a-z0-9-]+$"
+   },
+   "additionalProperties": {
+    "type": "object",
+    "required": [
+     "id",
+     "country",
+     "name",
+     "category",
+     "fields",
+     "rule_version"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}-[a-z0-9-]+$"
+     },
+     "country": {
+      "pattern": "^[A-Z]{3}$"
+     },
+     "name": {
+      "type": "string"
+     },
+     "category": {
+      "type": "string"
+     },
+     "official_source": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "rule_version": {
+      "type": "integer",
+      "minimum": 1
+     },
+     "fields": {
+      "type": "object",
+      "additionalProperties": {
+       "type": "object",
+       "required": [
+        "value",
+        "status"
+       ],
+       "properties": {
+        "status": {
+         "enum": [
+          "verified",
+          "sourced",
+          "third_party",
+          "estimated",
+          "unknown",
+          "outdated"
+         ]
+        },
+        "sources": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "pattern": "^https://"
+         }
+        },
+        "checked": {
+         "type": "string",
+         "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "note": {
+         "type": "string"
+        },
+        "verified_by": {
+         "type": "string",
+         "minLength": 1
+        },
+        "verified_on": {
+         "type": "string",
+         "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+       },
+       "allOf": [
+        {
+         "if": {
+          "properties": {
+           "status": {
+            "const": "verified"
+           }
+          }
+         },
+         "then": {
+          "required": [
+           "verified_by",
+           "sources",
+           "checked"
+          ]
+         }
+        },
+        {
+         "if": {
+          "properties": {
+           "status": {
+            "const": "sourced"
+           }
+          }
+         },
+         "then": {
+          "required": [
+           "sources",
+           "checked"
+          ]
+         }
+        },
+        {
+         "if": {
+          "properties": {
+           "status": {
+            "const": "unknown"
+           }
+          }
+         },
+         "then": {
+          "properties": {
+           "value": {
+            "type": "null"
+           }
+          }
+         }
+        }
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}

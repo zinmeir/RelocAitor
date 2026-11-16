@@ -1,0 +1,816 @@
+{
+ "about": "US dollars per unit of each currency, used only to show amounts in the currency you choose. Rankings always use dollars.",
+ "daily_date": "2026-11-13",
+ "daily_source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+ "annual_source": "https://data.worldbank.org/indicator/PA.NUS.FCRF",
+ "countries": {
+  "AGO": "AOA",
+  "ALB": "ALL",
+  "AND": "EUR",
+  "ARE": "AED",
+  "ARG": "ARS",
+  "ARM": "AMD",
+  "ATG": "XCD",
+  "AUS": "AUD",
+  "AUT": "EUR",
+  "AZE": "AZN",
+  "BDI": "BIF",
+  "BEL": "EUR",
+  "BEN": "XOF",
+  "BFA": "XOF",
+  "BGD": "BDT",
+  "BGR": "BGN",
+  "BHR": "BHD",
+  "BHS": "BSD",
+  "BIH": "BAM",
+  "BLR": "BYN",
+  "BLZ": "BZD",
+  "BOL": "BOB",
+  "BRA": "BRL",
+  "BRB": "BBD",
+  "BRN": "BND",
+  "BTN": "INR",
+  "BWA": "BWP",
+  "CAF": "XAF",
+  "CAN": "CAD",
+  "CHE": "CHF",
+  "CHL": "CLP",
+  "CHN": "CNY",
+  "CIV": "XOF",
+  "CMR": "XAF",
+  "COD": "CDF",
+  "COG": "XAF",
+  "COL": "COP",
+  "COM": "KMF",
+  "CPV": "CVE",
+  "CRI": "CRC",
+  "CYP": "EUR",
+  "CZE": "CZK",
+  "DEU": "EUR",
+  "DJI": "DJF",
+  "DMA": "XCD",
+  "DNK": "DKK",
+  "DOM": "DOP",
+  "DZA": "DZD",
+  "ECU": "USD",
+  "EGY": "EGP",
+  "ERI": "ERN",
+  "ESP": "EUR",
+  "EST": "EUR",
+  "ETH": "ETB",
+  "FIN": "EUR",
+  "FJI": "FJD",
+  "FRA": "EUR",
+  "FSM": "USD",
+  "GAB": "XAF",
+  "GBR": "GBP",
+  "GEO": "GEL",
+  "GHA": "GHS",
+  "GMB": "GMD",
+  "GNB": "XOF",
+  "GNQ": "XAF",
+  "GRC": "EUR",
+  "GRD": "XCD",
+  "GTM": "GTQ",
+  "GUY": "GYD",
+  "HKG": "HKD",
+  "HND": "HNL",
+  "HRV": "EUR",
+  "HTI": "HTG",
+  "HUN": "HUF",
+  "IDN": "IDR",
+  "IND": "INR",
+  "IRL": "EUR",
+  "IRN": "IRR",
+  "IRQ": "IQD",
+  "ISL": "ISK",
+  "ISR": "ILS",
+  "ITA": "EUR",
+  "JAM": "JMD",
+  "JOR": "JOD",
+  "JPN": "JPY",
+  "KAZ": "KZT",
+  "KEN": "KES",
+  "KGZ": "KGS",
+  "KHM": "KHR",
+  "KIR": "AUD",
+  "KNA": "XCD",
+  "KOR": "KRW",
+  "KWT": "KWD",
+  "LAO": "LAK",
+  "LBN": "LBP",
+  "LBR": "LRD",
+  "LBY": "LYD",
+  "LCA": "XCD",
+  "LIE": "CHF",
+  "LKA": "LKR",
+  "LSO": "ZAR",
+  "LTU": "EUR",
+  "LUX": "EUR",
+  "LVA": "EUR",
+  "MAR": "MAD",
+  "MCO": "EUR",
+  "MDA": "MDL",
+  "MDG": "MGA",
+  "MDV": "MVR",
+  "MEX": "MXN",
+  "MHL": "USD",
+  "MKD": "MKD",
+  "MLI": "XOF",
+  "MLT": "EUR",
+  "MNE": "EUR",
+  "MNG": "MNT",
+  "MOZ": "MZN",
+  "MRT": "MRU",
+  "MUS": "MUR",
+  "MWI": "MWK",
+  "MYS": "MYR",
+  "NAM": "ZAR",
+  "NER": "XOF",
+  "NGA": "NGN",
+  "NIC": "NIO",
+  "NLD": "EUR",
+  "NOR": "NOK",
+  "NPL": "NPR",
+  "NRU": "AUD",
+  "NZL": "NZD",
+  "OMN": "OMR",
+  "PAK": "PKR",
+  "PAN": "PAB",
+  "PER": "PEN",
+  "PHL": "PHP",
+  "PLW": "USD",
+  "PNG": "PGK",
+  "POL": "PLN",
+  "PRT": "EUR",
+  "PRY": "PYG",
+  "PSE": "ILS",
+  "QAT": "QAR",
+  "ROU": "RON",
+  "RUS": "RUB",
+  "RWA": "RWF",
+  "SAU": "SAR",
+  "SEN": "XOF",
+  "SGP": "SGD",
+  "SLB": "SBD",
+  "SLE": "SLE",
+  "SLV": "USD",
+  "SMR": "EUR",
+  "SRB": "RSD",
+  "SSD": "SSP",
+  "STP": "STN",
+  "SUR": "SRD",
+  "SVK": "EUR",
+  "SVN": "EUR",
+  "SWE": "SEK",
+  "SWZ": "SZL",
+  "SYC": "SCR",
+  "TCD": "XAF",
+  "TGO": "XOF",
+  "THA": "THB",
+  "TJK": "TJS",
+  "TLS": "USD",
+  "TON": "TOP",
+  "TTO": "TTD",
+  "TUN": "TND",
+  "TUR": "TRY",
+  "TUV": "AUD",
+  "TZA": "TZS",
+  "UGA": "UGX",
+  "UKR": "UAH",
+  "URY": "UYU",
+  "USA": "USD",
+  "UZB": "UZS",
+  "VCT": "XCD",
+  "VNM": "VND",
+  "VUT": "VUV",
+  "WSM": "WST",
+  "YEM": "YER",
+  "ZAF": "ZAR",
+  "ZMB": "ZMW",
+  "ZWE": "USD"
+ },
+ "rates": {
+  "AED": {
+   "usd_per_unit": 0.2722940776,
+   "basis": "annual",
+   "year": 2025
+  },
+  "ALL": {
+   "usd_per_unit": 0.0115202949,
+   "basis": "annual",
+   "year": 2025
+  },
+  "AMD": {
+   "usd_per_unit": 0.0025839115,
+   "basis": "annual",
+   "year": 2025
+  },
+  "AOA": {
+   "usd_per_unit": 0.0010964996,
+   "basis": "annual",
+   "year": 2025
+  },
+  "ARS": {
+   "usd_per_unit": 0.0008058984,
+   "basis": "annual",
+   "year": 2025
+  },
+  "AUD": {
+   "usd_per_unit": 0.67853635,
+   "basis": "daily"
+  },
+  "AZN": {
+   "usd_per_unit": 0.5882352941,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BAM": {
+   "usd_per_unit": 0.5760604208,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BBD": {
+   "usd_per_unit": 0.5,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BDT": {
+   "usd_per_unit": 0.0082020435,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BGN": {
+   "usd_per_unit": 0.5763052112,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BHD": {
+   "usd_per_unit": 2.6595744681,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BIF": {
+   "usd_per_unit": 0.0003397735,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BND": {
+   "usd_per_unit": 0.764762726,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BOB": {
+   "usd_per_unit": 0.1447178003,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BRL": {
+   "usd_per_unit": 0.17656362,
+   "basis": "daily"
+  },
+  "BSD": {
+   "usd_per_unit": 1.0,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BWP": {
+   "usd_per_unit": 0.0740609991,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BYN": {
+   "usd_per_unit": 0.3258204566,
+   "basis": "annual",
+   "year": 2025
+  },
+  "BZD": {
+   "usd_per_unit": 0.5,
+   "basis": "annual",
+   "year": 2025
+  },
+  "CAD": {
+   "usd_per_unit": 0.70135804,
+   "basis": "daily"
+  },
+  "CDF": {
+   "usd_per_unit": 0.0003712999,
+   "basis": "annual",
+   "year": 2025
+  },
+  "CHF": {
+   "usd_per_unit": 1.19274768,
+   "basis": "daily"
+  },
+  "CLP": {
+   "usd_per_unit": 0.0010511606,
+   "basis": "annual",
+   "year": 2025
+  },
+  "CNY": {
+   "usd_per_unit": 0.14988201,
+   "basis": "daily"
+  },
+  "COP": {
+   "usd_per_unit": 0.0002467225,
+   "basis": "annual",
+   "year": 2025
+  },
+  "CRC": {
+   "usd_per_unit": 0.0019861098,
+   "basis": "annual",
+   "year": 2025
+  },
+  "CVE": {
+   "usd_per_unit": 0.0102183507,
+   "basis": "annual",
+   "year": 2025
+  },
+  "CZK": {
+   "usd_per_unit": 0.04525057,
+   "basis": "daily"
+  },
+  "DJF": {
+   "usd_per_unit": 0.0056267971,
+   "basis": "annual",
+   "year": 2025
+  },
+  "DKK": {
+   "usd_per_unit": 0.14784098,
+   "basis": "daily"
+  },
+  "DOP": {
+   "usd_per_unit": 0.0161325276,
+   "basis": "annual",
+   "year": 2025
+  },
+  "DZD": {
+   "usd_per_unit": 0.0075984421,
+   "basis": "annual",
+   "year": 2025
+  },
+  "EGP": {
+   "usd_per_unit": 0.0203137434,
+   "basis": "annual",
+   "year": 2025
+  },
+  "ERN": {
+   "usd_per_unit": 0.0663349917,
+   "basis": "annual",
+   "year": 2025
+  },
+  "ETB": {
+   "usd_per_unit": 0.0121063417,
+   "basis": "annual",
+   "year": 2024
+  },
+  "EUR": {
+   "usd_per_unit": 1.1052,
+   "basis": "daily"
+  },
+  "FJD": {
+   "usd_per_unit": 0.4349654202,
+   "basis": "annual",
+   "year": 2025
+  },
+  "GBP": {
+   "usd_per_unit": 1.32265824,
+   "basis": "daily"
+  },
+  "GEL": {
+   "usd_per_unit": 0.3646119769,
+   "basis": "annual",
+   "year": 2025
+  },
+  "GHS": {
+   "usd_per_unit": 0.0796379658,
+   "basis": "annual",
+   "year": 2025
+  },
+  "GMD": {
+   "usd_per_unit": 0.0140273344,
+   "basis": "annual",
+   "year": 2025
+  },
+  "GTQ": {
+   "usd_per_unit": 0.1302062212,
+   "basis": "annual",
+   "year": 2025
+  },
+  "GYD": {
+   "usd_per_unit": 0.0047961631,
+   "basis": "annual",
+   "year": 2025
+  },
+  "HKD": {
+   "usd_per_unit": 0.12745347,
+   "basis": "daily"
+  },
+  "HNL": {
+   "usd_per_unit": 0.0385316738,
+   "basis": "annual",
+   "year": 2025
+  },
+  "HTG": {
+   "usd_per_unit": 0.0076554198,
+   "basis": "annual",
+   "year": 2025
+  },
+  "HUF": {
+   "usd_per_unit": 0.00302298,
+   "basis": "daily"
+  },
+  "IDR": {
+   "usd_per_unit": 5.481e-05,
+   "basis": "daily"
+  },
+  "ILS": {
+   "usd_per_unit": 0.31145554,
+   "basis": "daily"
+  },
+  "INR": {
+   "usd_per_unit": 0.01061085,
+   "basis": "daily"
+  },
+  "IQD": {
+   "usd_per_unit": 0.0007692308,
+   "basis": "annual",
+   "year": 2025
+  },
+  "IRR": {
+   "usd_per_unit": 2.38095e-05,
+   "basis": "annual",
+   "year": 2023
+  },
+  "ISK": {
+   "usd_per_unit": 0.0077856464,
+   "basis": "annual",
+   "year": 2025
+  },
+  "JMD": {
+   "usd_per_unit": 0.0062854962,
+   "basis": "annual",
+   "year": 2025
+  },
+  "JOD": {
+   "usd_per_unit": 1.4084507042,
+   "basis": "annual",
+   "year": 2025
+  },
+  "JPY": {
+   "usd_per_unit": 0.00625007,
+   "basis": "daily"
+  },
+  "KES": {
+   "usd_per_unit": 0.0077337982,
+   "basis": "annual",
+   "year": 2025
+  },
+  "KGS": {
+   "usd_per_unit": 0.0114469085,
+   "basis": "annual",
+   "year": 2025
+  },
+  "KHR": {
+   "usd_per_unit": 0.0002491632,
+   "basis": "annual",
+   "year": 2025
+  },
+  "KMF": {
+   "usd_per_unit": 0.0022968643,
+   "basis": "annual",
+   "year": 2025
+  },
+  "KRW": {
+   "usd_per_unit": 0.00074787,
+   "basis": "daily"
+  },
+  "KWD": {
+   "usd_per_unit": 3.2631242099,
+   "basis": "annual",
+   "year": 2025
+  },
+  "KZT": {
+   "usd_per_unit": 0.0019192569,
+   "basis": "annual",
+   "year": 2025
+  },
+  "LAK": {
+   "usd_per_unit": 4.89138e-05,
+   "basis": "annual",
+   "year": 2025
+  },
+  "LBP": {
+   "usd_per_unit": 1.11732e-05,
+   "basis": "annual",
+   "year": 2025
+  },
+  "LKR": {
+   "usd_per_unit": 0.0033238939,
+   "basis": "annual",
+   "year": 2025
+  },
+  "LRD": {
+   "usd_per_unit": 0.0052272094,
+   "basis": "annual",
+   "year": 2024
+  },
+  "LYD": {
+   "usd_per_unit": 0.1885879165,
+   "basis": "annual",
+   "year": 2025
+  },
+  "MAD": {
+   "usd_per_unit": 0.1069487036,
+   "basis": "annual",
+   "year": 2025
+  },
+  "MDL": {
+   "usd_per_unit": 0.0575445264,
+   "basis": "annual",
+   "year": 2025
+  },
+  "MGA": {
+   "usd_per_unit": 0.0002207627,
+   "basis": "annual",
+   "year": 2025
+  },
+  "MKD": {
+   "usd_per_unit": 0.0182965988,
+   "basis": "annual",
+   "year": 2025
+  },
+  "MNT": {
+   "usd_per_unit": 0.000282076,
+   "basis": "annual",
+   "year": 2025
+  },
+  "MRU": {
+   "usd_per_unit": 0.0274053943,
+   "basis": "annual",
+   "year": 2023
+  },
+  "MUR": {
+   "usd_per_unit": 0.0217405641,
+   "basis": "annual",
+   "year": 2025
+  },
+  "MVR": {
+   "usd_per_unit": 0.0648690268,
+   "basis": "annual",
+   "year": 2025
+  },
+  "MWK": {
+   "usd_per_unit": 0.0008612564,
+   "basis": "annual",
+   "year": 2023
+  },
+  "MXN": {
+   "usd_per_unit": 0.05378338,
+   "basis": "daily"
+  },
+  "MYR": {
+   "usd_per_unit": 0.24464859,
+   "basis": "daily"
+  },
+  "MZN": {
+   "usd_per_unit": 0.0156482278,
+   "basis": "annual",
+   "year": 2024
+  },
+  "NGN": {
+   "usd_per_unit": 0.0006585963,
+   "basis": "annual",
+   "year": 2025
+  },
+  "NIO": {
+   "usd_per_unit": 0.0273042761,
+   "basis": "annual",
+   "year": 2025
+  },
+  "NOK": {
+   "usd_per_unit": 0.10456502,
+   "basis": "daily"
+  },
+  "NPR": {
+   "usd_per_unit": 0.0071882748,
+   "basis": "annual",
+   "year": 2025
+  },
+  "NZD": {
+   "usd_per_unit": 0.55320853,
+   "basis": "daily"
+  },
+  "OMR": {
+   "usd_per_unit": 2.6007802341,
+   "basis": "annual",
+   "year": 2025
+  },
+  "PAB": {
+   "usd_per_unit": 1.0,
+   "basis": "annual",
+   "year": 2025
+  },
+  "PEN": {
+   "usd_per_unit": 0.2803426165,
+   "basis": "annual",
+   "year": 2025
+  },
+  "PGK": {
+   "usd_per_unit": 0.2425580917,
+   "basis": "annual",
+   "year": 2025
+  },
+  "PHP": {
+   "usd_per_unit": 0.01567082,
+   "basis": "daily"
+  },
+  "PKR": {
+   "usd_per_unit": 0.0035569087,
+   "basis": "annual",
+   "year": 2025
+  },
+  "PLN": {
+   "usd_per_unit": 0.25053839,
+   "basis": "daily"
+  },
+  "PYG": {
+   "usd_per_unit": 0.0001325303,
+   "basis": "annual",
+   "year": 2025
+  },
+  "QAR": {
+   "usd_per_unit": 0.2747252747,
+   "basis": "annual",
+   "year": 2025
+  },
+  "RON": {
+   "usd_per_unit": 0.20660261,
+   "basis": "daily"
+  },
+  "RSD": {
+   "usd_per_unit": 0.0096176596,
+   "basis": "annual",
+   "year": 2025
+  },
+  "RUB": {
+   "usd_per_unit": 0.0119542154,
+   "basis": "annual",
+   "year": 2025
+  },
+  "RWF": {
+   "usd_per_unit": 0.0007000456,
+   "basis": "annual",
+   "year": 2025
+  },
+  "SAR": {
+   "usd_per_unit": 0.2666666667,
+   "basis": "annual",
+   "year": 2025
+  },
+  "SBD": {
+   "usd_per_unit": 0.1200935433,
+   "basis": "annual",
+   "year": 2025
+  },
+  "SCR": {
+   "usd_per_unit": 0.0679096105,
+   "basis": "annual",
+   "year": 2025
+  },
+  "SEK": {
+   "usd_per_unit": 0.09950034,
+   "basis": "daily"
+  },
+  "SGD": {
+   "usd_per_unit": 0.77634167,
+   "basis": "daily"
+  },
+  "SLE": {
+   "usd_per_unit": 0.0469376138,
+   "basis": "annual",
+   "year": 2023
+  },
+  "SRD": {
+   "usd_per_unit": 0.0268383036,
+   "basis": "annual",
+   "year": 2025
+  },
+  "SSP": {
+   "usd_per_unit": 0.0004622986,
+   "basis": "annual",
+   "year": 2024
+  },
+  "STN": {
+   "usd_per_unit": 0.0459874738,
+   "basis": "annual",
+   "year": 2025
+  },
+  "SZL": {
+   "usd_per_unit": 0.055900521,
+   "basis": "annual",
+   "year": 2025
+  },
+  "THB": {
+   "usd_per_unit": 0.02948537,
+   "basis": "daily"
+  },
+  "TJS": {
+   "usd_per_unit": 0.0998232297,
+   "basis": "annual",
+   "year": 2025
+  },
+  "TND": {
+   "usd_per_unit": 0.333626183,
+   "basis": "annual",
+   "year": 2025
+  },
+  "TOP": {
+   "usd_per_unit": 0.4148470672,
+   "basis": "annual",
+   "year": 2025
+  },
+  "TRY": {
+   "usd_per_unit": 0.01985388,
+   "basis": "daily"
+  },
+  "TTD": {
+   "usd_per_unit": 0.148173467,
+   "basis": "annual",
+   "year": 2025
+  },
+  "TZS": {
+   "usd_per_unit": 0.0003849262,
+   "basis": "annual",
+   "year": 2024
+  },
+  "UAH": {
+   "usd_per_unit": 0.0239871014,
+   "basis": "annual",
+   "year": 2025
+  },
+  "UGX": {
+   "usd_per_unit": 0.0002775473,
+   "basis": "annual",
+   "year": 2025
+  },
+  "USD": {
+   "usd_per_unit": 1.0,
+   "basis": "dollar"
+  },
+  "UYU": {
+   "usd_per_unit": 0.0242771602,
+   "basis": "annual",
+   "year": 2025
+  },
+  "UZS": {
+   "usd_per_unit": 7.94951e-05,
+   "basis": "annual",
+   "year": 2025
+  },
+  "VND": {
+   "usd_per_unit": 4.13824e-05,
+   "basis": "annual",
+   "year": 2024
+  },
+  "VUV": {
+   "usd_per_unit": 0.0083108742,
+   "basis": "annual",
+   "year": 2025
+  },
+  "WST": {
+   "usd_per_unit": 0.358229852,
+   "basis": "annual",
+   "year": 2025
+  },
+  "XAF": {
+   "usd_per_unit": 0.0017184242,
+   "basis": "annual",
+   "year": 2025
+  },
+  "XCD": {
+   "usd_per_unit": 0.3703703704,
+   "basis": "annual",
+   "year": 2025
+  },
+  "XOF": {
+   "usd_per_unit": 0.0017184242,
+   "basis": "annual",
+   "year": 2025
+  },
+  "YER": {
+   "usd_per_unit": 0.000737944,
+   "basis": "annual",
+   "year": 2023
+  },
+  "ZAR": {
+   "usd_per_unit": 0.05894997,
+   "basis": "daily"
+  },
+  "ZMW": {
+   "usd_per_unit": 0.0395637085,
+   "basis": "annual",
+   "year": 2025
+  }
+ }
+}

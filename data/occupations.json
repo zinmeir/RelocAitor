@@ -1,0 +1,58 @@
+{
+  "_about": "Job fields used for shortage lists and prompt reading. 'phrases' are matched longest-first, so 'software engineer' wins over 'engineer'.",
+  "fields": {
+    "tech": {
+      "label": "Tech & IT",
+      "phrases": ["software engineer", "software developer", "web developer", "frontend developer", "backend developer",
+                  "full stack developer", "mobile developer", "app developer", "developer", "programmer", "coder",
+                  "data scientist", "data engineer", "data analyst", "machine learning engineer", "ml engineer",
+                  "ai engineer", "devops", "sysadmin", "system administrator", "network engineer", "cloud engineer",
+                  "cybersecurity", "security engineer", "it specialist", "it professional", "work in it", "in tech",
+                  "tech worker", "ux designer", "ui designer", "product designer", "qa engineer", "software tester"]
+    },
+    "healthcare": {
+      "label": "Healthcare",
+      "phrases": ["nurse", "registered nurse", "doctor", "physician", "surgeon", "gp", "general practitioner",
+                  "dentist", "pharmacist", "midwife", "physiotherapist", "physical therapist", "occupational therapist",
+                  "radiographer", "paramedic", "psychiatrist", "psychologist", "medical laboratory scientist",
+                  "lab technician", "healthcare worker", "care worker", "caregiver", "carer", "veterinarian", "vet"]
+    },
+    "engineering": {
+      "label": "Engineering",
+      "phrases": ["civil engineer", "mechanical engineer", "electrical engineer", "chemical engineer",
+                  "structural engineer", "mining engineer", "industrial engineer", "aerospace engineer",
+                  "engineer", "architect", "surveyor", "quantity surveyor", "urban planner"]
+    },
+    "education": {
+      "label": "Teaching",
+      "phrases": ["teacher", "school teacher", "primary teacher", "secondary teacher", "maths teacher",
+                  "math teacher", "science teacher", "english teacher", "early childhood educator",
+                  "kindergarten teacher", "special needs teacher", "lecturer", "professor", "tutor"]
+    },
+    "trades": {
+      "label": "Skilled trades",
+      "phrases": ["electrician", "plumber", "welder", "carpenter", "joiner", "bricklayer", "mechanic",
+                  "auto mechanic", "motor mechanic", "hvac technician", "fitter", "machinist", "tradesperson",
+                  "tradesman", "construction worker", "roofer", "plasterer", "tiler", "truck driver", "heavy vehicle driver"]
+    },
+    "finance": {
+      "label": "Finance & accounting",
+      "phrases": ["accountant", "chartered accountant", "auditor", "financial analyst", "actuary", "banker",
+                  "investment banker", "economist", "finance manager", "bookkeeper", "tax advisor"]
+    },
+    "science": {
+      "label": "Science & research",
+      "phrases": ["researcher", "research scientist", "scientist", "postdoc", "biologist", "chemist",
+                  "physicist", "mathematician", "statistician", "phd student", "academic"]
+    },
+    "hospitality": {
+      "label": "Hospitality & food",
+      "phrases": ["chef", "cook", "baker", "butcher", "pastry chef", "hotel manager", "restaurant manager",
+                  "waiter", "barista", "bartender", "hospitality worker"]
+    },
+    "other": {
+      "label": "Other field",
+      "phrases": []
+    }
+  }
+}

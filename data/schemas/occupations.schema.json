@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Job fields (data/occupations.json)",
+  "type": "object",
+  "properties": {
+    "_about": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z]+$"
+      },
+      "minProperties": 2,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 2
+          },
+          "phrases": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9' -]+$"
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "label",
+          "phrases"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "fields"
+  ],
+  "additionalProperties": false
+}

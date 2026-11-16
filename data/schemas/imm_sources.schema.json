@@ -1,0 +1,59 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Official source registry (data/immigration/sources.json)",
+ "type": "array",
+ "items": {
+  "type": "object",
+  "required": [
+   "id",
+   "kind",
+   "access",
+   "countries",
+   "routes",
+   "urls"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "id": {
+    "type": "string"
+   },
+   "kind": {
+    "enum": [
+     "official",
+     "third_party"
+    ]
+   },
+   "access": {
+    "enum": [
+     "manual",
+     "api",
+     "feed"
+    ]
+   },
+   "notes": {
+    "type": "string"
+   },
+   "countries": {
+    "type": "array",
+    "items": {
+     "pattern": "^[A-Z]{3}$"
+    }
+   },
+   "routes": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "pattern": "^[A-Z]{3}-[a-z0-9-]+$"
+    }
+   },
+   "urls": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "pattern": "^https://"
+    },
+    "minItems": 1
+   }
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Human sign-offs (data/immigration/verifications.json)",
+ "type": "array",
+ "items": {
+  "type": "object",
+  "required": [
+   "route",
+   "field",
+   "value_hash",
+   "by",
+   "date",
+   "sources"
+  ],
+  "properties": {
+   "route": {
+    "type": "string",
+    "pattern": "^[A-Z]{3}-[a-z0-9-]+$"
+   },
+   "field": {
+    "type": "string"
+   },
+   "value_hash": {
+    "pattern": "^[0-9a-f]{16}$"
+   },
+   "by": {
+    "type": "string",
+    "minLength": 1
+   },
+   "date": {
+    "type": "string",
+    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+   },
+   "sources": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "pattern": "^https://"
+    },
+    "minItems": 1
+   }
+  }
+ }
+}

@@ -1,0 +1,98 @@
+# Global Peace Index 2026 (Institute for Economics & Peace). Lower score = more peaceful (scale ~1–5).
+# Source: https://www.visionofhumanity.org via https://en.wikipedia.org/wiki/Global_Peace_Index (retrieved 2026-11-16)
+country_code,country,score,year
+ISL,Iceland,1.161,2026
+NZL,New Zealand,1.343,2026
+CHE,Switzerland,1.363,2026
+SVN,Slovenia,1.369,2026
+IRL,Ireland,1.371,2026
+AUT,Austria,1.421,2026
+PRT,Portugal,1.427,2026
+SGP,Singapore,1.435,2026
+FIN,Finland,1.478,2026
+JPN,Japan,1.489,2026
+DNK,Denmark,1.504,2026
+MYS,Malaysia,1.513,2026
+CZE,Czech Republic,1.517,2026
+CAN,Canada,1.525,2026
+HUN,Hungary,1.538,2026
+NLD,Netherlands,1.566,2026
+MUS,Mauritius,1.586,2026
+LVA,Latvia,1.589,2026
+AUS,Australia,1.602,2026
+BEL,Belgium,1.608,2026
+POL,Poland,1.615,2026
+HRV,Croatia,1.619,2026
+LTU,Lithuania,1.62,2026
+EST,Estonia,1.623,2026
+BGR,Bulgaria,1.628,2026
+ESP,Spain,1.654,2026
+DEU,Germany,1.657,2026
+SVK,Slovakia,1.661,2026
+QAT,Qatar,1.676,2026
+NOR,Norway,1.688,2026
+ITA,Italy,1.712,2026
+UZB,Uzbekistan,1.726,2026
+GBR,United Kingdom,1.73,2026
+SWE,Sweden,1.732,2026
+VNM,Vietnam,1.738,2026
+TWN,Taiwan,1.751,2026
+URY,Uruguay,1.754,2026
+KAZ,Kazakhstan,1.771,2026
+ROU,Romania,1.788,2026
+KWT,Kuwait,1.813,2026
+CHL,Chile,1.826,2026
+GRC,Greece,1.828,2026
+KOR,South Korea,1.839,2026
+OMN,Oman,1.85,2026
+CRI,Costa Rica,1.86,2026
+PRY,Paraguay,1.882,2026
+MAR,Morocco,1.887,2026
+LKA,Sri Lanka,1.91,2026
+JOR,Jordan,1.913,2026
+IDN,Indonesia,1.918,2026
+SRB,Serbia,1.919,2026
+ARG,Argentina,1.922,2026
+ARE,United Arab Emirates,1.927,2026
+GHA,Ghana,1.943,2026
+TUN,Tunisia,1.947,2026
+CYP,Cyprus,1.967,2026
+PAN,Panama,1.976,2026
+DZA,Algeria,2.053,2026
+BOL,Bolivia,2.054,2026
+GEO,Georgia,2.066,2026
+SAU,Saudi Arabia,2.067,2026
+KHM,Cambodia,2.075,2026
+TZA,Tanzania,2.08,2026
+FRA,France,2.083,2026
+THA,Thailand,2.089,2026
+PHL,Philippines,2.092,2026
+PER,Peru,2.12,2026
+BHR,Bahrain,2.131,2026
+NPL,Nepal,2.143,2026
+EGY,Egypt,2.186,2026
+BLR,Belarus,2.216,2026
+BGD,Bangladesh,2.226,2026
+CHN,China,2.231,2026
+ZAF,South Africa,2.308,2026
+BRA,Brazil,2.333,2026
+IND,India,2.409,2026
+UGA,Uganda,2.42,2026
+LBN,Lebanon,2.435,2026
+KEN,Kenya,2.447,2026
+VEN,Venezuela,2.516,2026
+USA,United States of America,2.535,2026
+ECU,Ecuador,2.539,2026
+TUR,Türkiye,2.605,2026
+ETH,Ethiopia,2.648,2026
+MEX,Mexico,2.65,2026
+IRQ,Iraq,2.662,2026
+COL,Colombia,2.735,2026
+NGA,Nigeria,2.755,2026
+IRN,Iran,2.759,2026
+MMR,Myanmar,2.911,2026
+PAK,Pakistan,2.919,2026
+AFG,Afghanistan,3.106,2026
+ISR,Israel,3.124,2026
+UKR,Ukraine,3.184,2026
+RUS,Russia,3.367,2026

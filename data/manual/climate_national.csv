@@ -1,0 +1,67 @@
+# Mean annual temperature (°C), 1991–2020, area-weighted national average.
+# World Bank Climate Change Knowledge Portal (CRU data), via https://en.wikipedia.org/wiki/List_of_countries_by_average_yearly_temperature (retrieved 2026-11-16)
+# Fallback only: area averages are skewed by uninhabited regions (e.g. Canada, Russia). Prefer climate_city.csv.
+country_code,country,avg_temp_c
+ARE,United Arab Emirates,28.17
+QAT,Qatar,28.02
+BHR,Bahrain,27.69
+SGP,Singapore,27.68
+GHA,Ghana,27.66
+NGA,Nigeria,27.30
+LKA,Sri Lanka,27.25
+PHL,Philippines,27.10
+THA,Thailand,26.85
+MYS,Malaysia,26.38
+IDN,Indonesia,25.96
+SAU,Saudi Arabia,25.94
+PAN,Panama,25.60
+BRA,Brazil,25.44
+KEN,Kenya,25.08
+COL,Colombia,25.00
+IND,India,24.94
+CRI,Costa Rica,24.83
+VNM,Vietnam,24.79
+MUS,Mauritius,23.33
+EGY,Egypt,23.14
+AUS,Australia,22.05
+MEX,Mexico,21.31
+PER,Peru,20.07
+CYP,Cyprus,20.01
+ZAF,South Africa,18.23
+MAR,Morocco,18.14
+URY,Uruguay,17.97
+ARG,Argentina,16.30
+PRT,Portugal,15.85
+GRC,Greece,13.17
+ESP,Spain,13.07
+ITA,Italy,13.02
+KOR,South Korea,12.22
+HRV,Croatia,11.96
+JPN,Japan,11.78
+TUR,Turkey,11.66
+FRA,France,11.65
+HUN,Hungary,11.50
+BEL,Belgium,10.67
+NLD,Netherlands,10.49
+NZL,New Zealand,10.46
+ROU,Romania,10.18
+SVN,Slovenia,9.86
+IRL,Ireland,9.73
+DEU,Germany,9.59
+USA,United States,9.46
+CHL,Chile,9.39
+GBR,United Kingdom,9.24
+GEO,Georgia,9.01
+DNK,Denmark,8.90
+POL,Poland,8.78
+CZE,Czech Republic,8.60
+CHN,China,7.59
+AUT,Austria,7.44
+CHE,Switzerland,6.47
+EST,Estonia,6.34
+SWE,Sweden,3.23
+FIN,Finland,2.46
+NOR,Norway,2.21
+ISL,Iceland,1.85
+RUS,Russia,-3.79
+CAN,Canada,-4.03

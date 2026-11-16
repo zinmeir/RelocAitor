@@ -1,0 +1,10 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+data/world_bank_reference.csv
+dist/
+ml/models/
+instance/

@@ -1,0 +1,273 @@
+{
+  "_about": "Major cities within large countries. Annual mean temperature from Wikipedia's list of cities by average temperature (the same source family as the country climate figures). Price level relative to the national average only where an official statistic exists (US: BEA regional price parities, 2024, the last year BEA published metro figures). Blank means not researched.",
+  "checked": "2026-11-16",
+  "sources": {
+    "temp_c": "https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature",
+    "price_index": "https://apps.bea.gov/scb/infographics/2026/0526-rpp.pdf"
+  },
+  "cities": {
+    "USA": [
+      {
+        "name": "New York City",
+        "temp_c": 12.9,
+        "price_index": 112.6
+      },
+      {
+        "name": "San Francisco",
+        "temp_c": 14.6,
+        "price_index": 115.6
+      },
+      {
+        "name": "Los Angeles",
+        "temp_c": 18.6,
+        "price_index": 113.6
+      },
+      {
+        "name": "Seattle",
+        "temp_c": 11.3,
+        "price_index": 111.1
+      },
+      {
+        "name": "Chicago",
+        "temp_c": 11.3,
+        "price_index": null
+      },
+      {
+        "name": "Boston",
+        "temp_c": 11.1,
+        "price_index": null
+      },
+      {
+        "name": "Miami",
+        "temp_c": 24.9,
+        "price_index": null
+      },
+      {
+        "name": "Houston",
+        "temp_c": 20.8,
+        "price_index": null
+      }
+    ],
+    "CAN": [
+      {
+        "name": "Toronto",
+        "temp_c": 9.7,
+        "price_index": null
+      },
+      {
+        "name": "Vancouver",
+        "temp_c": 10.5,
+        "price_index": null
+      },
+      {
+        "name": "Montreal",
+        "temp_c": 7.0,
+        "price_index": null
+      },
+      {
+        "name": "Calgary",
+        "temp_c": 4.5,
+        "price_index": null
+      },
+      {
+        "name": "Ottawa",
+        "temp_c": 6.8,
+        "price_index": null
+      }
+    ],
+    "AUS": [
+      {
+        "name": "Sydney",
+        "temp_c": 18.8,
+        "price_index": null
+      },
+      {
+        "name": "Melbourne",
+        "temp_c": 14.9,
+        "price_index": null
+      },
+      {
+        "name": "Brisbane",
+        "temp_c": 21.4,
+        "price_index": null
+      },
+      {
+        "name": "Perth",
+        "temp_c": 18.7,
+        "price_index": null
+      },
+      {
+        "name": "Adelaide",
+        "temp_c": 17.5,
+        "price_index": null
+      }
+    ],
+    "DEU": [
+      {
+        "name": "Berlin",
+        "temp_c": 10.3,
+        "price_index": null
+      },
+      {
+        "name": "Hamburg",
+        "temp_c": 9.7,
+        "price_index": null
+      },
+      {
+        "name": "Frankfurt",
+        "temp_c": 10.6,
+        "price_index": null
+      }
+    ],
+    "GBR": [
+      {
+        "name": "London",
+        "temp_c": 11.3,
+        "price_index": null
+      },
+      {
+        "name": "Edinburgh",
+        "temp_c": 9.3,
+        "price_index": null
+      }
+    ],
+    "ESP": [
+      {
+        "name": "Madrid",
+        "temp_c": 15.4,
+        "price_index": null
+      },
+      {
+        "name": "Barcelona",
+        "temp_c": 17.4,
+        "price_index": null
+      },
+      {
+        "name": "Valencia",
+        "temp_c": 18.6,
+        "price_index": null
+      },
+      {
+        "name": "Seville",
+        "temp_c": 19.6,
+        "price_index": null
+      }
+    ],
+    "ITA": [
+      {
+        "name": "Rome",
+        "temp_c": 15.2,
+        "price_index": null
+      },
+      {
+        "name": "Milan",
+        "temp_c": 13.0,
+        "price_index": null
+      },
+      {
+        "name": "Naples",
+        "temp_c": 15.9,
+        "price_index": null
+      }
+    ],
+    "JPN": [
+      {
+        "name": "Tokyo",
+        "temp_c": 15.4,
+        "price_index": null
+      },
+      {
+        "name": "Sapporo",
+        "temp_c": 8.9,
+        "price_index": null
+      }
+    ],
+    "CHN": [
+      {
+        "name": "Shanghai",
+        "temp_c": 16.7,
+        "price_index": null
+      },
+      {
+        "name": "Beijing",
+        "temp_c": 12.9,
+        "price_index": null
+      },
+      {
+        "name": "Shenzhen",
+        "temp_c": 23.3,
+        "price_index": null
+      },
+      {
+        "name": "Guangzhou",
+        "temp_c": 22.4,
+        "price_index": null
+      }
+    ],
+    "IND": [
+      {
+        "name": "New Delhi",
+        "temp_c": 24.6,
+        "price_index": null
+      },
+      {
+        "name": "Mumbai",
+        "temp_c": 27.1,
+        "price_index": null
+      }
+    ],
+    "BRA": [
+      {
+        "name": "São Paulo",
+        "temp_c": 19.2,
+        "price_index": null
+      },
+      {
+        "name": "Rio de Janeiro",
+        "temp_c": 23.8,
+        "price_index": null
+      }
+    ],
+    "MEX": [
+      {
+        "name": "Mexico City",
+        "temp_c": 17.5,
+        "price_index": null
+      },
+      {
+        "name": "Guadalajara",
+        "temp_c": 20.9,
+        "price_index": null
+      }
+    ],
+    "PRT": [
+      {
+        "name": "Lisbon",
+        "temp_c": 17.5,
+        "price_index": null
+      },
+      {
+        "name": "Porto",
+        "temp_c": 15.7,
+        "price_index": null
+      }
+    ],
+    "FRA": [
+      {
+        "name": "Paris",
+        "temp_c": 12.3,
+        "price_index": null
+      },
+      {
+        "name": "Lyon",
+        "temp_c": 12.5,
+        "price_index": null
+      },
+      {
+        "name": "Marseille",
+        "temp_c": 15.8,
+        "price_index": null
+      }
+    ]
+  }
+}

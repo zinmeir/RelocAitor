@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt vocabulary (data/search_lexicon.json)",
+  "type": "object",
+  "required": [
+    "version",
+    "factors",
+    "intents",
+    "regions",
+    "countries",
+    "currencies",
+    "refine",
+    "personal"
+  ],
+  "properties": {
+    "personal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "number_words",
+        "cue_only_jobs",
+        "job_cue",
+        "partner",
+        "single",
+        "children",
+        "no_children",
+        "age",
+        "age_range"
+      ],
+      "properties": {
+        "_about": {
+          "type": "string"
+        },
+        "number_words": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          }
+        },
+        "cue_only_jobs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "job_cue": {
+          "type": "string",
+          "minLength": 3
+        },
+        "partner": {
+          "type": "string",
+          "minLength": 3
+        },
+        "single": {
+          "type": "string",
+          "minLength": 3
+        },
+        "children": {
+          "type": "string",
+          "minLength": 3
+        },
+        "no_children": {
+          "type": "string",
+          "minLength": 3
+        },
+        "age": {
+          "type": "string",
+          "minLength": 3
+        },
+        "age_range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      }
+    },
+    "countries": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Z]{3}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "aliases",
+          "cities",
+          "demonyms"
+        ],
+        "properties": {
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "demonyms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# One-click deploy on Render: New > Blueprint > pick this repo.
+services:
+  - type: web
+    name: relocaitor
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && (python -m ml.build_semantic_index --model-only || true)
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --timeout 60 app:app
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: ANTHROPIC_API_KEY        # optional: lets the assistant phrase answers (with the user's consent)
+        sync: false
+      - key: RELOC_ENCRYPTION_KEY     # encrypts saved profiles; keep it stable or saved profiles become unreadable
+        generateValue: true
+      - key: RELOC_SECURE_COOKIES
+        value: "1"
+      - key: RELOC_LOG_JSON
+        value: "1"
+      - key: ADZUNA_APP_ID            # optional: live job vacancies
+        sync: false
+      - key: ADZUNA_APP_KEY
+        sync: false
+    # Accounts live in SQLite. On the free plan the file is lost on each deploy; for lasting accounts use a
+    # paid plan with a disk and point RELOC_DB at it:
+    # disk:
+    #   name: data
+    #   mountPath: /var/data
+    #   sizeGB: 1
+    # (then add envVar RELOC_DB=/var/data/relocaitor.db)

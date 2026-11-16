@@ -1,0 +1,1060 @@
+[
+ {
+  "id": "dofi.ibz.be",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "BEL"
+  ],
+  "routes": [],
+  "urls": [
+   "https://dofi.ibz.be"
+  ]
+ },
+ {
+  "id": "edbmauritius.org",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "MUS"
+  ],
+  "routes": [],
+  "urls": [
+   "https://edbmauritius.org"
+  ]
+ },
+ {
+  "id": "en.goc.gov.tr",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "TUR"
+  ],
+  "routes": [],
+  "urls": [
+   "https://en.goc.gov.tr"
+  ]
+ },
+ {
+  "id": "en.wikipedia.org",
+  "kind": "third_party",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ARE",
+   "ARG",
+   "AUS",
+   "AUT",
+   "BEL",
+   "BHR",
+   "BRA",
+   "CAN",
+   "CHE",
+   "CHL",
+   "COL",
+   "CRI",
+   "CYP",
+   "CZE",
+   "DEU",
+   "EGY",
+   "ESP",
+   "EST",
+   "FIN",
+   "FRA",
+   "GBR",
+   "GEO",
+   "GHA",
+   "GRC",
+   "HRV",
+   "HUN",
+   "IDN",
+   "IND",
+   "IRL",
+   "ISL",
+   "ISR",
+   "ITA",
+   "JPN",
+   "KEN",
+   "KOR",
+   "LKA",
+   "MAR",
+   "MEX",
+   "MUS",
+   "MYS",
+   "NGA",
+   "NLD",
+   "NOR",
+   "NZL",
+   "PAN",
+   "PER",
+   "PHL",
+   "POL",
+   "PRT",
+   "QAT",
+   "ROU",
+   "RUS",
+   "SAU",
+   "SVN",
+   "SWE",
+   "THA",
+   "TUR",
+   "TWN",
+   "URY",
+   "USA",
+   "VNM",
+   "ZAF"
+  ],
+  "routes": [],
+  "urls": [
+   "https://en.wikipedia.org/wiki/Naturalization#Summary_by_country"
+  ]
+ },
+ {
+  "id": "enterprise.gov.ie",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "IRL"
+  ],
+  "routes": [
+   "IRL-critical-skills-employment-permit"
+  ],
+  "urls": [
+   "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/employment-permit-eligibility/highly-skilled-eligible-occupations-list/",
+   "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+  ]
+ },
+ {
+  "id": "france-visas.gouv.fr",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "FRA"
+  ],
+  "routes": [
+   "FRA-long-stay-student-visa",
+   "FRA-talent-passport"
+  ],
+  "urls": [
+   "https://france-visas.gouv.fr",
+   "https://france-visas.gouv.fr/documents/d/france-visas/frais-de-visa-francais"
+  ]
+ },
+ {
+  "id": "icp.gov.ae",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ARE"
+  ],
+  "routes": [],
+  "urls": [
+   "https://icp.gov.ae"
+  ]
+ },
+ {
+  "id": "igi.mai.gov.ro",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ROU"
+  ],
+  "routes": [],
+  "urls": [
+   "https://igi.mai.gov.ro/en"
+  ]
+ },
+ {
+  "id": "immi.homeaffairs.gov.au",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "AUS"
+  ],
+  "routes": [],
+  "urls": [
+   "https://immi.homeaffairs.gov.au"
+  ]
+ },
+ {
+  "id": "immigration.go.ke",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "KEN"
+  ],
+  "routes": [],
+  "urls": [
+   "https://immigration.go.ke"
+  ]
+ },
+ {
+  "id": "immigration.gov.ng",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "NGA"
+  ],
+  "routes": [],
+  "urls": [
+   "https://immigration.gov.ng"
+  ]
+ },
+ {
+  "id": "immigration.gov.ph",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "PHL"
+  ],
+  "routes": [],
+  "urls": [
+   "https://immigration.gov.ph"
+  ]
+ },
+ {
+  "id": "ind.nl",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "NLD"
+  ],
+  "routes": [
+   "NLD-daft-us-treaty",
+   "NLD-highly-skilled-migrant-visa",
+   "NLD-startup-visa"
+  ],
+  "urls": [
+   "https://ind.nl/en",
+   "https://ind.nl/en/fees-costs-of-an-application",
+   "https://ind.nl/en/required-amounts-income-requirements",
+   "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+   "https://ind.nl/en/residence-permits/work/start-up"
+  ]
+ },
+ {
+  "id": "indianvisaonline.gov.in",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "IND"
+  ],
+  "routes": [],
+  "urls": [
+   "https://indianvisaonline.gov.in"
+  ]
+ },
+ {
+  "id": "ircc.canada.ca",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "CAN"
+  ],
+  "routes": [
+   "CAN-express-entry-fsw",
+   "CAN-spousal-partner-sponsorship",
+   "CAN-start-up-visa-program",
+   "CAN-study-permit-pgwp"
+  ],
+  "urls": [
+   "https://ircc.canada.ca/english/information/fees/fees.asp"
+  ]
+ },
+ {
+  "id": "island.is",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ISL"
+  ],
+  "routes": [],
+  "urls": [
+   "https://island.is/en/o/directorate-of-immigration"
+  ]
+ },
+ {
+  "id": "migration.gov.gr",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "GRC"
+  ],
+  "routes": [],
+  "urls": [
+   "https://migration.gov.gr/en"
+  ]
+ },
+ {
+  "id": "migri.fi",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "FIN"
+  ],
+  "routes": [
+   "FIN-specialist-residence-permit",
+   "FIN-startup-permit"
+  ],
+  "urls": [
+   "https://migri.fi/en",
+   "https://migri.fi/en/specialist",
+   "https://migri.fi/en/start-up-entrepreneur"
+  ]
+ },
+ {
+  "id": "mup.gov.hr",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "HRV"
+  ],
+  "routes": [],
+  "urls": [
+   "https://mup.gov.hr"
+  ]
+ },
+ {
+  "id": "oif.gov.hu",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "HUN"
+  ],
+  "routes": [],
+  "urls": [
+   "https://oif.gov.hu"
+  ]
+ },
+ {
+  "id": "portal.moi.gov.qa",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "QAT"
+  ],
+  "routes": [],
+  "urls": [
+   "https://portal.moi.gov.qa"
+  ]
+ },
+ {
+  "id": "serviciomigraciones.cl",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "CHL"
+  ],
+  "routes": [],
+  "urls": [
+   "https://serviciomigraciones.cl"
+  ]
+ },
+ {
+  "id": "travel.state.gov",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "USA"
+  ],
+  "routes": [
+   "USA-ir-1-cr-1-spouse-visa"
+  ],
+  "urls": [
+   "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/fees/fees-visa-services.html"
+  ]
+ },
+ {
+  "id": "ustraveldocs.com",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "USA"
+  ],
+  "routes": [
+   "USA-f-1-student-visa"
+  ],
+  "urls": [
+   "https://ustraveldocs.com/qa/qa-niv-visafeeinfo.asp"
+  ]
+ },
+ {
+  "id": "visa.mofa.gov.sa",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "SAU"
+  ],
+  "routes": [],
+  "urls": [
+   "https://visa.mofa.gov.sa"
+  ]
+ },
+ {
+  "id": "vistoperitalia.esteri.it",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ITA"
+  ],
+  "routes": [],
+  "urls": [
+   "https://vistoperitalia.esteri.it"
+  ]
+ },
+ {
+  "id": "vistos.mne.gov.pt",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "PRT"
+  ],
+  "routes": [],
+  "urls": [
+   "https://vistos.mne.gov.pt"
+  ]
+ },
+ {
+  "id": "www.argentina.gob.ar",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ARG"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.argentina.gob.ar/interior/migraciones"
+  ]
+ },
+ {
+  "id": "www.canada.ca",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "CAN"
+  ],
+  "routes": [
+   "CAN-express-entry-fsw"
+  ],
+  "urls": [
+   "https://www.canada.ca/en/immigration-refugees-citizenship.html",
+   "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations/category-based-selection.html",
+   "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html"
+  ]
+ },
+ {
+  "id": "www.cancilleria.gov.co",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "COL"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.cancilleria.gov.co"
+  ]
+ },
+ {
+  "id": "www.consulat.ma",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "MAR"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.consulat.ma"
+  ]
+ },
+ {
+  "id": "www.dha.gov.za",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ZAF"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.dha.gov.za"
+  ]
+ },
+ {
+  "id": "www.exteriores.gob.es",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ESP"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.exteriores.gob.es"
+  ]
+ },
+ {
+  "id": "www.geoconsul.gov.ge",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "GEO"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.geoconsul.gov.ge"
+  ]
+ },
+ {
+  "id": "www.gis.gov.gh",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "GHA"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.gis.gov.gh"
+  ]
+ },
+ {
+  "id": "www.gob.mx",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "MEX"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.gob.mx/inm"
+  ]
+ },
+ {
+  "id": "www.gob.pe",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "PER"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.gob.pe/migraciones"
+  ]
+ },
+ {
+  "id": "www.gov.br",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "BRA"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.gov.br/mre/en"
+  ]
+ },
+ {
+  "id": "www.gov.il",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "ISR"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.gov.il/en/departments/population_and_immigration_authority"
+  ]
+ },
+ {
+  "id": "www.gov.pl",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "POL"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.gov.pl/web/udsc-en"
+  ]
+ },
+ {
+  "id": "www.gov.si",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "SVN"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.gov.si/en"
+  ]
+ },
+ {
+  "id": "www.gov.uk",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "GBR"
+  ],
+  "routes": [
+   "GBR-family-visa-partner",
+   "GBR-innovator-founder-visa",
+   "GBR-skilled-worker-visa",
+   "GBR-student-visa-graduate-route"
+  ],
+  "urls": [
+   "https://www.gov.uk/browse/visas-immigration",
+   "https://www.gov.uk/indefinite-leave-to-remain",
+   "https://www.gov.uk/innovator-founder-visa",
+   "https://www.gov.uk/skilled-worker-visa/how-much-it-costs",
+   "https://www.gov.uk/skilled-worker-visa/knowledge-of-english",
+   "https://www.gov.uk/student-visa",
+   "https://www.gov.uk/uk-family-visa/how-much-it-costs",
+   "https://www.gov.uk/uk-family-visa/partner-spouse"
+  ]
+ },
+ {
+  "id": "www.gub.uy",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "URY"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.gub.uy/ministerio-relaciones-exteriores"
+  ]
+ },
+ {
+  "id": "www.hikorea.go.kr",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "KOR"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.hikorea.go.kr"
+  ]
+ },
+ {
+  "id": "www.imi.gov.my",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "MYS"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.imi.gov.my"
+  ]
+ },
+ {
+  "id": "www.imigrasi.go.id",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "IDN"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.imigrasi.go.id"
+  ]
+ },
+ {
+  "id": "www.immd.gov.hk",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "HKG"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.immd.gov.hk"
+  ]
+ },
+ {
+  "id": "www.immigration.gov.lk",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "LKA"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.immigration.gov.lk"
+  ]
+ },
+ {
+  "id": "www.immigration.gov.tw",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "TWN"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.immigration.gov.tw"
+  ]
+ },
+ {
+  "id": "www.immigration.govt.nz",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "NZL"
+  ],
+  "routes": [
+   "NZL-skilled-migrant-category"
+  ],
+  "urls": [
+   "https://www.immigration.govt.nz",
+   "https://www.immigration.govt.nz/opsmanual/89117.htm",
+   "https://www.immigration.govt.nz/visas/skilled-migrant-category-resident-visa/"
+  ]
+ },
+ {
+  "id": "www.irishimmigration.ie",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "IRL"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.irishimmigration.ie"
+  ]
+ },
+ {
+  "id": "www.make-it-in-germany.com",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "DEU"
+  ],
+  "routes": [
+   "DEU-eu-blue-card",
+   "DEU-family-reunification-visa",
+   "DEU-opportunity-card-job-search",
+   "DEU-student-visa-18-month-job-search"
+  ],
+  "urls": [
+   "https://www.make-it-in-germany.com/en",
+   "https://www.make-it-in-germany.com/en/visa-residence/procedure/entry-process",
+   "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+   "https://www.make-it-in-germany.com/en/visa-residence/types/job-search-opportunity-card",
+   "https://www.make-it-in-germany.com/en/visa-residence/types/studying"
+  ]
+ },
+ {
+  "id": "www.mid.ru",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "RUS"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.mid.ru/en"
+  ]
+ },
+ {
+  "id": "www.migracion.go.cr",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "CRI"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.migracion.go.cr"
+  ]
+ },
+ {
+  "id": "www.migracion.gob.pa",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "PAN"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.migracion.gob.pa"
+  ]
+ },
+ {
+  "id": "www.migration.gv.at",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "AUT"
+  ],
+  "routes": [
+   "AUT-red-white-red-card"
+  ],
+  "urls": [
+   "https://www.migration.gv.at/en",
+   "https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/very-highly-qualified-workers/"
+  ]
+ },
+ {
+  "id": "www.migrationsverket.se",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "SWE"
+  ],
+  "routes": [
+   "SWE-work-permit"
+  ],
+  "urls": [
+   "https://www.migrationsverket.se",
+   "https://www.migrationsverket.se/English/Private-individuals/Working-in-Sweden/Employed.html"
+  ]
+ },
+ {
+  "id": "www.moi.gov.cy",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "CYP"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.moi.gov.cy"
+  ]
+ },
+ {
+  "id": "www.moj.go.jp",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "JPN"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.moj.go.jp/isa/"
+  ]
+ },
+ {
+  "id": "www.mom.gov.sg",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "SGP"
+  ],
+  "routes": [
+   "SGP-employment-pass"
+  ],
+  "urls": [
+   "https://www.mom.gov.sg",
+   "https://www.mom.gov.sg/passes-and-permits/employment-pass",
+   "https://www.mom.gov.sg/passes-and-permits/employment-pass/apply-for-a-pass"
+  ]
+ },
+ {
+  "id": "www.mvcr.cz",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "CZE"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.mvcr.cz/mvcren"
+  ]
+ },
+ {
+  "id": "www.nia.gov.cn",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "CHN"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.nia.gov.cn"
+  ]
+ },
+ {
+  "id": "www.npra.gov.bh",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "BHR"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.npra.gov.bh"
+  ]
+ },
+ {
+  "id": "www.nyidanmark.dk",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "DNK"
+  ],
+  "routes": [
+   "DNK-pay-limit-scheme"
+  ],
+  "urls": [
+   "https://www.nyidanmark.dk/en-GB",
+   "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Work/Pay-limit-scheme"
+  ]
+ },
+ {
+  "id": "www.politsei.ee",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "EST"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.politsei.ee/en"
+  ]
+ },
+ {
+  "id": "www.sem.admin.ch",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "CHE"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.sem.admin.ch"
+  ]
+ },
+ {
+  "id": "www.thaievisa.go.th",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "THA"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.thaievisa.go.th"
+  ]
+ },
+ {
+  "id": "www.udi.no",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "NOR"
+  ],
+  "routes": [
+   "NOR-skilled-worker-permit"
+  ],
+  "urls": [
+   "https://www.udi.no/en",
+   "https://www.udi.no/en/want-to-apply/work-immigration/skilled-workers/"
+  ]
+ },
+ {
+  "id": "www.uscis.gov",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "USA"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.uscis.gov"
+  ]
+ },
+ {
+  "id": "www.visa2egypt.gov.eg",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "EGY"
+  ],
+  "routes": [],
+  "urls": [
+   "https://www.visa2egypt.gov.eg"
+  ]
+ },
+ {
+  "id": "xuatnhapcanh.gov.vn",
+  "kind": "official",
+  "access": "manual",
+  "notes": "",
+  "countries": [
+   "VNM"
+  ],
+  "routes": [],
+  "urls": [
+   "https://xuatnhapcanh.gov.vn"
+  ]
+ }
+]

@@ -1,0 +1,88 @@
+# EF English Proficiency Index 2025 (EF Education First), published Nov 2025.
+# Source table: https://www.ef.com/epi/ via https://en.wikipedia.org/wiki/EF_English_Proficiency_Index (retrieved 2026-11-16)
+# Native English-speaking countries are not ranked by EF; the pipeline scores them separately (see pipeline/sources.py).
+country_code,country,score,year
+NLD,Netherlands,624,2025
+HRV,Croatia,617,2025
+AUT,Austria,616,2025
+DEU,Germany,615,2025
+NOR,Norway,613,2025
+PRT,Portugal,612,2025
+DNK,Denmark,611,2025
+SWE,Sweden,609,2025
+BEL,Belgium,608,2025
+SVK,Slovakia,606,2025
+ROU,Romania,605,2025
+FIN,Finland,603,2025
+ZAF,South Africa,602,2025
+POL,Poland,600,2025
+LVA,Latvia,599,2025
+BGR,Bulgaria,594,2025
+KEN,Kenya,593,2025
+GRC,Greece,592,2025
+HUN,Hungary,590,2025
+CZE,Czechia,582,2025
+MYS,Malaysia,581,2025
+SRB,Serbia,579,2025
+ARG,Argentina,575,2025
+PHL,Philippines,569,2025
+NGA,Nigeria,569,2025
+CHE,Switzerland,564,2025
+EST,Estonia,561,2025
+LTU,Lithuania,543,2025
+URY,Uruguay,542,2025
+GEO,Georgia,541,2025
+GHA,Ghana,540,2025
+ESP,Spain,540,2025
+FRA,France,539,2025
+HKG,Hong Kong,538,2025
+CYP,Cyprus,537,2025
+BLR,Belarus,533,2025
+PRY,Paraguay,531,2025
+UKR,Ukraine,526,2025
+ISR,Israel,524,2025
+KOR,South Korea,522,2025
+BOL,Bolivia,521,2025
+RUS,Russia,521,2025
+VEN,Venezuela,520,2025
+PER,Peru,519,2025
+UGA,Uganda,518,2025
+CHL,Chile,517,2025
+CRI,Costa Rica,516,2025
+NPL,Nepal,514,2025
+ITA,Italy,513,2025
+BGD,Bangladesh,506,2025
+VNM,Vietnam,500,2025
+ETH,Ethiopia,499,2025
+TUN,Tunisia,498,2025
+PAK,Pakistan,493,2025
+IRN,Iran,492,2025
+MAR,Morocco,492,2025
+PAN,Panama,491,2025
+TUR,Turkey,488,2025
+ARE,United Arab Emirates,487,2025
+LKA,Sri Lanka,486,2025
+IND,India,484,2025
+BRA,Brazil,482,2025
+COL,Colombia,480,2025
+TZA,Tanzania,479,2025
+LBN,Lebanon,477,2025
+IDN,Indonesia,471,2025
+QAT,Qatar,469,2025
+DZA,Algeria,468,2025
+ECU,Ecuador,466,2025
+CHN,China,464,2025
+EGY,Egypt,459,2025
+KWT,Kuwait,455,2025
+AFG,Afghanistan,446,2025
+JPN,Japan,446,2025
+MMR,Myanmar,444,2025
+MEX,Mexico,440,2025
+UZB,Uzbekistan,439,2025
+JOR,Jordan,426,2025
+KAZ,Kazakhstan,417,2025
+OMN,Oman,407,2025
+IRQ,Iraq,406,2025
+SAU,Saudi Arabia,404,2025
+THA,Thailand,402,2025
+KHM,Cambodia,390,2025

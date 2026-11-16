@@ -1,0 +1,47 @@
+{
+ "method": "Iterative imputation (MICE) with Bayesian ridge regression, standardized indicators, 5-fold cross-validation per indicator",
+ "min_r2": 0.5,
+ "cv_r2": {
+  "NY.GNP.PCAP.CD": 0.96,
+  "PRICE_LEVEL": 0.809,
+  "SL.UEM.TOTL.ZS": -0.177,
+  "SL.EMP.VULN.ZS": 0.615,
+  "VC.IHR.PSRC.P5": 0.601,
+  "GPI": 0.321,
+  "UHC_INDEX_REPORTED": 0.815,
+  "SP.DYN.LE00.IN": 0.702,
+  "IT.NET.USER.ZS": 0.614,
+  "EF_EPI": 0.378,
+  "CITY_TEMP": 0.362
+ },
+ "used": {
+  "NY.GNP.PCAP.CD": {
+   "TWN": 19531.0
+  },
+  "PRICE_LEVEL": {
+   "TWN": 0.536
+  },
+  "SL.EMP.VULN.ZS": {
+   "TWN": 20.62
+  },
+  "VC.IHR.PSRC.P5": {
+   "TWN": 0.78
+  },
+  "UHC_INDEX_REPORTED": {
+   "TWN": 79.306,
+   "HKG": 86.708
+  },
+  "SP.DYN.LE00.IN": {
+   "TWN": 79.325
+  },
+  "IT.NET.USER.ZS": {
+   "TWN": 88.73
+  }
+ },
+ "rejected": [
+  "SL.UEM.TOTL.ZS",
+  "GPI",
+  "EF_EPI",
+  "CITY_TEMP"
+ ]
+}

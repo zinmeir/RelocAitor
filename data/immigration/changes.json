@@ -1,0 +1,69 @@
+[
+ {
+  "route": "CAN-express-entry-fsw",
+  "kind": "experience_requirement",
+  "direction": null,
+  "field": "work_experience",
+  "previous": null,
+  "new": 1,
+  "sources": [
+   "https://ircc.canada.ca/english/information/fees/fees.asp",
+   "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html"
+  ],
+  "detected": "2026-11-16",
+  "verification": "pending",
+  "id": "0a9f66f600047cd4"
+ },
+ {
+  "route": "CAN-express-entry-fsw",
+  "kind": "language_requirement",
+  "direction": null,
+  "field": "language",
+  "previous": null,
+  "new": {
+   "lang": "english",
+   "test": "CLB 7 in all four abilities (or the French equivalent)"
+  },
+  "sources": [
+   "https://ircc.canada.ca/english/information/fees/fees.asp",
+   "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html"
+  ],
+  "detected": "2026-11-16",
+  "verification": "pending",
+  "id": "f857e771f86228a4"
+ },
+ {
+  "route": "GBR-skilled-worker-visa",
+  "kind": "language_requirement",
+  "direction": null,
+  "field": "language",
+  "previous": null,
+  "new": {
+   "lang": "english",
+   "cefr": "B2"
+  },
+  "sources": [
+   "https://www.gov.uk/indefinite-leave-to-remain",
+   "https://www.gov.uk/skilled-worker-visa/how-much-it-costs",
+   "https://www.gov.uk/skilled-worker-visa/knowledge-of-english"
+  ],
+  "detected": "2026-11-16",
+  "verification": "pending",
+  "id": "ca632aa6797fe6a7"
+ },
+ {
+  "route": "DEU-eu-blue-card",
+  "kind": "education_requirement",
+  "direction": null,
+  "field": "education",
+  "previous": null,
+  "new": "bachelor",
+  "sources": [
+   "https://www.make-it-in-germany.com/en/visa-residence/procedure/entry-process",
+   "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card"
+  ],
+  "detected": "2026-11-16",
+  "verification": "pending",
+  "id": "630acba90f419663"
+ }
+]

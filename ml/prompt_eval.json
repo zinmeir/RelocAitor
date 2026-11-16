@@ -1,0 +1,27 @@
+{
+ "test_prompts": 60,
+ "train_prompts": 168,
+ "rules_only": {
+  "factor_precision": 0.902,
+  "factor_recall": 0.755,
+  "factor_f1": 0.822,
+  "visa_accuracy": 0.85
+ },
+ "model_only": {
+  "factor_precision": 0.848,
+  "factor_recall": 0.571,
+  "factor_f1": 0.683,
+  "visa_accuracy": 0.817
+ },
+ "rules_plus_model": {
+  "factor_precision": 0.902,
+  "factor_recall": 0.755,
+  "factor_f1": 0.822,
+  "visa_accuracy": 0.933
+ },
+ "C": 10.0,
+ "thresholds": {
+  "factor": null,
+  "visa": 0.5
+ }
+}

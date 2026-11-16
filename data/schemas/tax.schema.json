@@ -1,0 +1,42 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "OECD effective tax rates (data/finance/tax_oecd.json)",
+ "type": "object",
+ "required": [
+  "source",
+  "table",
+  "year",
+  "checked",
+  "rates_pct"
+ ],
+ "properties": {
+  "_about": {
+   "type": "string"
+  },
+  "source": {
+   "type": "string",
+   "pattern": "^https://"
+  },
+  "table": {
+   "type": "string"
+  },
+  "year": {
+   "type": "integer"
+  },
+  "checked": {
+   "type": "string"
+  },
+  "rates_pct": {
+   "type": "object",
+   "propertyNames": {
+    "pattern": "^[A-Z]{3}$"
+   },
+   "additionalProperties": {
+    "type": "number",
+    "minimum": 0,
+    "maximum": 70
+   },
+   "minProperties": 38
+  }
+ }
+}

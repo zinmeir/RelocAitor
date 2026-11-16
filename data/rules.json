@@ -1,0 +1,287 @@
+{
+  "_about": "Eligibility rules as data, read by eligibility.py (Python) and preview/mock_api.js (browser). Each visa rule compares one visa field with one profile field. Tests: 'in' (profile value must be in the visa's list), 'at_least' / 'at_most' (profile number against the visa's limit), 'allowed' (fails when the visa says false and the profile says yes), 'flag' (fails whenever the visa field is true). A rule is skipped when the visa field is absent (or 0 with ignore_zero). 'missing' applies when the profile field is unknown. Outcomes: 'ineligible' always wins; 'conditional' only downgrades an eligible verdict. Text placeholders: {visa}, {profile}, {visa:usd}, {profile:usd}, {visa:fields}.",
+  "blocs": [
+    {
+      "id": "eu",
+      "name": "EU/EEA free movement",
+      "members": [
+        "AUT",
+        "BEL",
+        "BGR",
+        "HRV",
+        "CYP",
+        "CZE",
+        "DNK",
+        "EST",
+        "FIN",
+        "FRA",
+        "DEU",
+        "GRC",
+        "HUN",
+        "IRL",
+        "ITA",
+        "LVA",
+        "LTU",
+        "LUX",
+        "MLT",
+        "NLD",
+        "POL",
+        "PRT",
+        "ROU",
+        "SVK",
+        "SVN",
+        "ESP",
+        "SWE",
+        "ISL",
+        "NOR",
+        "LIE",
+        "CHE"
+      ],
+      "pr_route": "Eventually",
+      "duration": "No time limit",
+      "summary": "As an EU/EEA/Swiss citizen you can live and work here without a visa; register locally after 3 months. Permanent residence after 5 years."
+    },
+    {
+      "id": "cta",
+      "name": "Common Travel Area",
+      "members": [
+        "GBR",
+        "IRL"
+      ],
+      "pr_route": "Yes",
+      "duration": "No time limit",
+      "summary": "British and Irish citizens can live, work and study in each other's country with no visa and near-equal rights."
+    },
+    {
+      "id": "tta",
+      "name": "Trans-Tasman arrangement",
+      "members": [
+        "AUS",
+        "NZL"
+      ],
+      "pr_route": "Eventually",
+      "duration": "No time limit",
+      "summary": "Australian and New Zealand citizens can live and work in each other's country on arrival."
+    },
+    {
+      "id": "gcc",
+      "name": "GCC citizen mobility",
+      "members": [
+        "ARE",
+        "QAT",
+        "SAU",
+        "BHR",
+        "KWT",
+        "OMN"
+      ],
+      "pr_route": "No",
+      "duration": "No time limit",
+      "summary": "Gulf Cooperation Council citizens can live and work across member states without a work visa."
+    },
+    {
+      "id": "mercosur",
+      "name": "Mercosur Residence Agreement",
+      "members": [
+        "ARG",
+        "BRA",
+        "URY",
+        "CHL",
+        "COL",
+        "PER",
+        "PRY",
+        "BOL",
+        "ECU"
+      ],
+      "pr_route": "Eventually",
+      "duration": "2 years, then permanent",
+      "summary": "South American citizens of member states get 2-year residence with work rights, convertible to permanent residence."
+    }
+  ],
+  "visa_rules": [
+    {
+      "id": "passport",
+      "visa": "restricted_to",
+      "profile": "nationality",
+      "test": "in",
+      "missing": {
+        "status": "conditional",
+        "text": "Only open to certain nationalities. Set your passport to check."
+      },
+      "fail": {
+        "status": "ineligible",
+        "text": "Not open to holders of your passport."
+      }
+    },
+    {
+      "id": "income",
+      "visa": "min_income",
+      "profile": "monthly_income",
+      "test": "at_least",
+      "ignore_zero": true,
+      "fail": {
+        "status": "ineligible",
+        "text": "Needs about {visa:usd}/mo income (you entered {profile:usd})."
+      }
+    },
+    {
+      "id": "investment",
+      "visa": "min_investment",
+      "profile": "investment_budget",
+      "test": "at_least",
+      "ignore_zero": true,
+      "fail": {
+        "status": "ineligible",
+        "text": "Needs about {visa:usd} to invest (your budget is {profile:usd})."
+      }
+    },
+    {
+      "id": "age_max",
+      "visa": "age_max",
+      "profile": "age",
+      "test": "at_most",
+      "fail": {
+        "status": "ineligible",
+        "text": "Age limit: {visa} or under (you're {profile})."
+      }
+    },
+    {
+      "id": "age_min",
+      "visa": "age_min",
+      "profile": "age",
+      "test": "at_least",
+      "fail": {
+        "status": "ineligible",
+        "text": "Minimum age {visa} (you're {profile})."
+      }
+    },
+    {
+      "id": "partner",
+      "visa": "family.partner",
+      "profile": "partner",
+      "test": "allowed",
+      "skip_types": [
+        "family",
+        "free"
+      ],
+      "fail": {
+        "status": "ineligible",
+        "text": "Your partner can't come with you on this visa."
+      }
+    },
+    {
+      "id": "children",
+      "visa": "family.children",
+      "profile": "children",
+      "test": "allowed",
+      "skip_types": [
+        "family",
+        "free"
+      ],
+      "fail": {
+        "status": "ineligible",
+        "text": "Children can't come with you on this visa."
+      }
+    },
+    {
+      "id": "job_list",
+      "visa": "fields",
+      "profile": "occupation",
+      "test": "in",
+      "missing": {
+        "status": "conditional",
+        "text": "Only for listed jobs ({visa:fields}). Set your field to check."
+      },
+      "fail": {
+        "status": "ineligible",
+        "text": "Only for listed jobs ({visa:fields})."
+      }
+    },
+    {
+      "id": "education",
+      "visa": "education_min",
+      "profile": "education",
+      "test": "rank_at_least",
+      "scale": "education",
+      "missing": {
+        "status": "conditional",
+        "text": "Needs at least a {visa:education} or equivalent. Add your education to check."
+      },
+      "fail": {
+        "status": "ineligible",
+        "text": "Needs at least a {visa:education} (you have a {profile:education})."
+      }
+    },
+    {
+      "id": "experience",
+      "visa": "experience_years",
+      "profile": "experience_years",
+      "test": "at_least",
+      "missing": {
+        "status": "conditional",
+        "text": "Needs {visa} year(s) of skilled work experience. Add yours to check."
+      },
+      "fail": {
+        "status": "ineligible",
+        "text": "Needs {visa} year(s) of skilled work experience (you entered {profile})."
+      }
+    },
+    {
+      "id": "language",
+      "visa": "language",
+      "test": "language",
+      "missing": {
+        "status": "conditional",
+        "text": "Needs {visa:language}. Add your level to check."
+      },
+      "incomparable": {
+        "status": "conditional",
+        "text": "Needs {visa:language} on an approved test, which can't be compared with a CEFR level."
+      },
+      "fail": {
+        "status": "ineligible",
+        "text": "Needs {visa:language} (you have {profile:language})."
+      }
+    },
+    {
+      "id": "sponsor",
+      "visa": "requires_sponsor",
+      "test": "flag",
+      "only_if_eligible": true,
+      "fail": {
+        "status": "conditional",
+        "text": "Requires a partner or family member who is a citizen or resident."
+      }
+    }
+  ],
+  "scales": {
+    "education": [
+      "secondary",
+      "diploma",
+      "bachelor",
+      "master",
+      "doctorate"
+    ],
+    "cefr": [
+      "A1",
+      "A2",
+      "B1",
+      "B2",
+      "C1",
+      "C2"
+    ]
+  },
+  "labels": {
+    "education": {
+      "secondary": "secondary school",
+      "diploma": "post-secondary diploma",
+      "bachelor": "bachelor's degree",
+      "master": "master's degree",
+      "doctorate": "doctorate"
+    },
+    "language": {
+      "english": "English",
+      "german": "German",
+      "french": "French"
+    }
+  }
+}

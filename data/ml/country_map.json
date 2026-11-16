@@ -1,0 +1,1854 @@
+{
+ "method": "z-scored 9 factors \u2192 PCA (2D map) + k-means (k by silhouette) + Euclidean nearest neighbours",
+ "features": [
+  "average_salary",
+  "cost_of_living",
+  "pr_ease",
+  "job_market",
+  "climate",
+  "safety",
+  "healthcare",
+  "english",
+  "internet"
+ ],
+ "k": 4,
+ "silhouette_by_k": {
+  "3": 0.269,
+  "4": 0.273,
+  "5": 0.247,
+  "6": 0.244,
+  "7": 0.221,
+  "8": 0.239
+ },
+ "stability_ari": {
+  "mean": 0.715,
+  "min": 0.439,
+  "bootstraps": 30
+ },
+ "explained_variance": [
+  0.561,
+  0.149
+ ],
+ "axes": [
+  {
+   "label": "more income & cost & healthcare \u2192",
+   "loadings": {
+    "average_salary": 0.429,
+    "cost_of_living": 0.395,
+    "pr_ease": 0.202,
+    "job_market": 0.318,
+    "climate": -0.265,
+    "safety": 0.296,
+    "healthcare": 0.393,
+    "english": 0.261,
+    "internet": 0.371
+   }
+  },
+  {
+   "label": "more jobs \u2192 (vs PR ease & English)",
+   "loadings": {
+    "average_salary": 0.112,
+    "cost_of_living": -0.067,
+    "pr_ease": -0.624,
+    "job_market": 0.429,
+    "climate": 0.246,
+    "safety": 0.082,
+    "healthcare": 0.147,
+    "english": -0.517,
+    "internet": 0.232
+   }
+  }
+ ],
+ "clusters": [
+  {
+   "id": 0,
+   "name": "English-friendly \u00b7 Cooler",
+   "size": 26,
+   "members": [
+    "USA",
+    "CAN",
+    "GBR",
+    "IRL",
+    "DEU",
+    "FRA",
+    "NLD",
+    "BEL",
+    "SWE",
+    "NOR",
+    "DNK",
+    "FIN",
+    "ISL",
+    "CHE",
+    "AUT",
+    "PRT",
+    "CZE",
+    "POL",
+    "HUN",
+    "EST",
+    "ROU",
+    "HRV",
+    "SVN",
+    "AUS",
+    "NZL",
+    "SGP"
+   ],
+   "centroid_z": {
+    "average_salary": 0.79,
+    "cost_of_living": 0.86,
+    "pr_ease": 0.56,
+    "job_market": 0.51,
+    "climate": -0.9,
+    "safety": 0.65,
+    "healthcare": 0.62,
+    "english": 0.92,
+    "internet": 0.54
+   }
+  },
+  {
+   "id": 1,
+   "name": "Strong job market \u00b7 Little English",
+   "size": 15,
+   "members": [
+    "ESP",
+    "ITA",
+    "JPN",
+    "KOR",
+    "TWN",
+    "HKG",
+    "CHN",
+    "MYS",
+    "ARE",
+    "QAT",
+    "SAU",
+    "ISR",
+    "BHR",
+    "RUS",
+    "CYP"
+   ],
+   "centroid_z": {
+    "average_salary": 0.36,
+    "cost_of_living": -0.05,
+    "pr_ease": -0.72,
+    "job_market": 0.8,
+    "climate": 0.48,
+    "safety": 0.29,
+    "healthcare": 0.43,
+    "english": -0.67,
+    "internet": 0.6
+   }
+  },
+  {
+   "id": 2,
+   "name": "Less safe \u00b7 Weak job market",
+   "size": 14,
+   "members": [
+    "MEX",
+    "CRI",
+    "PAN",
+    "BRA",
+    "ARG",
+    "CHL",
+    "URY",
+    "COL",
+    "PER",
+    "GRC",
+    "THA",
+    "TUR",
+    "MUS",
+    "GEO"
+   ],
+   "centroid_z": {
+    "average_salary": -0.5,
+    "cost_of_living": -0.54,
+    "pr_ease": 0.48,
+    "job_market": -0.93,
+    "climate": 0.61,
+    "safety": -1.0,
+    "healthcare": -0.2,
+    "english": -0.61,
+    "internet": -0.4
+   }
+  },
+  {
+   "id": 3,
+   "name": "Weaker healthcare \u00b7 Lower income",
+   "size": 11,
+   "members": [
+    "VNM",
+    "IND",
+    "IDN",
+    "PHL",
+    "LKA",
+    "ZAF",
+    "EGY",
+    "MAR",
+    "KEN",
+    "NGA",
+    "GHA"
+   ],
+   "centroid_z": {
+    "average_salary": -1.72,
+    "cost_of_living": -1.28,
+    "pr_ease": -0.96,
+    "job_market": -1.11,
+    "climate": 0.71,
+    "safety": -0.66,
+    "healthcare": -1.8,
+    "english": -0.48,
+    "internet": -1.6
+   }
+  }
+ ],
+ "countries": {
+  "USA": {
+   "x": 1.7979,
+   "y": 0.6244,
+   "cluster": 0,
+   "neighbors": [
+    "GBR",
+    "ISR",
+    "AUT",
+    "CHE",
+    "FRA",
+    "ISL",
+    "BEL",
+    "SGP"
+   ],
+   "distances": [
+    2.556,
+    2.879,
+    3.098,
+    3.174,
+    3.177,
+    3.243,
+    3.258,
+    3.432
+   ]
+  },
+  "CAN": {
+   "x": 2.7576,
+   "y": -1.9366,
+   "cluster": 0,
+   "neighbors": [
+    "SWE",
+    "NLD",
+    "NZL",
+    "BEL",
+    "FIN",
+    "DEU",
+    "DNK",
+    "IRL"
+   ],
+   "distances": [
+    1.025,
+    1.286,
+    1.484,
+    1.525,
+    1.538,
+    1.601,
+    1.605,
+    1.875
+   ]
+  },
+  "MEX": {
+   "x": -1.95,
+   "y": 0.8129,
+   "cluster": 2,
+   "neighbors": [
+    "BRA",
+    "TUR",
+    "THA",
+    "CRI",
+    "PER",
+    "COL",
+    "PAN",
+    "ARG"
+   ],
+   "distances": [
+    1.513,
+    2.389,
+    2.423,
+    2.522,
+    2.685,
+    2.747,
+    2.976,
+    3.247
+   ]
+  },
+  "CRI": {
+   "x": -0.8225,
+   "y": -0.372,
+   "cluster": 2,
+   "neighbors": [
+    "URY",
+    "BRA",
+    "ARG",
+    "CHL",
+    "CYP",
+    "PAN",
+    "GRC",
+    "PER"
+   ],
+   "distances": [
+    1.305,
+    1.57,
+    1.688,
+    1.795,
+    2.162,
+    2.322,
+    2.417,
+    2.432
+   ]
+  },
+  "PAN": {
+   "x": -1.9763,
+   "y": -0.9915,
+   "cluster": 2,
+   "neighbors": [
+    "COL",
+    "BRA",
+    "PER",
+    "CRI",
+    "GEO",
+    "TUR",
+    "ARG",
+    "CHL"
+   ],
+   "distances": [
+    1.898,
+    2.198,
+    2.303,
+    2.322,
+    2.553,
+    2.579,
+    2.747,
+    2.753
+   ]
+  },
+  "BRA": {
+   "x": -2.0477,
+   "y": 0.1514,
+   "cluster": 2,
+   "neighbors": [
+    "MEX",
+    "CRI",
+    "THA",
+    "PER",
+    "COL",
+    "TUR",
+    "PAN",
+    "ARG"
+   ],
+   "distances": [
+    1.513,
+    1.57,
+    1.867,
+    1.982,
+    2.026,
+    2.063,
+    2.198,
+    2.266
+   ]
+  },
+  "ARG": {
+   "x": -0.8291,
+   "y": -0.7398,
+   "cluster": 2,
+   "neighbors": [
+    "GRC",
+    "CHL",
+    "CRI",
+    "URY",
+    "MYS",
+    "CYP",
+    "TWN",
+    "PER"
+   ],
+   "distances": [
+    1.679,
+    1.685,
+    1.688,
+    1.695,
+    2.01,
+    2.053,
+    2.073,
+    2.225
+   ]
+  },
+  "CHL": {
+   "x": -0.2833,
+   "y": -0.5524,
+   "cluster": 2,
+   "neighbors": [
+    "URY",
+    "ARG",
+    "CRI",
+    "ESP",
+    "THA",
+    "TUR",
+    "FRA",
+    "BRA"
+   ],
+   "distances": [
+    1.339,
+    1.685,
+    1.795,
+    1.931,
+    2.196,
+    2.286,
+    2.372,
+    2.46
+   ]
+  },
+  "URY": {
+   "x": 0.0622,
+   "y": -0.9576,
+   "cluster": 2,
+   "neighbors": [
+    "CRI",
+    "CHL",
+    "ARG",
+    "ESP",
+    "FRA",
+    "CYP",
+    "GRC",
+    "PRT"
+   ],
+   "distances": [
+    1.305,
+    1.339,
+    1.695,
+    2.012,
+    2.033,
+    2.153,
+    2.257,
+    2.508
+   ]
+  },
+  "COL": {
+   "x": -2.768,
+   "y": -0.9186,
+   "cluster": 2,
+   "neighbors": [
+    "PAN",
+    "BRA",
+    "TUR",
+    "PER",
+    "THA",
+    "MEX",
+    "GEO",
+    "CRI"
+   ],
+   "distances": [
+    1.898,
+    2.026,
+    2.32,
+    2.465,
+    2.634,
+    2.747,
+    2.807,
+    2.911
+   ]
+  },
+  "PER": {
+   "x": -2.5953,
+   "y": -0.585,
+   "cluster": 2,
+   "neighbors": [
+    "BRA",
+    "MAR",
+    "ZAF",
+    "TUR",
+    "GEO",
+    "ARG",
+    "PAN",
+    "IND"
+   ],
+   "distances": [
+    1.982,
+    2.077,
+    2.135,
+    2.156,
+    2.168,
+    2.225,
+    2.303,
+    2.425
+   ]
+  },
+  "GBR": {
+   "x": 2.3731,
+   "y": -0.3693,
+   "cluster": 0,
+   "neighbors": [
+    "AUT",
+    "BEL",
+    "IRL",
+    "NLD",
+    "DEU",
+    "DNK",
+    "NOR",
+    "ISL"
+   ],
+   "distances": [
+    0.918,
+    0.967,
+    1.311,
+    1.398,
+    1.405,
+    1.525,
+    1.555,
+    1.555
+   ]
+  },
+  "IRL": {
+   "x": 3.1382,
+   "y": -0.7705,
+   "cluster": 0,
+   "neighbors": [
+    "DNK",
+    "NLD",
+    "BEL",
+    "NOR",
+    "AUT",
+    "GBR",
+    "ISL",
+    "DEU"
+   ],
+   "distances": [
+    0.735,
+    1.004,
+    1.182,
+    1.202,
+    1.298,
+    1.311,
+    1.33,
+    1.392
+   ]
+  },
+  "DEU": {
+   "x": 2.5188,
+   "y": -0.6421,
+   "cluster": 0,
+   "neighbors": [
+    "NLD",
+    "BEL",
+    "AUT",
+    "DNK",
+    "IRL",
+    "NOR",
+    "GBR",
+    "CAN"
+   ],
+   "distances": [
+    0.751,
+    1.035,
+    1.285,
+    1.38,
+    1.392,
+    1.398,
+    1.405,
+    1.601
+   ]
+  },
+  "FRA": {
+   "x": 0.9565,
+   "y": -0.1623,
+   "cluster": 0,
+   "neighbors": [
+    "ITA",
+    "ESP",
+    "BEL",
+    "EST",
+    "SVN",
+    "AUT",
+    "CZE",
+    "URY"
+   ],
+   "distances": [
+    1.463,
+    1.642,
+    1.766,
+    1.777,
+    1.939,
+    1.94,
+    2.005,
+    2.033
+   ]
+  },
+  "NLD": {
+   "x": 2.7207,
+   "y": -0.8624,
+   "cluster": 0,
+   "neighbors": [
+    "BEL",
+    "DEU",
+    "DNK",
+    "IRL",
+    "NOR",
+    "CAN",
+    "AUT",
+    "SWE"
+   ],
+   "distances": [
+    0.715,
+    0.751,
+    0.878,
+    1.004,
+    1.224,
+    1.286,
+    1.317,
+    1.355
+   ]
+  },
+  "BEL": {
+   "x": 2.3147,
+   "y": -0.6916,
+   "cluster": 0,
+   "neighbors": [
+    "NLD",
+    "AUT",
+    "GBR",
+    "DEU",
+    "DNK",
+    "IRL",
+    "FIN",
+    "NOR"
+   ],
+   "distances": [
+    0.715,
+    0.963,
+    0.967,
+    1.035,
+    1.105,
+    1.182,
+    1.251,
+    1.33
+   ]
+  },
+  "SWE": {
+   "x": 2.625,
+   "y": -1.6906,
+   "cluster": 0,
+   "neighbors": [
+    "FIN",
+    "CAN",
+    "NLD",
+    "BEL",
+    "DNK",
+    "NOR",
+    "DEU",
+    "IRL"
+   ],
+   "distances": [
+    0.81,
+    1.025,
+    1.355,
+    1.36,
+    1.448,
+    1.595,
+    1.775,
+    1.833
+   ]
+  },
+  "NOR": {
+   "x": 3.3952,
+   "y": -0.518,
+   "cluster": 0,
+   "neighbors": [
+    "ISL",
+    "DNK",
+    "IRL",
+    "NLD",
+    "BEL",
+    "DEU",
+    "GBR",
+    "SWE"
+   ],
+   "distances": [
+    0.815,
+    0.914,
+    1.202,
+    1.224,
+    1.33,
+    1.398,
+    1.555,
+    1.595
+   ]
+  },
+  "DNK": {
+   "x": 3.2103,
+   "y": -0.7794,
+   "cluster": 0,
+   "neighbors": [
+    "IRL",
+    "NLD",
+    "NOR",
+    "BEL",
+    "ISL",
+    "DEU",
+    "SWE",
+    "GBR"
+   ],
+   "distances": [
+    0.735,
+    0.878,
+    0.914,
+    1.105,
+    1.287,
+    1.38,
+    1.448,
+    1.525
+   ]
+  },
+  "FIN": {
+   "x": 2.359,
+   "y": -1.4652,
+   "cluster": 0,
+   "neighbors": [
+    "SWE",
+    "BEL",
+    "NLD",
+    "CAN",
+    "DNK",
+    "EST",
+    "NOR",
+    "AUT"
+   ],
+   "distances": [
+    0.81,
+    1.251,
+    1.491,
+    1.538,
+    1.561,
+    1.579,
+    1.71,
+    1.747
+   ]
+  },
+  "ISL": {
+   "x": 3.3947,
+   "y": -0.023,
+   "cluster": 0,
+   "neighbors": [
+    "NOR",
+    "DNK",
+    "IRL",
+    "CHE",
+    "GBR",
+    "AUT",
+    "BEL",
+    "NLD"
+   ],
+   "distances": [
+    0.815,
+    1.287,
+    1.33,
+    1.439,
+    1.555,
+    1.586,
+    1.635,
+    1.73
+   ]
+  },
+  "CHE": {
+   "x": 2.7529,
+   "y": 0.9363,
+   "cluster": 0,
+   "neighbors": [
+    "ISL",
+    "AUT",
+    "GBR",
+    "NOR",
+    "IRL",
+    "BEL",
+    "DNK",
+    "SVN"
+   ],
+   "distances": [
+    1.439,
+    1.821,
+    1.96,
+    2.11,
+    2.177,
+    2.182,
+    2.273,
+    2.336
+   ]
+  },
+  "AUT": {
+   "x": 2.1467,
+   "y": -0.3114,
+   "cluster": 0,
+   "neighbors": [
+    "GBR",
+    "BEL",
+    "DEU",
+    "IRL",
+    "NLD",
+    "SVN",
+    "CZE",
+    "ISL"
+   ],
+   "distances": [
+    0.918,
+    0.963,
+    1.285,
+    1.298,
+    1.317,
+    1.369,
+    1.406,
+    1.586
+   ]
+  },
+  "ESP": {
+   "x": 0.8965,
+   "y": 0.0878,
+   "cluster": 1,
+   "neighbors": [
+    "ITA",
+    "FRA",
+    "KOR",
+    "CHL",
+    "GRC",
+    "URY",
+    "CYP",
+    "SVN"
+   ],
+   "distances": [
+    1.237,
+    1.642,
+    1.869,
+    1.931,
+    2.0,
+    2.012,
+    2.036,
+    2.057
+   ]
+  },
+  "PRT": {
+   "x": 1.1472,
+   "y": -1.1277,
+   "cluster": 0,
+   "neighbors": [
+    "NZL",
+    "AUS",
+    "CYP",
+    "ESP",
+    "GRC",
+    "MYS",
+    "DEU",
+    "SGP"
+   ],
+   "distances": [
+    1.537,
+    1.974,
+    2.071,
+    2.259,
+    2.391,
+    2.394,
+    2.406,
+    2.455
+   ]
+  },
+  "ITA": {
+   "x": 0.5572,
+   "y": 0.7619,
+   "cluster": 1,
+   "neighbors": [
+    "ESP",
+    "FRA",
+    "KOR",
+    "TWN",
+    "SVN",
+    "JPN",
+    "CYP",
+    "HKG"
+   ],
+   "distances": [
+    1.237,
+    1.463,
+    1.642,
+    1.802,
+    1.844,
+    1.903,
+    1.944,
+    2.039
+   ]
+  },
+  "GRC": {
+   "x": -0.3677,
+   "y": -0.538,
+   "cluster": 2,
+   "neighbors": [
+    "ARG",
+    "TWN",
+    "ESP",
+    "CYP",
+    "ITA",
+    "URY",
+    "PRT",
+    "CRI"
+   ],
+   "distances": [
+    1.679,
+    1.714,
+    2.0,
+    2.046,
+    2.161,
+    2.257,
+    2.391,
+    2.417
+   ]
+  },
+  "CZE": {
+   "x": 1.3671,
+   "y": -0.1438,
+   "cluster": 0,
+   "neighbors": [
+    "POL",
+    "SVN",
+    "HRV",
+    "HUN",
+    "AUT",
+    "EST",
+    "DEU",
+    "ROU"
+   ],
+   "distances": [
+    0.732,
+    0.893,
+    1.263,
+    1.267,
+    1.406,
+    1.601,
+    1.76,
+    1.807
+   ]
+  },
+  "POL": {
+   "x": 0.9893,
+   "y": -0.367,
+   "cluster": 0,
+   "neighbors": [
+    "CZE",
+    "HRV",
+    "HUN",
+    "ROU",
+    "SVN",
+    "EST",
+    "AUT",
+    "DEU"
+   ],
+   "distances": [
+    0.732,
+    0.959,
+    1.006,
+    1.263,
+    1.292,
+    1.73,
+    1.776,
+    2.052
+   ]
+  },
+  "HUN": {
+   "x": 0.9186,
+   "y": -0.0244,
+   "cluster": 0,
+   "neighbors": [
+    "POL",
+    "ROU",
+    "SVN",
+    "HRV",
+    "CZE",
+    "AUT",
+    "EST",
+    "MYS"
+   ],
+   "distances": [
+    1.006,
+    1.101,
+    1.214,
+    1.229,
+    1.267,
+    1.787,
+    1.883,
+    2.05
+   ]
+  },
+  "EST": {
+   "x": 1.2157,
+   "y": -0.9284,
+   "cluster": 0,
+   "neighbors": [
+    "FIN",
+    "CZE",
+    "POL",
+    "BEL",
+    "FRA",
+    "SWE",
+    "HUN",
+    "AUT"
+   ],
+   "distances": [
+    1.579,
+    1.601,
+    1.73,
+    1.766,
+    1.777,
+    1.852,
+    1.883,
+    1.938
+   ]
+  },
+  "ROU": {
+   "x": 0.1518,
+   "y": -0.3945,
+   "cluster": 0,
+   "neighbors": [
+    "HUN",
+    "POL",
+    "HRV",
+    "CZE",
+    "SVN",
+    "EST",
+    "MYS",
+    "AUT"
+   ],
+   "distances": [
+    1.101,
+    1.263,
+    1.267,
+    1.807,
+    2.067,
+    2.089,
+    2.211,
+    2.361
+   ]
+  },
+  "HRV": {
+   "x": 0.6004,
+   "y": -0.6036,
+   "cluster": 0,
+   "neighbors": [
+    "POL",
+    "HUN",
+    "CZE",
+    "ROU",
+    "SVN",
+    "AUT",
+    "EST",
+    "DEU"
+   ],
+   "distances": [
+    0.959,
+    1.229,
+    1.263,
+    1.267,
+    1.689,
+    1.965,
+    2.128,
+    2.336
+   ]
+  },
+  "SVN": {
+   "x": 1.5217,
+   "y": 0.331,
+   "cluster": 0,
+   "neighbors": [
+    "CZE",
+    "HUN",
+    "POL",
+    "AUT",
+    "KOR",
+    "HRV",
+    "DEU",
+    "BEL"
+   ],
+   "distances": [
+    0.893,
+    1.214,
+    1.292,
+    1.369,
+    1.607,
+    1.689,
+    1.717,
+    1.781
+   ]
+  },
+  "AUS": {
+   "x": 2.6298,
+   "y": -0.78,
+   "cluster": 0,
+   "neighbors": [
+    "NZL",
+    "PRT",
+    "SGP",
+    "NLD",
+    "DEU",
+    "CAN",
+    "BEL",
+    "GBR"
+   ],
+   "distances": [
+    1.102,
+    1.974,
+    2.092,
+    2.298,
+    2.361,
+    2.413,
+    2.453,
+    2.563
+   ]
+  },
+  "NZL": {
+   "x": 2.4041,
+   "y": -1.3529,
+   "cluster": 0,
+   "neighbors": [
+    "AUS",
+    "CAN",
+    "PRT",
+    "NLD",
+    "DEU",
+    "BEL",
+    "DNK",
+    "IRL"
+   ],
+   "distances": [
+    1.102,
+    1.484,
+    1.537,
+    1.628,
+    1.771,
+    1.795,
+    2.112,
+    2.138
+   ]
+  },
+  "JPN": {
+   "x": 0.7413,
+   "y": 1.9343,
+   "cluster": 1,
+   "neighbors": [
+    "ITA",
+    "HKG",
+    "KOR",
+    "QAT",
+    "ARE",
+    "SVN",
+    "CYP",
+    "TWN"
+   ],
+   "distances": [
+    1.903,
+    2.227,
+    2.258,
+    2.416,
+    2.437,
+    2.444,
+    2.743,
+    2.77
+   ]
+  },
+  "KOR": {
+   "x": 1.2618,
+   "y": 1.3558,
+   "cluster": 1,
+   "neighbors": [
+    "SVN",
+    "ITA",
+    "ESP",
+    "ARE",
+    "HUN",
+    "HKG",
+    "FRA",
+    "CZE"
+   ],
+   "distances": [
+    1.607,
+    1.642,
+    1.869,
+    1.982,
+    2.054,
+    2.1,
+    2.115,
+    2.155
+   ]
+  },
+  "SGP": {
+   "x": 2.4514,
+   "y": 0.3332,
+   "cluster": 0,
+   "neighbors": [
+    "GBR",
+    "AUT",
+    "HKG",
+    "DEU",
+    "BEL",
+    "AUS",
+    "SVN",
+    "NLD"
+   ],
+   "distances": [
+    1.78,
+    1.786,
+    1.921,
+    2.0,
+    2.07,
+    2.092,
+    2.125,
+    2.129
+   ]
+  },
+  "TWN": {
+   "x": -0.5319,
+   "y": 0.9032,
+   "cluster": 1,
+   "neighbors": [
+    "CYP",
+    "GRC",
+    "ITA",
+    "ARG",
+    "BHR",
+    "ESP",
+    "MYS",
+    "HKG"
+   ],
+   "distances": [
+    1.705,
+    1.714,
+    1.802,
+    2.073,
+    2.15,
+    2.179,
+    2.225,
+    2.328
+   ]
+  },
+  "HKG": {
+   "x": 1.5571,
+   "y": 1.6765,
+   "cluster": 1,
+   "neighbors": [
+    "SGP",
+    "ITA",
+    "ARE",
+    "KOR",
+    "CYP",
+    "BHR",
+    "JPN",
+    "ESP"
+   ],
+   "distances": [
+    1.921,
+    2.039,
+    2.073,
+    2.1,
+    2.171,
+    2.187,
+    2.227,
+    2.293
+   ]
+  },
+  "CHN": {
+   "x": -1.3144,
+   "y": 2.053,
+   "cluster": 1,
+   "neighbors": [
+    "TUR",
+    "TWN",
+    "SAU",
+    "VNM",
+    "THA",
+    "ITA",
+    "KOR",
+    "ARE"
+   ],
+   "distances": [
+    2.283,
+    2.355,
+    2.375,
+    2.452,
+    2.478,
+    2.613,
+    2.86,
+    2.872
+   ]
+  },
+  "VNM": {
+   "x": -2.6928,
+   "y": 0.7423,
+   "cluster": 3,
+   "neighbors": [
+    "IDN",
+    "MAR",
+    "EGY",
+    "LKA",
+    "GHA",
+    "IND",
+    "CHN",
+    "THA"
+   ],
+   "distances": [
+    1.617,
+    1.645,
+    1.808,
+    1.954,
+    2.216,
+    2.394,
+    2.452,
+    2.487
+   ]
+  },
+  "IND": {
+   "x": -4.495,
+   "y": -0.192,
+   "cluster": 3,
+   "neighbors": [
+    "LKA",
+    "EGY",
+    "GHA",
+    "IDN",
+    "KEN",
+    "NGA",
+    "VNM",
+    "PER"
+   ],
+   "distances": [
+    1.55,
+    1.592,
+    1.695,
+    1.85,
+    2.102,
+    2.309,
+    2.394,
+    2.425
+   ]
+  },
+  "IDN": {
+   "x": -3.5055,
+   "y": 0.325,
+   "cluster": 3,
+   "neighbors": [
+    "LKA",
+    "EGY",
+    "VNM",
+    "GHA",
+    "IND",
+    "MAR",
+    "PHL",
+    "PER"
+   ],
+   "distances": [
+    1.544,
+    1.545,
+    1.617,
+    1.694,
+    1.85,
+    2.356,
+    2.52,
+    2.801
+   ]
+  },
+  "PHL": {
+   "x": -3.0839,
+   "y": -0.6192,
+   "cluster": 3,
+   "neighbors": [
+    "GHA",
+    "LKA",
+    "ZAF",
+    "KEN",
+    "IND",
+    "NGA",
+    "IDN",
+    "MUS"
+   ],
+   "distances": [
+    1.93,
+    1.965,
+    1.984,
+    2.34,
+    2.451,
+    2.513,
+    2.52,
+    2.567
+   ]
+  },
+  "MYS": {
+   "x": -0.0085,
+   "y": -0.1799,
+   "cluster": 1,
+   "neighbors": [
+    "ARG",
+    "HUN",
+    "ROU",
+    "TWN",
+    "PRT",
+    "ESP",
+    "CYP",
+    "CHL"
+   ],
+   "distances": [
+    2.01,
+    2.05,
+    2.211,
+    2.225,
+    2.394,
+    2.429,
+    2.431,
+    2.562
+   ]
+  },
+  "THA": {
+   "x": -1.9088,
+   "y": 0.7076,
+   "cluster": 2,
+   "neighbors": [
+    "TUR",
+    "BRA",
+    "CHL",
+    "MEX",
+    "CHN",
+    "VNM",
+    "PER",
+    "MAR"
+   ],
+   "distances": [
+    1.65,
+    1.867,
+    2.196,
+    2.423,
+    2.478,
+    2.487,
+    2.543,
+    2.549
+   ]
+  },
+  "LKA": {
+   "x": -3.4466,
+   "y": 0.2589,
+   "cluster": 3,
+   "neighbors": [
+    "IDN",
+    "IND",
+    "EGY",
+    "VNM",
+    "PHL",
+    "GHA",
+    "PER",
+    "KEN"
+   ],
+   "distances": [
+    1.544,
+    1.55,
+    1.558,
+    1.954,
+    1.965,
+    2.135,
+    2.658,
+    2.944
+   ]
+  },
+  "ARE": {
+   "x": 0.9528,
+   "y": 2.9431,
+   "cluster": 1,
+   "neighbors": [
+    "QAT",
+    "SAU",
+    "BHR",
+    "KOR",
+    "HKG",
+    "JPN",
+    "ITA",
+    "TWN"
+   ],
+   "distances": [
+    0.98,
+    1.332,
+    1.96,
+    1.982,
+    2.073,
+    2.437,
+    2.553,
+    2.793
+   ]
+  },
+  "QAT": {
+   "x": 1.2932,
+   "y": 3.3557,
+   "cluster": 1,
+   "neighbors": [
+    "ARE",
+    "SAU",
+    "HKG",
+    "JPN",
+    "KOR",
+    "BHR",
+    "ITA",
+    "CHE"
+   ],
+   "distances": [
+    0.98,
+    1.805,
+    2.371,
+    2.416,
+    2.417,
+    2.637,
+    2.852,
+    3.125
+   ]
+  },
+  "SAU": {
+   "x": -0.1286,
+   "y": 3.4024,
+   "cluster": 1,
+   "neighbors": [
+    "ARE",
+    "QAT",
+    "BHR",
+    "CHN",
+    "KOR",
+    "JPN",
+    "TWN",
+    "HKG"
+   ],
+   "distances": [
+    1.332,
+    1.805,
+    2.371,
+    2.375,
+    2.652,
+    2.872,
+    2.963,
+    3.031
+   ]
+  },
+  "ISR": {
+   "x": 0.7252,
+   "y": 1.4391,
+   "cluster": 1,
+   "neighbors": [
+    "CYP",
+    "FRA",
+    "ITA",
+    "USA",
+    "ARE",
+    "HKG",
+    "CRI",
+    "TWN"
+   ],
+   "distances": [
+    2.778,
+    2.837,
+    2.879,
+    2.879,
+    2.923,
+    2.927,
+    3.21,
+    3.225
+   ]
+  },
+  "TUR": {
+   "x": -1.6752,
+   "y": 0.3591,
+   "cluster": 2,
+   "neighbors": [
+    "THA",
+    "BRA",
+    "PER",
+    "CHN",
+    "CHL",
+    "COL",
+    "MEX",
+    "ARG"
+   ],
+   "distances": [
+    1.65,
+    2.063,
+    2.156,
+    2.283,
+    2.286,
+    2.32,
+    2.389,
+    2.437
+   ]
+  },
+  "BHR": {
+   "x": 0.6161,
+   "y": 1.7829,
+   "cluster": 1,
+   "neighbors": [
+    "ARE",
+    "TWN",
+    "HKG",
+    "KOR",
+    "HUN",
+    "SAU",
+    "CYP",
+    "SVN"
+   ],
+   "distances": [
+    1.96,
+    2.15,
+    2.187,
+    2.191,
+    2.266,
+    2.371,
+    2.608,
+    2.611
+   ]
+  },
+  "ZAF": {
+   "x": -2.5496,
+   "y": -1.3888,
+   "cluster": 3,
+   "neighbors": [
+    "PHL",
+    "PER",
+    "KEN",
+    "NGA",
+    "ARG",
+    "GEO",
+    "GHA",
+    "MUS"
+   ],
+   "distances": [
+    1.984,
+    2.135,
+    2.533,
+    2.69,
+    2.701,
+    2.712,
+    2.793,
+    2.84
+   ]
+  },
+  "EGY": {
+   "x": -3.9805,
+   "y": 1.0643,
+   "cluster": 3,
+   "neighbors": [
+    "IDN",
+    "LKA",
+    "IND",
+    "VNM",
+    "GHA",
+    "MAR",
+    "PHL",
+    "PER"
+   ],
+   "distances": [
+    1.545,
+    1.558,
+    1.592,
+    1.808,
+    2.206,
+    2.612,
+    2.648,
+    2.705
+   ]
+  },
+  "MAR": {
+   "x": -2.7562,
+   "y": 0.0498,
+   "cluster": 3,
+   "neighbors": [
+    "VNM",
+    "PER",
+    "GEO",
+    "IDN",
+    "GHA",
+    "TUR",
+    "THA",
+    "EGY"
+   ],
+   "distances": [
+    1.645,
+    2.077,
+    2.326,
+    2.356,
+    2.472,
+    2.496,
+    2.549,
+    2.612
+   ]
+  },
+  "KEN": {
+   "x": -4.4375,
+   "y": -1.5442,
+   "cluster": 3,
+   "neighbors": [
+    "NGA",
+    "GHA",
+    "IND",
+    "PHL",
+    "ZAF",
+    "LKA",
+    "PER",
+    "IDN"
+   ],
+   "distances": [
+    1.492,
+    1.71,
+    2.102,
+    2.34,
+    2.533,
+    2.944,
+    2.957,
+    3.119
+   ]
+  },
+  "NGA": {
+   "x": -4.8593,
+   "y": -0.7561,
+   "cluster": 3,
+   "neighbors": [
+    "KEN",
+    "IND",
+    "GHA",
+    "PHL",
+    "ZAF",
+    "LKA",
+    "EGY",
+    "PER"
+   ],
+   "distances": [
+    1.492,
+    2.309,
+    2.507,
+    2.513,
+    2.69,
+    3.078,
+    3.278,
+    3.402
+   ]
+  },
+  "GHA": {
+   "x": -3.7874,
+   "y": -0.6747,
+   "cluster": 3,
+   "neighbors": [
+    "IDN",
+    "IND",
+    "KEN",
+    "PHL",
+    "LKA",
+    "EGY",
+    "VNM",
+    "MAR"
+   ],
+   "distances": [
+    1.694,
+    1.695,
+    1.71,
+    1.93,
+    2.135,
+    2.206,
+    2.216,
+    2.472
+   ]
+  },
+  "MUS": {
+   "x": -1.3528,
+   "y": -1.068,
+   "cluster": 2,
+   "neighbors": [
+    "ARG",
+    "GRC",
+    "PHL",
+    "TWN",
+    "CYP",
+    "HRV",
+    "ZAF",
+    "PRT"
+   ],
+   "distances": [
+    2.367,
+    2.433,
+    2.567,
+    2.643,
+    2.696,
+    2.838,
+    2.84,
+    2.874
+   ]
+  },
+  "RUS": {
+   "x": -0.4791,
+   "y": 1.0585,
+   "cluster": 1,
+   "neighbors": [
+    "TUR",
+    "ROU",
+    "POL",
+    "HUN",
+    "BHR",
+    "KOR",
+    "CZE",
+    "MEX"
+   ],
+   "distances": [
+    3.239,
+    3.275,
+    3.435,
+    3.56,
+    3.569,
+    3.608,
+    3.676,
+    3.686
+   ]
+  },
+  "GEO": {
+   "x": -2.0898,
+   "y": -1.7494,
+   "cluster": 2,
+   "neighbors": [
+    "PER",
+    "MAR",
+    "ARG",
+    "TUR",
+    "PAN",
+    "ZAF",
+    "CHL",
+    "COL"
+   ],
+   "distances": [
+    2.168,
+    2.326,
+    2.516,
+    2.542,
+    2.553,
+    2.712,
+    2.742,
+    2.807
+   ]
+  },
+  "CYP": {
+   "x": 0.2017,
+   "y": 0.3212,
+   "cluster": 1,
+   "neighbors": [
+    "TWN",
+    "ITA",
+    "ESP",
+    "GRC",
+    "ARG",
+    "PRT",
+    "URY",
+    "CRI"
+   ],
+   "distances": [
+    1.705,
+    1.944,
+    2.036,
+    2.046,
+    2.053,
+    2.071,
+    2.153,
+    2.162
+   ]
+  }
+ }
+}

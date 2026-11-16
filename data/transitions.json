@@ -1,0 +1,119 @@
+{
+  "_about": "Multi-stage routes to permanent residence. Each step links an official page read on the 'checked' date. Only transitions an official page supports are listed; a temporary visa is never assumed to lead to residence. Durations the page doesn't state are null and reported as unknown.",
+  "checked": "2026-11-16",
+  "pathways": [
+    {
+      "id": "CAN-study-pgwp-cec",
+      "country": "CAN",
+      "title": "Study, then work on a PGWP, then permanent residence (Canadian Experience Class)",
+      "kind": "study_to_pr",
+      "steps": [
+        {
+          "route": "CAN-study-permit-pgwp",
+          "label": "Study at a Canadian institution",
+          "years": null,
+          "years_note": "The length of your programme"
+        },
+        {
+          "label": "Work on a Post-Graduation Work Permit",
+          "years": 0,
+          "max_years": 3,
+          "years_note": "The year of Canadian work in the next step is done on this permit. PGWP length depends on the level and length of your programme (up to 3 years) and your passport's validity.",
+          "condition": "Graduate from an eligible programme",
+          "sources": [
+            "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html"
+          ]
+        },
+        {
+          "label": "Apply for permanent residence through the Canadian Experience Class",
+          "years": 1,
+          "pr": true,
+          "years_note": "After at least 1 year (1,560 hours) of skilled Canadian work in the last 3 years",
+          "requirements": {
+            "experience_years": 1,
+            "education_min": null,
+            "notes": [
+              "Work in TEER 0, 1, 2 or 3, gained in Canada while authorised to work",
+              "Meet the minimum score in all four language abilities on an approved test",
+              "There is no education requirement"
+            ]
+          },
+          "sources": [
+            "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html"
+          ]
+        }
+      ],
+      "limits": [
+        "Meeting the minimum puts you in the Express Entry pool; permanent residence needs an invitation from a competitive draw.",
+        "The PGWP page doesn't say that PGWP work counts towards residence; the Canadian Experience Class page requires Canadian work gained while authorised to work."
+      ]
+    },
+    {
+      "id": "GBR-student-graduate-skilled-settlement",
+      "country": "GBR",
+      "title": "Study, then the Graduate visa, then Skilled Worker, then settlement",
+      "kind": "study_to_pr",
+      "steps": [
+        {
+          "route": "GBR-student-visa-graduate-route",
+          "label": "Study on a Student visa",
+          "years": null,
+          "years_note": "The length of your course"
+        },
+        {
+          "label": "Graduate visa",
+          "years": 2,
+          "years_note": "2 years for bachelor's and master's graduates applying by 31 December 2026, 18 months from 1 January 2027, 3 years after a PhD. It can't be extended.",
+          "condition": "Your university confirms you completed your course",
+          "sources": [
+            "https://www.gov.uk/graduate-visa"
+          ]
+        },
+        {
+          "route": "GBR-skilled-worker-visa",
+          "label": "Switch to a Skilled Worker visa",
+          "years": 5,
+          "pr": true,
+          "years_note": "Settlement after 5 years on the Skilled Worker visa",
+          "sources": [
+            "https://www.gov.uk/graduate-visa"
+          ]
+        }
+      ],
+      "limits": [
+        "The Graduate visa page doesn't say the Graduate visa counts towards settlement, so the 5 years are counted from the Skilled Worker visa.",
+        "Skilled Worker needs a job offer from a licensed sponsor."
+      ]
+    },
+    {
+      "id": "DEU-blue-card-settlement",
+      "country": "DEU",
+      "title": "EU Blue Card, then a settlement permit",
+      "kind": "work_to_pr",
+      "steps": [
+        {
+          "route": "DEU-eu-blue-card",
+          "label": "Work on an EU Blue Card",
+          "years": 0,
+          "years_note": "The months in the next step are counted while you hold the Blue Card"
+        },
+        {
+          "label": "Settlement permit",
+          "pr": true,
+          "years": null,
+          "years_by_german": {
+            "B1": 1.75,
+            "A1": 2.25
+          },
+          "years_note": "After 21 months with B1 German, or 27 months with A1",
+          "sources": [
+            "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card"
+          ]
+        }
+      ],
+      "limits": [
+        "Below A1 German the page gives no settlement timeline for Blue Card holders."
+      ]
+    }
+  ]
+}

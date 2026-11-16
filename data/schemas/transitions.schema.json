@@ -1,0 +1,126 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Multi-stage pathways (data/transitions.json)",
+ "type": "object",
+ "required": [
+  "checked",
+  "pathways"
+ ],
+ "properties": {
+  "_about": {
+   "type": "string"
+  },
+  "checked": {
+   "type": "string",
+   "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+  },
+  "pathways": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "country",
+     "title",
+     "kind",
+     "steps",
+     "limits"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "pattern": "^[A-Z]{3}-[a-z0-9-]+$"
+     },
+     "country": {
+      "pattern": "^[A-Z]{3}$"
+     },
+     "title": {
+      "type": "string"
+     },
+     "kind": {
+      "enum": [
+       "study_to_pr",
+       "work_to_pr",
+       "nomad_to_pr",
+       "business_to_pr",
+       "family_to_pr"
+      ]
+     },
+     "limits": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "steps": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+       "type": "object",
+       "required": [
+        "label"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "route": {
+         "pattern": "^[A-Z]{3}-[a-z0-9-]+$"
+        },
+        "label": {
+         "type": "string"
+        },
+        "years": {
+         "type": [
+          "number",
+          "null"
+         ],
+         "minimum": 0
+        },
+        "max_years": {
+         "type": "number"
+        },
+        "years_note": {
+         "type": "string"
+        },
+        "pr": {
+         "type": "boolean"
+        },
+        "condition": {
+         "type": "string"
+        },
+        "years_by_german": {
+         "type": "object",
+         "additionalProperties": {
+          "type": "number"
+         }
+        },
+        "requirements": {
+         "type": "object"
+        },
+        "sources": {
+         "type": "array",
+         "items": {
+          "type": "string",
+          "pattern": "^https://"
+         },
+         "minItems": 1
+        }
+       },
+       "anyOf": [
+        {
+         "required": [
+          "route"
+         ]
+        },
+        {
+         "required": [
+          "sources"
+         ]
+        }
+       ]
+      }
+     }
+    }
+   }
+  }
+ }
+}
